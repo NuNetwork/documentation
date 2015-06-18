@@ -1,0 +1,123 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic)
+@import settings.scss
+
+html
+  position: relative
+  min-height: 100%
+
+body
+  background-color: #f9f9f9
+  font-family: 'Lato'
+  margin: 0 0 50px 0
+  padding: 0
+
+.col
+  padding: 5px
+  &.right
+    float: right
+
+.site_header, .site_footer
+  padding: 2.5px 0 0
+  font-size: .875em
+  background-color: #000000
+
+.site_header
+  max-height: 95px
+  border-bottom: 1px solid #383536
+
+.page_content
+  padding-top: 30px
+  padding-bottom: 80px
+  background-color: #ffffff
+
+.nav_list
+  list-style-type: none
+  li
+    display: inline-block !important
+    vertical-align: middle
+    margin-right: 2px
+    a
+      display: inline-block
+      padding: 10px 20px
+      color: #ffffff
+      text-decoration: none
+      &:hover
+        background-color: #423f40
+    &.logo
+      a
+        margin-left: 0
+        padding-left: 0
+    &.btn
+      border: 2px solid #ffffff
+      border-radius: 5px
+      a
+        &:hover
+          background-color: #ffffff
+          color: #000000
+  &.right
+    margin-top: 18px
+    margin-right: 0
+    padding-right: 0
+  &.footer
+    li
+      margin-right: 0
+      &:after
+        padding: 0 8px
+        content: "|"
+      &:last-child
+        &:after
+          content: ""
+      &.copyright
+        color: gray
+        margin-right: 20px
+        &:after
+          content: ""
+    a
+      padding: 0
+      font-weight: 300
+      &:hover
+        text-decoration: underline
+        background-color: transparent
+
+.nav_left_sidebar
+  @extend %grid-3
+  padding: 20px 30px
+  border-right: 1px solid #eeeeee
+  font-size: .9em
+  font-weight: 400
+  h4
+    font-size: .825em
+    font-weight: 300
+  ul
+    list-style-type: none
+    margin-bottom: 15px
+    li
+      a
+        text-decoration: none
+        color: #707070
+        &:hover
+          color: #931f0a
+      &.current
+        a
+          color: red
+
+.body_wrapper
+  @extend %grid-9
+  padding: 20px 30px
+  h1, h2, h3, h4, h5, h6
+    color: #444444
+
+.body_header
+  hr
+    margin: 20px 0
+    border: 0
+    border-top: 1px solid #EEEEEE
+
+.site_footer
+  position: absolute
+  bottom: 0
+  height: 50px
+  width: 100%
+  padding-top: 5px
+  padding-left: 50px
+  border-top: 1px solid #595959

@@ -1,0 +1,25 @@
+# Translations
+# //todo: move to separate config files inside of _locale
+# for ease of editing in Prose.io
+i18n:
+  en:
+    home:
+      name: "Home"
+      url: "/"
+    about:
+      name: "About"
+      url: "/about/"
+  fr:
+    home:
+      name: "Accueil"
+      url: "/accueil/"
+    about:
+      name: "À propos"
+      url: "/a-propos/"
+  zh:
+    home:
+      name: "首页"
+      url: "/首页/"
+    about:
+      name: "关于"
+      url: "/关于/"
