@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Documentation for how to use and integrate with the Nu cryptoasset client,
   core protocol and its consensus and transactional tokens, NuShares (NSR) and
   NuBits (NBT).
-baseurl: "/documentation/" # the subpath of your site, e.g. /blog/
+baseurl: "/documentation" # the subpath of your site, e.g. /blog/
 url: "http://nunetwork.github.io" # the base hostname & protocol for your site
 kbimageurl: /kb/images/
 historyurl: https://github.com/NuNetwork/documentation/tree/gh-pages/_kb/
@@ -23,3 +23,4 @@ redcarpet:
 
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
