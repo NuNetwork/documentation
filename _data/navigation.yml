@@ -1,9 +1,7 @@
 en:
   primary:
-    - title: Nu Network
-      url: /
-    - title: About
-      url: /about/
+    - title: Documentation
+      url: /documentation/
   doc-sidebar:
     - heading: Getting Started
     - heading: NuBits

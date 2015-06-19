@@ -10,13 +10,16 @@ url: "http://nunetwork.github.io" # the base hostname & protocol for your site
 kbimageurl: /kb/images/
 historyurl: https://github.com/NuNetwork/documentation/tree/gh-pages/_kb/
 
+# Content collections
+collections:
+  kb:
+    output: true
+    fig_count: 1
 
 # Build settings
 markdown: redcarpet
 redcarpet:
   extensions: ['smart', 'superscript']
 
-collections:
-  kb:
-    output: true
-    fig_count: 1
+gems:
+  - jekyll-sitemap
