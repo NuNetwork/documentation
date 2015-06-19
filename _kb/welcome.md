@@ -2,7 +2,7 @@
 title: Welcome!
 nav_heading:
 filename: welcome.md
-permalink: /
+permalink: /documentation
 layout: default
 lang: en
 ---
