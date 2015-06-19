@@ -8,8 +8,6 @@ lang: en
 callouts:
 ---
 
-#Creating a data feed for NuShares voting
-
 ##Feed URL
 
 Data feeds can be pulled into the client using a URL that points to the raw JSON voting data. The client accepts JSON voting data using the same format as the **setvote** RPC command.

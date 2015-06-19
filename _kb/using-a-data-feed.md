@@ -7,8 +7,6 @@ layout: kb
 lang: en
 callouts:
 ---
-#Using a data feed
-
 
 ##About data feeds
 

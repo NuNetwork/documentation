@@ -16,8 +16,6 @@ callouts:
       body: Data directories are usually marked as hidden folders by default, meaning you will have to change some settings in order to see them. Please review the links below for your platform on how to enable viewing hidden folders.[Windows](http://www.howtogeek.com/howto/windows-vista/show-hidden-files-and-folders-in-windows-vista/)\n\n[Linux](http://www.howtogeek.com/howto/ubuntu/view-hidden-files-and-folders-in-ubuntu-file-browser/)\n\n[OSX](http://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/)"
 ---
 
-#Creating a nu.conf file
-
 Sometimes you may need to use a configuration file to change the behavior of the nu client. Learn how to locate your data directory, and create a conf file.
 
 ##1. Find the Nu data directory
