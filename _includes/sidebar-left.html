@@ -1,5 +1,6 @@
 {% capture location %}{{ page.url | remove_first:'/' | split:'/' | last | replace: '.html', '' }}{% endcapture %}
-{{location}}
+<script>console.log('location = {{location}}');</script>
+
 <section class="col nav_left_sidebar">
   <ul><li><a href="/">Home</a></li></ul>
   {% for menu in site.data.navigation[page.lang].doc-sidebar %}

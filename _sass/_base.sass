@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic)
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic)
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css)
 @import settings.scss
 
 html
@@ -8,7 +9,7 @@ html
 body
   background-color: #f9f9f9
   font-family: 'Lato'
-  margin: 0 0 50px 0
+  margin: 0 0 -50px 0
   padding: 0
 
 .col
@@ -116,10 +117,77 @@ body
     color: #444444
 
 .body_header
+  h1
+    display: inline-block
   hr
     margin: 20px 0
     border: 0
     border-top: 1px solid #EEEEEE
+  .version_history_link
+    display: inline-block
+    float: right
+    padding-top: 8px
+    font-size: .75em
+    a
+      color: #bbbbbb
+      text-decoration: none
+      &:hover
+        color: #931f0a
+
+.body_content
+
+figure
+  margin: 25px 0
+  text-align: center
+  img
+    max-width: 100%
+  figcaption
+    margin-top: -2px
+    color: #999999
+    font-size: .75em
+
+.block_callout
+  margin: 30px 0 20px 0
+  padding: 15px 15px 1px
+  background-color: #f4f8fa
+  border-left: 4px solid #5bc0de
+  a
+    color: #0074a0
+  i
+    display: inline-block
+    padding-right: 3px
+    color: #5bc0de
+  .callout_title
+    display: inline-block
+    font-size: .85em
+    color: #5bc0de
+  .callout_body
+    margin-top: 5px
+    margin-bottom: 15px
+    font-size: .9em
+  &.success
+    background-color: #f1f8ee
+    border-color: #75bf56
+    i
+      color: #75bf56
+    .callout_title
+      color: #75bf56
+  &.warning
+    background-color: #fcf8f2
+    border-color: #f0ad4e
+    i
+      color: #f0ad4e
+    .callout_title
+      color: #f0ad4e
+  &.danger
+    background-color: #fdf7f7
+    border-color: #d9534f
+    i
+      color: #d9534f
+    .callout_title
+      color: #d9534f
+
+
 
 .site_footer
   position: absolute

@@ -11,13 +11,14 @@
 
       {% include sidebar-left.html %}
 
+
 			<section class="col body_wrapper">
 				<header class="body_header">
           <h1>{{ page.title }}</h1>
 					<hr>
 				</header>
 
-				<div class="body-content">
+				<div class="body_content">
           {{ page.content | markdownify }}
 				</div>
 
@@ -27,6 +28,7 @@
     </div>
 
     {% include footer.html %}
+    {% include footer_scripts.html %}
 
   </body>
 

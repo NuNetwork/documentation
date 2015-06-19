@@ -5,6 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   //TODO: Site description needs to be updated
 baseurl: "/documentation/" # the subpath of your site, e.g. /blog/
 url: "http://nunetwork.github.io" # the base hostname & protocol for your site
+kbimageurl: /kb/images/
 historyurl: https://github.com/NewNetwork/documentation/commits/gh-pages/_kb/
 
 # Build settings
@@ -15,3 +16,4 @@ redcarpet:
 collections:
   kb:
     output: true
+    fig_count: 1

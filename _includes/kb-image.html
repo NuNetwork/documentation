@@ -1,0 +1,17 @@
+{% if include.caption == empty %}
+  {% assign caption=' – ' %}
+{% else %}
+  {% capture cap %} – {{ include.caption }}{% endcapture %}
+  {% assign caption=cap %}
+{% endif %}
+
+{% if include.alt == empty %}
+  {% capture alt %}{{ caption | remove:" – " }} %}{% endcapture %}
+{% elsif include.alt %}
+  {% assign alt=include.alt %}
+{% endif %}
+
+<figure>
+  <img src="{{ site.baseurl }}{{ site.kbimageurl }}{{ include.filename }}" alt="{{ alt }}" class="kb_image_embed">
+  <figcaption>Fig %.{{ caption }}.</figcaption>
+</figure>
