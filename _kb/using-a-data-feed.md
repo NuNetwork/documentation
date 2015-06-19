@@ -7,14 +7,16 @@ layout: kb
 lang: en
 callouts:
 ---
+#Using a data feed
 
-#About data feeds
+
+##About data feeds
 
 Data feeds let users configure their Nu client to pull voting data from the internet. All that is needed is a URL to the voting data. You can use the **setdatafeed** RPC call to configure the feed from the command line. The **getdatafeed** RPC can be used to view the current feed. The client pulls the data every 60 seconds by default, but this can be changed using the **datafeeddelay** configuration (for example you can add `datafeeddelay=30` in your nu.conf). The data feed information is stored in your NuShares wallet.dat file.
 
 Your previous votes in the client are replaced when you set a data feed. If votes are manually added after you set the feed they will be removed on the next pull. You optionally can choose to ignore individual parts of a voting feed (motions, custodians, or park rates). If you choose to ignore custodian votes from the feed, for example, you may manually edit custodian votes in the client without the data feed overwriting them. All parts are selected by default.
 
-#Adding a data feed
+##Adding a data feed
 
 The data feed button can be found at the bottom of the NuShares voting page
 
@@ -39,31 +41,31 @@ server=1
 votenotify=C:\folder\folder\script.bat
 ```
 
-#Using data feeds from the daemon
+##Using data feeds from the daemon
 
-##Setting the data feed
+Setting the data feed
 
 ```
 nud setdatafeed https://abc.com/my-datafeed.json
 ```
 
-#Setting up a signed data feed
+Setting up a signed data feed
 
 ```
 nud setdatafeed https://abc.com/my-datafeed.json https://abc.com/my-datafeed.json.signature SSPwKhtFEyQvUx9cPjaC8yUxdeNrTMfJfF
 ```
 
-#Using only specific parts of a data feed (custodians, park rates, motions)
+Using only specific parts of a data feed (custodians, park rates, motions)
 ```
 nud setdatafeed https://abc.com/my-datafeed.json https://abc.com/my-datafeed.json.signature SSPwKhtFEyQvUx9cPjaC8yUxdeNrTMfJfF custodians,parkrates
 ```
 
-#Or without signature
+Or without signature
 ```
 nud setdatafeed https://abc.com/my-datafeed.json "" "" custodians,parkrates
 ```
 
-#To verify your current settings:
+To verify your current settings:
 ```
 nud getdatafeed
 ```
