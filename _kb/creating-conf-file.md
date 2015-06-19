@@ -1,6 +1,6 @@
 ---
 title: Creating a conf file
-nav_heading: NuShares
+nav_heading: NuBits
 filename: creating-conf-file.md
 permalink: /creating-conf-file/
 layout: kb
