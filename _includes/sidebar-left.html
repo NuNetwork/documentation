@@ -1,0 +1,19 @@
+{% capture location %}{{ page.url | remove_first:'/' | split:'/' | last | replace: '.html', '' }}{% endcapture %}
+{{location}}
+<section class="col nav_left_sidebar">
+  <ul><li><a href="/">Home</a></li></ul>
+  {% for menu in site.data.navigation[page.lang].doc-sidebar %}
+  <h4>{{ menu.heading | upcase }}</h4>
+  <ul>
+    {% for doc in site.kb %}
+      {% capture current_doc %}{{ doc.filename | split: '.' | first }}{% endcapture %}
+      {% if doc.nav_heading == menu.heading and current_doc == location %}
+        <li class="current"><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+      {% elsif doc.nav_heading == menu.heading %}
+        <li class=""><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
+</section>

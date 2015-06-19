@@ -1,0 +1,32 @@
+{% for callout in page.callouts %}
+    {% assign name=callout.shortname %}
+    {% assign type=callout.type %}
+    {% assign title=callout.title | markdownify %}
+    {% assign body=callout.body | markdownify %}
+
+{% if include.name == callout.shortname %}
+<section class="block_callout {{ type }}">
+	<h3>
+	{% if type == "warning" %}
+		<i class="fa fa-exclamation-circle " title="Warning"></i>
+	{% elsif type == "danger" %}
+		<i class="fa fa-exclamation-triangle " title="Danger"></i>
+	{% elsif type == "success" %}
+		<i class="fa fa-check-square " title="Success"></i>
+	{% else %}
+	{% comment %}
+		# 'info' is the default callout type
+		# default to the 'info' class if it isn't clear what to do
+		# with what is passed into the 'include.callout_type'
+	{% endcomment %}
+		<i class="fa fa-info-circle on" title="Info"></i>
+	{% endif %}
+		<span class="callout_title">{{ title }}</span>
+  	</h3>
+
+	<div class="callout_body"><p>{{ body }}</p>
+	</div>
+</section>
+
+{% endif %}
+{% endfor %}

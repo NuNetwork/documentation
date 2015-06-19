@@ -1,0 +1,15 @@
+en:
+  primary:
+    - title: Nu Network
+      url: /
+    - title: About
+      url: /about/
+  doc-sidebar:
+    - heading: Getting Started
+    - heading: NuBits
+    - heading: NuShares
+    - heading: Technical Resources
+    - heading: NuBot
+    - heading: Nu Web Service
+    - heading: Tools
+    - heading: Connect

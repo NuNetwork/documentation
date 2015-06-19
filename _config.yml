@@ -1,37 +1,17 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Nu Documentation
+email: development@nubits.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+  //TODO: Site description needs to be updated
+baseurl: "/documentation/" # the subpath of your site, e.g. /blog/
+url: "http://nunetwork.github.io" # the base hostname & protocol for your site
+historyurl: https://github.com/NewNetwork/documentation/commits/gh-pages/_kb/
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: ['smart', 'superscript']
 
-# Content defaults (including localization setup)
-permalink: /:title/
-
-defaults:
-  -
-    scope:
-      path: _pages/en
-    values:
-      layout: default
-      lang: en
-  -
-    scope:
-      path: _pages/fr
-    values:
-      layout: default
-      lang: fr
-  -
-    scope:
-      path: _pages/zh
-    values:
-      layout: default
-      lang: zh
+collections:
+  kb:
+    output: true
