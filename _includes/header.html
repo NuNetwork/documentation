@@ -2,7 +2,7 @@
   <nav class="container nav_top">
     <ul class="col nav_list">
       <li class="nav_item logo">
-        <a href="https://nubits.com"><img src="/assets/images/nu-network-logo.png" height=50 width=50></a>
+        <a href="https://nubits.com"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/nu-network-logo.png" height=50 width=50></a>
       </li>
       {% for menu in site.data.navigation[page.lang].primary %}
       <li class="nav_item"><a href="{{ menu.url }}">{{ menu.title }}</a></li>
