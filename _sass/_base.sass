@@ -101,7 +101,6 @@ body
   font-size: .9em
   font-weight: 400
   h4
-    margin-bottom: -2px
     font-size: 80%
     font-weight: 400
     color: transparentize(#707070, 0.55)
@@ -109,6 +108,8 @@ body
     list-style-type: none
     margin-bottom: 18px
     li
+      line-height: 1.25em
+      margin-bottom: 0.55em
       a
         text-decoration: none
         color: #707070
@@ -161,7 +162,7 @@ body
       margin-top: 0
   h3
     margin-bottom: 0.6em
-    color: transparentize(#444444, 0.5)
+    color: transparentize(#444444, 0.75)
     font-style: italic
   p
     margin-bottom: 1.25em
@@ -190,7 +191,6 @@ body
     padding-left: 20px
     li
       margin-bottom: 5px
-
 
 figure
   margin: 25px 0
@@ -224,6 +224,13 @@ figure
   .callout_body
     margin-bottom: 15px
     font-size: .9em
+    pre > code
+      display: block
+      margin: 20px 0 30px 0
+      padding: 10px
+      background-color: transparentize(#ffffff, 0.5)
+      border: 1px solid #e2e2e2
+      border-radius: 3px
   &.success
     background-color: #f1f8ee
     border-color: #75bf56

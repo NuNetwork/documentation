@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/documentation" # the subpath of your site, e.g. /blog/
 url: "http://nunetwork.github.io" # the base hostname & protocol for your site
 kbimageurl: /kb/images/
-historyurl: https://github.com/NuNetwork/documentation/tree/gh-pages/_kb/
+historyurl: https://github.com/NuNetwork/documentation/commits/gh-pages/_kb/
 
 # Content collections
 collections:

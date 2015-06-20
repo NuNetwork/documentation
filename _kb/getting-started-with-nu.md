@@ -2,7 +2,7 @@
 title: Getting Started With Nu
 nav_heading: Getting Started
 filename: getting-started-with-nu.md
-permalink: /getting-started-with-nu/
+permalink: /documentation/
 layout: kb
 lang: en
 callouts:
