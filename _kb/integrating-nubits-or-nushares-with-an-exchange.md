@@ -1,5 +1,5 @@
 ---
-title: Integrating With An Exchange
+title: Exchange Integration
 nav_heading: Technical Resources
 filename: integrating-nubits-or-nushares-with-an-exchange.md
 permalink: /integrating-nubits-or-nushares-with-an-exchange/

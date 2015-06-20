@@ -33,7 +33,7 @@ PEERCOIN TESTNET RPC PORT 9904
 
 `addmultisigaddress <nrequired> <'["key","key"]'> [account]`
 
-Adds a _nrequired-to-sign_ multi-signature address to the wallet
+Adds a _nRequired-to-sign_ multi-signature address to the wallet.
 
 ### backupwallet
 
