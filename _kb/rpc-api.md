@@ -8,7 +8,6 @@ lang: en
 callouts:
 ---
 
-
 ## Nu Network Ports
 
 {% highlight bash %}
@@ -34,15 +33,13 @@ PEERCOIN TESTNET RPC PORT 9904
 
 `addmultisigaddress <nrequired> <'["key","key"]'> [account]`
 
-Add a nrequired-to-sign multisignature address to the wallet
-
+Adds a _nrequired-to-sign_ multi-signature address to the wallet
 
 ### backupwallet
 
 `backupwallet <destination>`
 
-Safely copies wallet.dat to destination, which can be a directory or a path with filename.
-
+Safely copies _wallet.dat_ to destination, which can be a directory or a path with filename.
 
 ### checkwallet
 
@@ -50,18 +47,15 @@ Safely copies wallet.dat to destination, which can be a directory or a path with
 
 Check portfolio for integrity.
 
-
 ### createmultisig
 
 `createmultisig nrequired ["key",...]`
-
 
 ### createrawtransaction
 
 `createrawtransaction [{"txid":txid,"vout":n},...] {address:amount,...}`
 
-Create a transaction spending given inputs
-
+Create a transaction spending given inputs.
 
 ### decoderawtransaction
 
@@ -69,20 +63,17 @@ Create a transaction spending given inputs
 
 Return a JSON object representing the serialized, hex-encoded transaction.
 
-
 ### distribute
 
 `distribute <cutoff timestamp> <amount> [<proceed>]`
 
-cutoff is date and time at which the share balances should be considered. Format is unix time.
-
-
+\<cutoff timestamp\> is the date and time at which the share balances should be considered formatted in unix epoch time.
 
 ### dumpprivkey
 
 `dumpprivkey <ppcoinaddress>`
 
-Reveals the private key corresponding to <ppcoinaddress>.
+Reveals the private key corresponding to \<ppcoinaddress\>.
 
 ### encryptwallet
 
@@ -96,15 +87,11 @@ Encrypts the portfolio with <passphrase>
 
 Add the Peercoin keys associated with the NuShares addresses to the Peercoin wallet. Peercoin must be running and accept RPC commands.
 
-
-
 ### getaccount
 
 `getaccount <address>`
 
 Returns the account associated with the given address.
-
-
 
 ### getaccountaddress
 
@@ -112,23 +99,17 @@ Returns the account associated with the given address.
 
 Returns the current Nu address for receiving payments to this account.
 
-
-
 ### getaddressesbyaccount
 
 `getaddressesbyaccount <account>`
 
 Returns the list of addresses for the given account.
 
-
-
 ### getbalance
 
 `getbalance [account] [minconf=1]`
 
-If [account] is not specified, returns the server's total available balance.
-
-
+If \[account\] is not specified, returns the server's total available balance.
 
 ### getblock
 
@@ -136,23 +117,17 @@ If [account] is not specified, returns the server's total available balance.
 
 txinfo optional to print more detailed tx info
 
-
-
 ### getblockcount
 
 `getblockcount`
 
 Returns the number of blocks in the longest block chain.
 
-
-
 ### getblockhash
 
 `getblockhash <index>`
 
-Returns hash of block in best-block-chain at <index>.
-
-
+Returns hash of block in best-block-chain at \<index\>.
 
 ### getblocktemplate
 
@@ -160,15 +135,11 @@ Returns hash of block in best-block-chain at <index>.
 
 Returns data needed to construct a block to work on:
 
-
-
 ### getcheckpoint
 
 `getcheckpoint`
 
 Show info of synchronized checkpoint.
-
-
 
 ### getconnectioncount
 
@@ -176,15 +147,11 @@ Show info of synchronized checkpoint.
 
 Returns the number of connections to other nodes.
 
-
-
 ### getcustodianvotes
 
 `getcustodianvotes [<block height>] [<block quantity>]`
 
 Returns an object containing the custodian vote results.
-
-
 
 ### getdifficulty
 
@@ -192,15 +159,11 @@ Returns an object containing the custodian vote results.
 
 Returns difficulty as a multiple of the minimum difficulty.
 
-
-
 ### getgenerate
 
 `getgenerate`
 
-Returns true or false.
-
-
+Returns `true` or `false`.
 
 ### gethashespersec
 
@@ -208,23 +171,17 @@ Returns true or false.
 
 Returns a recent hashes per second performance measurement while generating.
 
-
-
 ### getinfo
 
 `getinfo`
 
 Returns an object containing various state info.
 
-
-
 ### getliquidityinfo
 
 `getliquidityinfo <currency>`
 
-currency is the single letter of the currency (currently only 'B')
-
-
+Currency is the single letter of the currency (currently only 'B' for "NuBits").
 
 ### getmininginfo
 
@@ -232,31 +189,23 @@ currency is the single letter of the currency (currently only 'B')
 
 Returns an object containing mining-related information.
 
-
-
 ### getmotions
 
 `getmotions [<block height>] [<block quantity>]`
 
 Returns an object containing the motion vote results.
 
-
-
 ### getnetworkghps
 
 `getnetworkghps`
 
-Returns a recent Ghash/second network mining estimate.
-
-
+Returns a recent giga-hash per second (GH/s) network mining estimate.
 
 ### getnewaddress
 
 `getnewaddress [account]`
 
-Returns a new Nu address for receiving payments.  If [account] is specified (recommended), it is added to the address book so payments received with the address will be credited to [account].
-
-
+Returns a new Nu address for receiving payments.  If \[account\] is specified (recommended), it is added to the address book so payments received with the address will be credited to [account].
 
 ### getparkrates
 
@@ -264,15 +213,11 @@ Returns a new Nu address for receiving payments.  If [account] is specified (rec
 
 Returns an object containing the park rates in the block at height <height> (default: the last block).
 
-
-
 ### getpeercoinaddresses
 
 `getpeercoinaddresses <account>`
 
 Returns the list of addresses and the associated Peercoin address for the given account.
-
-
 
 ### getpeerinfo
 
@@ -280,15 +225,11 @@ Returns the list of addresses and the associated Peercoin address for the given 
 
 Returns data about each connected network node.
 
-
-
 ### getrawmempool
 
 `getrawmempool`
 
 Returns all transaction ids in memory pool.
-
-
 
 ### getrawtransaction
 
@@ -296,35 +237,27 @@ Returns all transaction ids in memory pool.
 
 If verbose=0, returns a string that is
 
-
-
 ### getreceivedbyaccount
 
 `getreceivedbyaccount <account> [minconf=1]`
 
-Returns the total amount received by addresses with <account> in transactions with at least [minconf] confirmations.
-
-
+Returns the total amount received by addresses with \<account\> in transactions with at least \[minconf\] confirmations.
 
 ### getreceivedbyaddress
 
 `getreceivedbyaddress <address> [minconf=1]`
 
-Returns the total amount received by <address> in transactions with at least [minconf] confirmations.
-
-
+Returns the total amount received by \<address\> in transactions with at least \[minconf\] confirmations.
 
 ### gettransaction
 
 `gettransaction <txid>`
 
-Get detailed information about <txid>
-
+Get detailed information about \<txid\>.
 
 ### gettxout
 
 `gettxout "txid" n ( includemempool )`
-
 
 ### getvote
 
@@ -332,15 +265,11 @@ Get detailed information about <txid>
 
 Returns the vote that will be inserted in the next proof of stake block.
 
-
-
 ### getwork
 
 `getwork [data]`
 
-If [data] is not specified, returns formatted hash data to work on:
-
-
+If \[data\] is not specified, returns formatted hash data to work on:
 
 ### help
 
@@ -348,15 +277,11 @@ If [data] is not specified, returns formatted hash data to work on:
 
 List commands, or get help for a command.
 
-
-
 ### importprivkey
 
 `importprivkey <ppcoinprivkey> [label]`
 
 Adds a private key (as returned by dumpprivkey) to your wallet.
-
-
 
 ### keypoolrefill
 
@@ -364,15 +289,11 @@ Adds a private key (as returned by dumpprivkey) to your wallet.
 
 Fills the keypool, requires portfolio passphrase to be set.
 
-
-
 ### liquidityinfo
 
 `liquidityinfo <currency> <buyamount> <sellamount> <grantaddress>`
 
 Broadcast liquidity information.
-
-
 
 ### listaccounts
 
@@ -380,47 +301,35 @@ Broadcast liquidity information.
 
 Returns Object that has account names as keys, account balances as values.
 
-
-
 ### listparked
 
 `listparked [account]`
 
 Returns the list of parked coins.
 
-
-
 ### listreceivedbyaccount
 
 `listreceivedbyaccount [minconf=1] [includeempty=false]`
 
-[minconf] is the minimum number of confirmations before payments are included.
-
-
+\[minconf\] is the minimum number of confirmations before payments are included.
 
 ### listreceivedbyaddress
 
 `listreceivedbyaddress [minconf=1] [includeempty=false]`
 
-[minconf] is the minimum number of confirmations before payments are included.
-
-
+\[minconf\] is the minimum number of confirmations before payments are included.
 
 ### listsinceblock
 
 `listsinceblock [blockhash] [target-confirmations]`
 
-Get all transactions in blocks since block [blockhash], or all transactions if omitted
-
-
+Get all transactions in blocks since block \[blockhash\], or all transactions if omitted
 
 ### listtransactions
 
 `listtransactions [account] [count=10] [from=0]`
 
-Returns up to [count] most recent transactions skipping the first [from] transactions for account [account].
-
-
+Returns up to \[count\] most recent transactions skipping the first \[from\] transactions for account \[account\].
 
 ### listunspent
 
@@ -428,15 +337,11 @@ Returns up to [count] most recent transactions skipping the first [from] transac
 
 Returns array of unspent transaction outputs
 
-
-
 ### makekeypair
 
 `makekeypair [prefix]`
 
 Make a public/private key pair.
-
-
 
 ### move
 
@@ -444,54 +349,46 @@ Make a public/private key pair.
 
 Move from one account in your portfolio to another.
 
-
-
 ### park
 
 `park <amount> <duration> [account=""] [unparkaddress] [minconf=1]`
 
-<amount> is a real and is rounded to the nearest 0.000001
-
+\<amount\> is a real and is rounded to the nearest 0.000001
 
 
 ### repairwallet
 
 `repairwallet`
 
-Repair portfolio if checkwallet reports any problem.
-
+Repair portfolio if `checkwallet` reports any problem.
 
 
 ### reservebalance
 
 `reservebalance [<reserve> [amount]]`
 
-<reserve> is true or false to turn balance reserve on or off.
-
+\<reserve\> is true or false to turn balance reserve on or off.
 
 
 ### sendalert
 
 `sendalert <message> <privatekey> <minver> <maxver> <priority> <id> [cancelupto]`
 
-<message> is the alert text message
-
+\<message\> is the alert text message
 
 
 ### sendfrom
 
 `sendfrom <fromaccount> <toaddress> <amount> [minconf=1] [comment] [comment-to]`
 
-<amount> is a real and is rounded to the nearest 0.000001
-
+\<amount\> is a real and is rounded to the nearest 0.000001
 
 
 ### sendmany
 
 `sendmany <fromaccount> {address:amount,...} [minconf=1] [comment]`
 
-amounts are double-precision floating point numbers
-
+\<amount(s)\> are double-precision floating point numbers
 
 
 ### sendrawtransaction
@@ -501,13 +398,11 @@ amounts are double-precision floating point numbers
 Submits raw transaction (serialized, hex-encoded) to local node and network.
 
 
-
 ### sendtoaddress
 
 `sendtoaddress <address> <amount> [comment] [comment-to]`
 
-<amount> is a real and is rounded to the nearest 0.000001
-
+\<amount\> is a real and is rounded to the nearest 0.000001
 
 
 ### setaccount
@@ -517,30 +412,27 @@ Submits raw transaction (serialized, hex-encoded) to local node and network.
 Sets the account associated with the given address.
 
 
-
 ### setgenerate
 
 `setgenerate <generate> [genproclimit]`
 
-<generate> is true or false to turn generation on or off.
-
+\<generate\> is true or false to turn generation on or off.
 
 
 ### setmotionvote
 
 `setmotionvote <motion hash>`
 
-<motionhash> is the hash of the motion to vote for.
-
+\<motionhash\> is the hash of the motion to vote for.
 
 
 ### setvote
 
 `setvote <vote>`
 
-<vote> is the complete vote in JSON. Example:
+\<vote\> is the complete vote in JSON. Example:
 
-```
+{% highlight bash %}
 setvote {
    "custodians":[
       {
@@ -576,8 +468,8 @@ setvote {
       "3f786850e387550fdab836ed7e6dc881de23001b"
    ]
 }
+{% endhighlight %}
 
-```
 ### signmessage
 
 `signmessage <address> <message>`
@@ -585,13 +477,13 @@ setvote {
 Sign a message with the private key of an address
 
 
-
 ### signrawtransaction
 
-`signrawtransaction <hex string> [{"txid":txid,"vout":n,"scriptPubKey":hex},...] [<privatekey1>,...] [sighashtype="ALL"]`
+{% highlight bash %}
+signrawtransaction <hex string> [{"txid":txid,"vout":n,"scriptPubKey":hex},...] [<privatekey1>,...] [sighashtype="ALL"]
+{% endhighlight %}
 
 Sign inputs for raw transaction (serialized, hex-encoded).
-
 
 
 ### stop
@@ -601,29 +493,25 @@ Sign inputs for raw transaction (serialized, hex-encoded).
 Stop Nu server.
 
 
-
 ### submitblock
 
 `submitblock <hex data> [optional-params-obj]`
 
-[optional-params-obj] parameter is currently ignored.
-
+\[optional-params-obj\] parameter is currently ignored.
 
 
 ### unpark
 
 `unpark`
 
-unpark all transaction that have reached duration
-
+Unpark all transaction that have reached duration
 
 
 ### validateaddress
 
 `validateaddress <address>`
 
-Return information about <address>.
-
+Return information about \<address\>.
 
 
 ### verifymessage
@@ -633,7 +521,6 @@ Return information about <address>.
 Verify a signed message
 
 
-
 ### walletlock
 
 `walletlock`
@@ -641,17 +528,15 @@ Verify a signed message
 Removes the portfolio encryption key from memory, locking the portfolio.
 
 
-
 ### walletpassphrase
 
 `walletpassphrase <passphrase> <timeout> [mintonly]`
 
-Stores the portfolio decryption key in memory for <timeout> seconds.
-
+Stores the portfolio decryption key in memory for \<timeout\> seconds.
 
 
 ### walletpassphrasechange
 
 `walletpassphrasechange <oldpassphrase> <newpassphrase>`
 
-Changes the portfolio passphrase from <oldpassphrase> to <newpassphrase>.
+Changes the portfolio passphrase from \<oldpassphrase\> to \<newpassphrase\>.
