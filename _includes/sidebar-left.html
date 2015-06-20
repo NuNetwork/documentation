@@ -2,7 +2,7 @@
 <script>console.log('location = {{location}}');</script>
 
 <section class="col nav_left_sidebar">
-  <ul><li><a href="/">Home</a></li></ul>
+  {%comment%}<ul><li><a href="/">Home</a></li></ul>{%endcomment%}
   {% for menu in site.data.navigation[page.lang].doc-sidebar %}
   <h4>{{ menu.heading | upcase }}</h4>
   <ul>
@@ -15,33 +15,51 @@
       {% endif %}
     {% endfor %}
 
+    {% if menu.heading == 'NuBits' %}
+      {% for link in site.data.navigation[page.lang].nubits %}
+        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }} <i class="fa fa-external-link" title="External Link"></i></a></li>
+      {% endfor %}
+    {% endif %}
+
+    {% if menu.heading == 'NuShares' %}
+      {% for link in site.data.navigation[page.lang].nushares %}
+        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }} <i class="fa fa-external-link" title="External Link"></i></a></li>
+      {% endfor %}
+    {% endif %}
+
+    {% if menu.heading == 'Technical Resources' %}
+      {% for link in site.data.navigation[page.lang].tech-resources %}
+        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }} <i class="fa fa-external-link" title="External Link"></i></a></li>
+      {% endfor %}
+    {% endif %}
+
     {% if menu.heading == 'NuBot' %}
       {% for link in site.data.navigation[page.lang].nubot %}
-        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }}</a></li>
+        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }} <i class="fa fa-external-link" title="External Link"></i></a></li>
       {% endfor %}
     {% endif %}
 
     {% if menu.heading == 'Nu Web Services' %}
       {% for link in site.data.navigation[page.lang].webservices %}
-        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }}</a></li>
+        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }} <i class="fa fa-external-link" title="External Link"></i></a></li>
       {% endfor %}
     {% endif %}
 
     {% if menu.heading == 'Tools' %}
       {% for link in site.data.navigation[page.lang].tools %}
-        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }}</a></li>
+        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }} <i class="fa fa-external-link" title="External Link"></i></a></li>
       {% endfor %}
     {% endif %}
 
     {% if menu.heading == 'External Resources' %}
       {% for link in site.data.navigation[page.lang].ext-resources %}
-        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }}</a></li>
+        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }} <i class="fa fa-external-link" title="External Link"></i></a></li>
       {% endfor %}
     {% endif %}
 
     {% if menu.heading == 'Connect' %}
       {% for link in site.data.navigation[page.lang].social-networks %}
-        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }}</a></li>
+        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }} <i class="fa fa-external-link" title="External Link"></i></a></li>
       {% endfor %}
     {% endif %}
   </ul>

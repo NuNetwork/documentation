@@ -16,6 +16,17 @@ en:
     - heading: Tools
     - heading: External Resources
     - heading: Connect
+  nubits:
+  nushares:
+    - resource: NuShares Introduction
+      url: https://nubits.com/nushares/introduction
+    - resource: Voting Mechanics
+      url: https://nubits.com/nushares/voting-mechanics
+  tech-resources:
+    - resource: Source Code
+      url: https://bitbucket.org/JordanLeePeershares/nubit
+    - resource: Issue Tracker
+      url: https://bitbucket.org/JordanLeePeershares/nubit/issues
   nubot:
     - resource: Source Code
       url: https://bitbucket.org/JordanLeePeershares/nubottrading
@@ -24,10 +35,6 @@ en:
     - resource: Block Explorer
       url: http://blockexplorer.nu
   ext-resources:
-    - resource: NuShares Introduction
-      url: https://nubits.com/nushares/introduction
-    - resource: NuShares Voting Mechanics
-      url: https://nubits.com/nushares/voting-mechanics
   social-networks:
     - resource: Community Forums
       url: https://discuss.nubits.com
