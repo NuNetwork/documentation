@@ -5,6 +5,7 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.desc %}{{ page.desc | strip_html }}{% else %}{{ page.excerpt | strip_html | replace: "[[", " ("  | replace: "]]", ")" }}{% endif %}">
+  <link href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}" rel="shortcut icon" type="image/x-icon">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/assets/css/syntax.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
