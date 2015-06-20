@@ -151,12 +151,12 @@ body
 
 .body_content
   h2
-    margin-top: 40px
+    margin-top: 30px
     max-width: 90%
     font-size: 1.35em
     line-height: 1.45em
     color: transparentize(#444444, 0.3)
-    margin-bottom: 1.25em
+    margin-bottom: 20px
     &:first-child
       margin-top: 0
   h3
@@ -170,6 +170,9 @@ body
       font-size: 90%
       border-radius: 3px
       background-color: transparentize(#0074a0, 0.9)
+  blockquote
+    border-left: 4px solid #dddddd
+    padding-left: 10px
   a
     color: #0074a0
   .highlight
@@ -204,18 +207,21 @@ figure
   padding: 15px 15px 1px
   background-color: #f4f8fa
   border-left: 4px solid #5bc0de
+  h3
+    margin-bottom: 0
   a
     color: #0074a0
   i
     display: inline-block
-    padding-right: 3px
+    padding-right: 6px
     color: #5bc0de
   .callout_title
     display: inline-block
     font-size: .85em
     color: #5bc0de
+    p
+      margin-bottom: -5px
   .callout_body
-    margin-top: 5px
     margin-bottom: 15px
     font-size: .9em
   &.success
@@ -239,6 +245,43 @@ figure
       color: #d9534f
     .callout_title
       color: #d9534f
+
+//colors
+$color_celeste_approx: #cccccc
+$white: white
+$color_desert_storm_approx: #f8f8f8
+
+table
+  margin-top: 15px
+  margin-bottom: 30px
+  padding: 0
+  border-collapse: collapse
+  tr
+    border-top: 1px solid $color_celeste_approx
+    background-color: $white
+    margin: 0
+    padding: 0
+    th
+      font-weight: bold
+      background-color: $color_desert_storm_approx
+      border: 1px solid $color_celeste_approx
+      text-align: left
+      margin: 0
+      padding: 6px 13px
+      :first-child
+        margin-top: 0
+      :last-child
+        margin-bottom: 0
+    td
+      border: 1px solid $color_celeste_approx
+      font-size: 90%
+      text-align: left
+      margin: 0
+      padding: 6px 13px
+      :first-child
+        margin-top: 0
+      :last-child
+        margin-bottom: 0
 
 
 

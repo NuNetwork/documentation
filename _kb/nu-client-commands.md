@@ -8,7 +8,7 @@ lang: en
 callouts:
 ---
 
-`nud [options] <command> [params]` 
+`nud [options] <command> [params]`
 Send command to -server or nud
 
 `nud [options] help`
@@ -63,7 +63,7 @@ Command | Description
 `-upnp` | Use Universal Plug and Play to map the listening port (default: 0)
 `-?` | This help message
 
-#### ifdef QT_GUI
+### ifdef QT_GUI
 
 Command | Description
 --------|------------
@@ -72,22 +72,23 @@ Command | Description
 `-dnsseed`  | Find peers using DNS lookup (default: 1)
 `-banscore=<n>` | Threshold for disconnecting misbehaving peers (default: 100)
 `-bantime=<n>` | Number of seconds to keep misbehaving peers from reconnecting (default: 86400)
-`-maxreceivebuffer=<n>` | Maximum per-connection receive buffer, <n>*1000 bytes (default: 10000)
-`-maxsendbuffer=<n>` | Maximum per-connection send buffer, <n>*1000 bytes (default: 10000)
+`-maxreceivebuffer=<n>` | Maximum per-connection receive buffer, <n>\*1000 bytes (default: 10000)
+`-maxsendbuffer=<n>` | Maximum per-connection send buffer, <n>\*1000 bytes (default: 10000)
 
-#### if USE_UPNP
+### if USE_UPNP
 
 Command | Description
 --------|------------
 `-upnp` | Use Universal Plug and Play to map the listening port (default: 1)
 
 
-#### ifdef WIN32
+### ifdef WIN32
+
 Command | Description
 --------|------------
 `-printtodebugger` | Send trace/debug info to debugger
 
-#### if !defined(WIN32) && !defined(QT_GUI)
+### if !defined(WIN32) && !defined(QT_GUI)
 
 Command | Description
 --------|------------

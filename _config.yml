@@ -17,9 +17,11 @@ collections:
     fig_count: 1
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: ['smart', 'superscript']
+#markdown: redcarpet
+#redcarpet:
+#  extensions: ['smart', 'superscript']
+kramdown:
+  input: GFM
 
 gems:
   - jekyll-sitemap

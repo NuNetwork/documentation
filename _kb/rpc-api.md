@@ -11,11 +11,11 @@ callouts:
 
 ## Nu Network Ports
 
-```
+{% highlight bash %}
 PROTOCOL PORT 7890
-// Base RPC port used by the NuShares RPC server. 
+// Base RPC port used by the NuShares RPC server.
 // Other unit RPC servers listen on RPC_PORT+1, RPC_PORT+2, etc.
-RPC PORT 14001 
+RPC PORT 14001
 RPC PORT 14002     // NuBits
 
 // Same rules apply to testnet, but on different ports
@@ -26,7 +26,7 @@ TESTNET RPC PORT 15002     // NuBits
 // Peercoin ports used when communicating with the Peercoin wallet for dividend distributions
 PEERCOIN RPC PORT 9902
 PEERCOIN TESTNET RPC PORT 9904
-```
+{% endhighlight %}
 
 ## Methods
 
