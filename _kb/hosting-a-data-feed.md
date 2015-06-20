@@ -1,5 +1,5 @@
 ---
-title: Hosting A Data Feed
+title: Hosting a Data Feed
 nav_heading: NuShares
 filename: hosting-a-data-feed.md
 permalink: /hosting-a-data-feed/

@@ -41,7 +41,7 @@ After locating the nu folder in your data directory create a new file called **n
 
 ## 3. Edit the nu.conf file
 
-Now you can add commands to your conf file that will change the behavior of the wallet client and daemon when they are started. The sample file below shows you some common commands. For a list of other commands you can enter into the conf file visit the [Client Commands](nu-client-commands) page.
+Now you can add commands to your conf file that will change the behavior of the wallet client and daemon when they are started. The sample file below shows you some common commands. For a list of other commands you can enter into the conf file visit the [Client Commands]({{ site.url }}{{ site.baseurl }}/nu-client-commands) page.
 
 Make sure the file is being saved in plain text. If you accidentally saved the file in a format such as .doc or .rtf Nu will not be able to use it.
 

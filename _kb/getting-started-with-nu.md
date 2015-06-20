@@ -16,7 +16,7 @@ You've heard about our 1$ pegged crypo-currency and want some stability in your 
 
 ### NuBits Official Wallet (Nu)
 
-You can get the official Nu wallet from [NuBits.com/download](http://nubits.com/download). It's available for Windows, Linux, and OSX. This wallet is made with love by the official NuBits development team. We have a [video tutorial](https://www.youtube.com/watch?v=LZXO4HY3tDc) to help you learn how to send and receive NuBits using the Nu Wallet
+You can get the official Nu wallet from [NuBits.com/download](https://nubits.com/download). It's available for Windows, Linux, and OSX. This wallet is made with love by the official NuBits development team. We have a [video tutorial](https://www.youtube.com/watch?v=LZXO4HY3tDc) to help you learn how to send and receive NuBits using the Nu Wallet
 
 ### Mobile Wallets
 * [NuBits Official Android Wallet](https://play.google.com/store/apps/details?id=com.matthewmitchell.nubits_android_wallet) - This wallet was developed with support for the NuBits community.

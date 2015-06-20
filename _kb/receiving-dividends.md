@@ -12,7 +12,7 @@ callouts:
 
 Dividends are sent out in the form of Peercoins. Once you export the Peercoin keys from your Nu wallet into your Peer(coin/unity) wallet the dividends will be accessible. Follow the instructions below to export the keys.
 
-Make sure that for both Nu and your Peer(coin/unity) wallet client that you have a [configuration file](how do I link to the config section?) available, and that each has at a minimum the following information.
+Make sure that for both Nu and your Peer(coin/unity) wallet client that you have a [configuration file]({{ site.url }}{{ site.baseurl }}/creating-conf-file) available, and that each has at a minimum the following information.
 
 {% highlight bash linenos %}
 server=1  
@@ -53,8 +53,9 @@ If you experience problems with connecting the two wallets, please confirm that 
 {% highlight bash %}
 PROTOCOL PORT  7890
 RPC PORT  14001     // Base RPC port used by the NuShares RPC server. Other unit RPC servers listen on RPC_PORT+1, RPC_PORT+2, etc.
-RPC PORT  14002     // NuBits\n\n// Same rules apply to testnet, but on different ports
+RPC PORT  14002     // NuBits
 
+// Same rules apply to testnet, but on different ports
 TESTNET PORT   7895
 TESTNET RPC PORT  15001     // NuShares
 TESTNET RPC PORT  15002     // NuBits

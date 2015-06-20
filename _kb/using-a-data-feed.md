@@ -29,7 +29,7 @@ In the screen shot above you'll notice two extra fields. To prevent man-in-the-m
 
 ## votenotify Configuration
 
-It’s still very important for users to be aware of what they’re voting for when using a feed. The vote data provided by the data feed is always recorded in debug.log (but the file is truncated regularly). In addition the **votenotify** configuration is available. Providing this configuration the path to a script in the [nu.conf file](http://docs.nubits.com/v1.0/docs/creating-conf-file) will invoke that script when votes are changed. This could be used to trigger a script that sends an email, or creates a file with a diff of the changes for review.
+It’s still very important for users to be aware of what they’re voting for when using a feed. The vote data provided by the data feed is always recorded in debug.log (but the file is truncated regularly). In addition the **votenotify** configuration is available. Providing this configuration the path to a script in the [nu.conf file]({{ site.url }}{{ site.baseurl}}/creating-conf-file) will invoke that script when votes are changed. This could be used to trigger a script that sends an email, or creates a file with a diff of the changes for review.
 
 {% gist 6bd15ce07fb51b962938 %}
 

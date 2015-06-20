@@ -25,7 +25,7 @@ From [NuBits.com/download](https://nubits.com/download) you can find a package c
 
 ## 2. Create a nu.conf file
 
-Before running the daemon you will need to create a *nu.conf* file. Follow our [creating a nu.conf file](/creating-conf-file) guide to learn how to create the file. Place the following into your file:
+Before running the daemon you will need to create a *nu.conf* file. Follow our [creating a nu.conf file]({{ site.url }}{{ site.baseurl }}/creating-conf-file) guide to learn how to create the file. Place the following into your file:
 
 {% highlight bash %}
 rpcuser=anyusername
@@ -37,9 +37,7 @@ server=1
 
 ## 3. Start the daemon
 
-Run the daemon using the --daemon parameter
-
-Ex.`./nud --daemon`
+Run the daemon using the --daemon parameter (eg. `./nud --daemon`).
 
 This will start the daemon in the background and begin syncing the blockchain. Run  `./nud getinfo` to verify you can communicate with the daemon through RPC.
 
