@@ -14,10 +14,21 @@
 			<section class="col body_wrapper">
 				<header class="body_header">
           <h1>{{ page.title }}</h1>
+          {% assign issue_base_url="https://github.com/NuNetwork/documentation/issues/new?" %}
+          {% assign title_content="title=%5BSuggestion%5D+%22" %}
+          {% assign body_content1="%22&body=%2A%2APage+Title%2A%2A%3A+" %}
+          {% assign body_content2="%0D%0A%2A%2AURL%2A%2A%3A+" %}
+          {% assign body_content3="%0D%0A%0D%0A%23%23+Update+Suggested%0D%0A" %}
+          {% capture update_req_string %}
+            {% capture encoded_title %}{{ page.title | replace: " ", "+" }}{% endcapture %}
+            {% capture content_url %}{{ site.url }}{{ site.baseurl }}{{ page.permalink }}{% endcapture %}
+            {% capture encoded_url %}{{ content_url | replace: ":","%3A" | replace: "/","%2F"}}{% endcapture %}
+            {{ issue_base_url }}{{ title_content }}{{ encoded_title }}{{ body_content1 }}{{ encoded_title }}{{ body_content2 }}{{ encoded_url }}{{ body_content3 }}
+          {% endcapture %}
           <span class="version_history_link">
-            <a href="{{ site.historyurl }}/{{ page.filename }}" target="_blank">Revision History</a>
+            <a href="{{ site.historyurl }}/{{ page.filename }}" target="_blank">Revision History</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{ update_req_string }}">Suggest An Update</a>
           </span>
-					<hr>
+          <hr>
 				</header>
 
 				<div class="body_content">
