@@ -1,5 +1,5 @@
 ---
-title: Receiving dividends
+title: Integrating With An Exchange
 nav_heading: Technical Resources
 filename: integrating-nubits-or-nushares-with-an-exchange.md
 permalink: /integrating-nubits-or-nushares-with-an-exchange/
@@ -44,7 +44,7 @@ Nu uses different port numbers for different units. The only units in the softwa
 
 ```
 PROTOCOL PORT 7890
-// Base RPC port used by the NuShares RPC server. 
+// Base RPC port used by the NuShares RPC server.
 // Other unit RPC servers listen on RPC_PORT+1, RPC_PORT+2, etc.
 RPC PORT 14001     // NuShares
 RPC PORT 14002     // NuBits
