@@ -21,7 +21,7 @@
           {% assign body_content3="%0D%0A%0D%0A%23%23+Update+Suggested%0D%0A" %}
           {% capture update_req_string %}
             {% capture encoded_title %}{{ page.title | replace: " ", "+" }}{% endcapture %}
-            {% capture content_url %}{{ site.url }}{{ site.baseurl }}{{ page.permalink }}{% endcapture %}
+            {% capture content_url %}{{ site.baseurl }}{{ page.url }}{% endcapture %}
             {% capture encoded_url %}{{ content_url | replace: ":","%3A" | replace: "/","%2F"}}{% endcapture %}
             {{ issue_base_url }}{{ title_content }}{{ encoded_title }}{{ body_content1 }}{{ encoded_title }}{{ body_content2 }}{{ encoded_url }}{{ body_content3 }}
           {% endcapture %}
