@@ -9,6 +9,7 @@ baseurl: "/documentation" # the subpath of your site, e.g. /blog/
 url: "http://nunetwork.github.io" # the base hostname & protocol for your site
 kbimageurl: /kb/images/
 historyurl: https://github.com/NuNetwork/documentation/commits/gh-pages/_kb/
+suggesturlbase: https://nunetwork.github.io/documentation
 
 # Content collections
 collections:
