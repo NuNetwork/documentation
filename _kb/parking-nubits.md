@@ -1,8 +1,8 @@
 ---
 title: Parking NuBits
 nav_heading: NuBits
-filename: nubits-parking.md
-permalink: /nubits-parking/
+filename: parking-nubits.md
+permalink: /parking-nubits/
 layout: kb
 lang: en
 callouts:

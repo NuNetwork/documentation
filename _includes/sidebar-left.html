@@ -14,7 +14,38 @@
         <li class=""><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
       {% endif %}
     {% endfor %}
+
+    {% if menu.heading == 'NuBot' %}
+      {% for link in site.data.navigation[page.lang].nubot %}
+        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }}</a></li>
+      {% endfor %}
+    {% endif %}
+
+    {% if menu.heading == 'Nu Web Services' %}
+      {% for link in site.data.navigation[page.lang].webservices %}
+        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }}</a></li>
+      {% endfor %}
+    {% endif %}
+
+    {% if menu.heading == 'Tools' %}
+      {% for link in site.data.navigation[page.lang].tools %}
+        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }}</a></li>
+      {% endfor %}
+    {% endif %}
+
+    {% if menu.heading == 'External Resources' %}
+      {% for link in site.data.navigation[page.lang].ext-resources %}
+        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }}</a></li>
+      {% endfor %}
+    {% endif %}
+
+    {% if menu.heading == 'Connect' %}
+      {% for link in site.data.navigation[page.lang].social-networks %}
+        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }}</a></li>
+      {% endfor %}
+    {% endif %}
   </ul>
   {% endfor %}
+
 
 </section>

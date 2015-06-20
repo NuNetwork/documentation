@@ -1,5 +1,5 @@
 ---
-title: Receiving dividends
+title: Receiving Dividends
 nav_heading: NuShares
 filename: receiving-dividends.md
 permalink: /receiving-dividends/
@@ -8,19 +8,19 @@ lang: en
 callouts:
 ---
 
-#Instructions for how to set up your connection between Peer(coin/unity) and Nu
+## Instructions for how to set up your connection between Peer(coin/unity) and Nu
 
 Dividends are sent out in the form of Peercoins. Once you export the Peercoin keys from your Nu wallet into your Peer(coin/unity) wallet the dividends will be accessible. Follow the instructions below to export the keys.
 
 Make sure that for both Nu and your Peer(coin/unity) wallet client that you have a [configuration file](how do I link to the config section?) available, and that each has at a minimum the following information.
 
-```
+{% highlight bash linenos %}
 server=1  
 rpcuser={anything}  
 rpcpassword={anything}  
 
 #for use on the testnet, include `testnet=1`
-```
+{% endhighlight %}
 
 * Once the configuration files are in place, launch both clients.
 * Go back to your Nu wallet and change your units to work from the NuShares side (file menu: Unit > NuShares).
@@ -36,9 +36,9 @@ In your Peercoin wallet client, on the Receiving tab, you will see that the NuSh
 
 Once that has been completed, you'll be ready for a dividend distribution. If you should add additional NuShares addresses in the future, please make sure you follow the same steps again to integrate those new paired keys into your Peercoin wallet. You will not duplicate existing keys, so this operation can be run as many times as you need, into the future.
 
-##"Troubleshooting"
+## Troubleshooting
 
-###0 key(s) were exported to Peercoin
+### 0 key(s) were exported to Peercoin
 
 If you see a dialog like this, when you try to export the keys:
 
@@ -46,11 +46,11 @@ If you see a dialog like this, when you try to export the keys:
 
 You have probably already exported the keys to your client. Check your Peer(coin/unity) client to see if the keys exist.
 
-###Port conflicts
+### Port conflicts
 
 If you experience problems with connecting the two wallets, please confirm that your network allows traffic on the following ports:
 
-```
+{% highlight bash %}
 PROTOCOL PORT  7890
 RPC PORT  14001     // Base RPC port used by the NuShares RPC server. Other unit RPC servers listen on RPC_PORT+1, RPC_PORT+2, etc.
 RPC PORT  14002     // NuBits\n\n// Same rules apply to testnet, but on different ports
@@ -62,6 +62,4 @@ TESTNET RPC PORT  15002     // NuBits
 // Peercoin ports used when communicating with the Peercoin wallet for dividend distributions
 PEERCOIN RPC PORT  9902
 PEERCOIN TESTNET RPC PORT  9904
-
-```
-
+{% endhighlight %}
