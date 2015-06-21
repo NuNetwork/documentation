@@ -35,4 +35,6 @@ You have a wallet now. Great! Now how do you get NuBits and NuShares?
 
 You can buy NuBits and NuShares on exchanges and then send them to your wallet.
 
+*The exchange list is organized alphabetically and does not indicate a preference or endorsement by the Nu Community. Cryptoasset trading involves special risks and may not be suitable for everyone.*
+
 {% include exchanges.html %}

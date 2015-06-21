@@ -14,7 +14,6 @@ en:
     - heading: NuBot
     - heading: Nu Web Services
     - heading: Tools
-    - heading: External Resources
     - heading: Connect
   getting-started:
   nubits:
@@ -35,6 +34,8 @@ en:
   tools:
     - resource: Block Explorer
       url: http://blockexplorer.nu
+    - resource: Nu Press Kit
+      url: http://nubrand.me/
   ext-resources:
   social-networks:
     - resource: Community Forums
