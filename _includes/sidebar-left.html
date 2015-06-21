@@ -58,12 +58,6 @@
       {% endfor %}
     {% endif %}
 
-    {% if menu.heading == 'External Resources' %}
-      {% for link in site.data.navigation[page.lang].ext-resources %}
-        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }} <i class="fa fa-external-link" title="External Link"></i></a></li>
-      {% endfor %}
-    {% endif %}
-
     {% if menu.heading == 'Connect' %}
       {% for link in site.data.navigation[page.lang].social-networks %}
         <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }} <i class="fa fa-external-link" title="External Link"></i></a></li>
