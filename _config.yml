@@ -5,11 +5,15 @@ description: > # this means to ignore newlines until "baseurl:"
   Documentation for how to use and integrate with the Nu cryptoasset client,
   core protocol and its consensus and transactional tokens, NuShares (NSR) and
   NuBits (NBT).
-baseurl: "/documentation" # the subpath of your site, e.g. /blog/
-url: "http://nunetwork.github.io" # the base hostname & protocol for your site
-kbimageurl: /kb/images/
-historyurl: https://github.com/NuNetwork/documentation/commits/gh-pages/_kb/
-suggesturlbase: https://nunetwork.github.io/documentation
+url: "https://docs.nubits.com"   # with the https protocol
+enforce_ssl: "docs.nubits.com"  # without any protocol
+baseurl: "/"
+#baseurl: "/documentation" # the subpath of your site, e.g. /blog/
+#url: "http://nunetwork.github.io" # the base hostname & protocol for your site
+kbimageurl: "/kb/images/"
+historyurl: "https://github.com/NuNetwork/documentation/commits/gh-pages/_kb/"
+#suggesturlbase: https://nunetwork.github.io/documentation
+suggesturlbase: "https://docs.nubits.com/"
 
 # Content collections
 collections:

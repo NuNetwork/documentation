@@ -1,3 +1,9 @@
 {% comment %}
   Include javascripts that need to be executed within the document's <head>
 {% endcomment %}
+
+<script type="text/javascript">
+    var host = "nubits.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
