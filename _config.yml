@@ -8,12 +8,12 @@ description: > # this means to ignore newlines until "baseurl:"
 
 url: "https://docs.nubits.com"   # with the https protocol
 baseurl: ""
-#enforce_ssl: "docs.nubits.com"  # without any protocol
+enforce_ssl: "docs.nubits.com"  # without any protocol
 kbimageurl: "/kb/images/"
 historyurl: "https://github.com/NuNetwork/documentation/commits/gh-pages/_kb/"
 suggesturlbase: "https://docs.nubits.com/"
 
-# Previous domain settings 
+# Previous domain settings
 # (Keeping until we're sure we don't need them any longer; useful for any ports of this repo for other documentation uses, for instance, Peershares)
 #url: "http://nunetwork.github.io" # the base hostname & protocol for your site
 #baseurl: "/documentation" # the subpath of your site, e.g. /blog/
