@@ -4,7 +4,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.desc %}{{ page.desc | strip_html }}{% else %}{{ page.excerpt | strip_html | replace: "[[", " ("  | replace: "]]", ")" }}{% endif %}">
+  {% if page.desc %}
+  {% capture description %}{{ page.desc | strip_html }}{% endcapture %}
+  {% elsif page.excerpt %}
+  {% capture description %}{{ page.excerpt | strip_html | replace: "[[", " ("  | replace: "]]", ")" }}{% endcapture %}
+  {% else %}
+  {% capture description %}{{ site.description | strip_html }}{% endcapture %}
+  {% endif %}
+  <meta name="description" content="{{ description | strip_newlines }}" />
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}" />
+  {% else %}
+  <meta name="keywords" content="nu, nubits, nushares, nbt, nsr, cryptoassets, documentation, docs, knowledge base, kb, faq, support, help, technical resources, tools, resources, services, contact, connect" />
+  {% endif %}
   <link href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}" rel="shortcut icon" type="image/x-icon">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/assets/css/syntax.css" | prepend: site.baseurl }}">

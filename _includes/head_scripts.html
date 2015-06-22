@@ -2,8 +2,10 @@
   Include javascripts that need to be executed within the document's <head>
 {% endcomment %}
 
+{% if site.enforce_ssl %}
 <script type="text/javascript">
-    var host = "docs.nubits.com";
+    var host = "{{ site.enforce_ssl }}";
     if ((host == window.location.host) && (window.location.protocol != "https:"))
         window.location.protocol = "https";
 </script>
+{% endif %}
