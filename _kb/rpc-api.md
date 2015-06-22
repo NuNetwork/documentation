@@ -41,6 +41,13 @@ Adds a _nRequired-to-sign_ multi-signature address to the wallet.
 
 Safely copies _wallet.dat_ to destination, which can be a directory or a path with filename.
 
+### burn
+
+`burn <amount> <unit> [comment] `
+
+`<amount>` is a real and is rounded to the nearest 0.0001 `<unit>` is the unit to burn ('B' for NuBits, 'S' for NuShares). requires portfolio passphrase to be set with walletpassphrase first
+
+
 ### checkwallet
 
 `checkwallet`
@@ -153,11 +160,23 @@ Returns the number of connections to other nodes.
 
 Returns an object containing the custodian vote results.
 
+
+### getdatafeed
+
+`getdatafeed Return the current data feed.`
+
+
 ### getdifficulty
 
 `getdifficulty`
 
 Returns difficulty as a multiple of the minimum difficulty.
+
+
+### getelectedcustodians
+
+`getelectedcustodians Returns an object containing the elected custodians.`
+
 
 ### getgenerate
 
@@ -213,6 +232,14 @@ Returns a new Nu address for receiving payments.  If \[account\] is specified (r
 
 Returns an object containing the park rates in the block at height <height> (default: the last block).
 
+
+### getparkvotes
+
+`getparkvotes [<block height>] [<block quantity>]`
+
+Returns an object containing a summary of the park rate votes.
+
+
 ### getpeercoinaddresses
 
 `getpeercoinaddresses <account>`
@@ -224,6 +251,14 @@ Returns the list of addresses and the associated Peercoin address for the given 
 `getpeerinfo`
 
 Returns data about each connected network node.
+
+
+### getpremium
+
+`getpremium <amount> <duration>`
+
+`<amount>` is a real and is rounded to the nearest 0.0001 `<duration>` is the number of blocks during which the amount would be parked`
+
 
 ### getrawmempool
 
@@ -412,6 +447,13 @@ Submits raw transaction (serialized, hex-encoded) to local node and network.
 Sets the account associated with the given address.
 
 
+### setdatafeed
+
+`setdatafeed <url> [<signature url> <address>] [<parts>]`
+
+Change the vote data feed. Set `<url>` to an empty string to disable. If `<signature url>` and <address> are specified and not empty strings a signature will also be retrieved at <signature url> and verified. Parts is the list of the top level vote parts that will be taken from the feed, separated by a coma. The other parts will not affect the vote. Default is "custodians,parkrates,motions".
+
+
 ### setgenerate
 
 `setgenerate <generate> [genproclimit]`
@@ -424,7 +466,6 @@ Sets the account associated with the given address.
 `setmotionvote <motion hash>`
 
 \<motionhash\> is the hash of the motion to vote for.
-
 
 ### setvote
 
@@ -539,4 +580,6 @@ Stores the portfolio decryption key in memory for \<timeout\> seconds.
 
 `walletpassphrasechange <oldpassphrase> <newpassphrase>`
 
+
 Changes the portfolio passphrase from \<oldpassphrase\> to \<newpassphrase\>.
+
