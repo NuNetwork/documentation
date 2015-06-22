@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 
 url: "https://docs.nubits.com"   # with the https protocol
 baseurl: ""
-enforce_ssl: "docs.nubits.com"  # without any protocol
+#enforce_ssl: "docs.nubits.com"  # without any protocol
 kbimageurl: "/kb/images/"
 historyurl: "https://github.com/NuNetwork/documentation/commits/gh-pages/_kb/"
 suggesturlbase: "https://docs.nubits.com/"
