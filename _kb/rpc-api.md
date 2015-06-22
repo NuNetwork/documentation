@@ -45,7 +45,7 @@ Safely copies _wallet.dat_ to destination, which can be a directory or a path wi
 
 `burn <amount> <unit> [comment] `
 
-`<amount>` is a real and is rounded to the nearest 0.0001 `<unit>` is the unit to burn ('B' for NuBits, 'S' for NuShares). requires portfolio passphrase to be set with walletpassphrase first
+\<amount\> is a real and is rounded to the nearest 0.0001 \<unit\> is the unit to burn ('B' for NuBits, 'S' for NuShares). requires portfolio passphrase to be set with `walletpassphrase` first.
 
 
 ### checkwallet
@@ -86,7 +86,7 @@ Reveals the private key corresponding to \<ppcoinaddress\>.
 
 ` encryptwallet <passphrase>`
 
-Encrypts the portfolio with <passphrase>
+Encrypts the portfolio with \<passphrase\>
 
 ### exportpeercoinkeys
 
@@ -175,7 +175,9 @@ Returns difficulty as a multiple of the minimum difficulty.
 
 ### getelectedcustodians
 
-`getelectedcustodians Returns an object containing the elected custodians.`
+`getelectedcustodians`
+
+Returns an object containing the elected custodians.
 
 
 ### getgenerate
@@ -224,13 +226,13 @@ Returns a recent giga-hash per second (GH/s) network mining estimate.
 
 `getnewaddress [account]`
 
-Returns a new Nu address for receiving payments.  If \[account\] is specified (recommended), it is added to the address book so payments received with the address will be credited to [account].
+Returns a new Nu address for receiving payments.  If \[account\] is specified (recommended), it is added to the address book so payments received with the address will be credited to \[account\].
 
 ### getparkrates
 
 `getparkrates [<height>] [<currency>]`
 
-Returns an object containing the park rates in the block at height <height> (default: the last block).
+Returns an object containing the park rates in the block at height \<height\> (default: the last block).
 
 
 ### getparkvotes
@@ -257,7 +259,7 @@ Returns data about each connected network node.
 
 `getpremium <amount> <duration>`
 
-`<amount>` is a real and is rounded to the nearest 0.0001 `<duration>` is the number of blocks during which the amount would be parked`
+\<amount\> is a real and is rounded to the nearest 0.0001 \<duration\> is the number of blocks during which the amount would be parked.
 
 
 ### getrawmempool
@@ -270,7 +272,7 @@ Returns all transaction ids in memory pool.
 
 `getrawtransaction <txid> [verbose=0]`
 
-If verbose=0, returns a string that is
+If `verbose=0`, returns serialized, hex-encoded data for transaction txid. If `verbose` is non-zero, returns a JSON Object containing information about the transaction. Returns an error if \<txid\> is unknown.
 
 ### getreceivedbyaccount
 
@@ -451,14 +453,14 @@ Sets the account associated with the given address.
 
 `setdatafeed <url> [<signature url> <address>] [<parts>]`
 
-Change the vote data feed. Set `<url>` to an empty string to disable. If `<signature url>` and <address> are specified and not empty strings a signature will also be retrieved at <signature url> and verified. Parts is the list of the top level vote parts that will be taken from the feed, separated by a coma. The other parts will not affect the vote. Default is "custodians,parkrates,motions".
+Change the vote data feed. Set \<url\> to an empty string to disable. If \<signature url\> and \<address\> are specified and not empty strings a signature will also be retrieved at \<signature url\> and verified. Parts is the list of the top level vote parts that will be taken from the feed, separated by a coma. The other parts will not affect the vote. Default is "custodians,parkrates,motions".
 
 
 ### setgenerate
 
 `setgenerate <generate> [genproclimit]`
 
-\<generate\> is true or false to turn generation on or off.
+\<generate\> is `true` or `false` to turn generation on or off.
 
 
 ### setmotionvote
@@ -582,4 +584,3 @@ Stores the portfolio decryption key in memory for \<timeout\> seconds.
 
 
 Changes the portfolio passphrase from \<oldpassphrase\> to \<newpassphrase\>.
-
