@@ -56,5 +56,46 @@ en:
     - heading: Events of 2014
     - heading: Events of 2015
   events2013:
+    - resource: The Peershares Template
+      url: "#the-peershares-template"
   events2014:
+    - resource: The World's First Stable Digital Currency
+      url: "#the-worlds-first-stable-digital-currency"
+    - resource: First Liquidity Provider Custodians
+      url: "#first-liquidity-provider-custodians"
+    - resource: The Unsustainability of Parking
+      url: "#the-unsustainability-of-parking"
+    - resource: Possible Solutions to Reducing the Supply of NuBits
+      url: "#possible-solutions-to-reducing-the-supply-of-nubits"
+    - resource: First Strategic Reserve Team
+      url: "#first-strategic-reserve-team"
+    - resource: Price Stable Android Wallet
+      url: "#price-stable-android-wallet"
+    - resource: Evolution of Liquidity Operations
+      url: "#evolution-of-liquidity-operations"
+    - resource: The Intermediary Currency
+      url: "#the-intermediary-currency"
+    - resource: High Volumes, Open Sourcing &amp; Dividends
+      url: "#high-volumes-open-sourcing--dividends"
   events2015:
+    - resource: Zero Reserve, Zero Counterparty Risk
+      url: "#zero-reserve-zero-counterparty-risk"
+    - resource: NuShare Custodians &amp; NuBits Burning
+      url: "#nushare-custodians--nubits-burning"
+    - resource: The Era of Data Feeds Has Begun
+      url: "#the-era-of-data-feeds-has-begun"
+    - resource: Decentralized Liquidity Without Counterparty Risk Not Yet Implemented
+      url: "#decentralized-liquidity-without-counterparty-risk-not-yet-implemented"
+    - resource: Exchange Hackings
+      url: "#exchange-hackings"
+    - resource: NuShare Buybacks &amp; Ending Centralized Liquidity Operations
+      url: "#nushare-buybacks--ending-centralized-liquidity-operations"
+    - resource: NuShare Auction for Peg Support
+      url: "#nushare-auction-for-peg-support"
+    - resource: Rise of the Liquidity Pools
+      url: "#rise-of-the-liquidity-pools"
+    - resource: Trustless Liquidity Pool
+      url: "#trustless-liquidity-pool"
+    - resource: Blocks &amp; Chains Decentralized Exchange
+      url: "#blocks--chains-decentralized-exchange"
+      

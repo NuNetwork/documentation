@@ -1,6 +1,5 @@
 {% capture location %}{{ page.url | remove_first:'/' | split:'/' | last | replace: '.html', '' }}{% endcapture %}
 {% comment %}<script>console.log('location = {{location}}');// for debugging</script>{% endcomment %}
-
 <section class="col nav_left_sidebar">
   <div class="chat_link"><a href="https://gitter.im/NuNetwork/documentation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank"><img src="https://badges.gitter.im/Join%20Chat.svg"></a></div>
   {% for menu in site.data.navigation[page.lang].history-sidebar %}
@@ -17,19 +16,22 @@
 
     {% if menu.heading == 'Events of 2013' %}
       {% for link in site.data.navigation[page.lang].events2013 %}
-        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }} <i class="fa fa-external-link" title="External Link"></i></a></li>
+        {% capture anchorlink %}{{ site.baseurl }}{{ page.url }}{{ link.url }}{% endcapture %}
+        <li class=""><a href="{{ anchorlink | replace: 'history/','history' }}" class="" >{{ link.resource }}</a></li>
       {% endfor %}
     {% endif %}
 
     {% if menu.heading == 'Events of 2014' %}
       {% for link in site.data.navigation[page.lang].events2014 %}
-        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }} <i class="fa fa-external-link" title="External Link"></i></a></li>
+        {% capture anchorlink %}{{ site.baseurl }}{{ page.url }}{{ link.url }}{% endcapture %}
+        <li class=""><a href="{{ anchorlink | replace: 'history/','history' }}" class="" >{{ link.resource }}</a></li>
       {% endfor %}
     {% endif %}
 
     {% if menu.heading == 'Events of 2015' %}
       {% for link in site.data.navigation[page.lang].events2015 %}
-        <li class="ext_res"><a href="{{ link.url }}" target="_blank">{{ link.resource }} <i class="fa fa-external-link" title="External Link"></i></a></li>
+        {% capture anchorlink %}{{ site.baseurl }}{{ page.url }}{{ link.url }}{% endcapture %}
+        <li class=""><a href="{{ anchorlink | replace: 'history/','history' }}" class="" >{{ link.resource }}</a></li>
       {% endfor %}
     {% endif %}
   </ul>
