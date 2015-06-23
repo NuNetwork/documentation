@@ -1,1 +1,0 @@
-[Linear Park Rate Calculator](https://docs.google.com/spreadsheets/d/1QbEypSFcNfy8-IP5OLo99kptxZMWgaoaLYcsvewcpA0/edit?pli=1#gid=0) - Linear park rate calculator [created by Deserver](https://discuss.nubits.com/t/linear-parking-rates-simulation-spreadsheed/480) (NuBot developer)
