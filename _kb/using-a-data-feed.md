@@ -17,11 +17,11 @@ Your previous votes in the client are replaced when you set a data feed. If vote
 
 The data feed button can be found at the bottom of the NuShares voting page
 
-{% include kb-image.html filename="nushares_wallet_overview_page.png" caption="NuShares wallet overview" %}
+{% include image.html filename="nushares_wallet_overview_page.png" caption="NuShares wallet overview" %}
 
 Pressing the data feed button will open up the feed dialog box. From here you can provide the data feed URL, and select which parts of the voting data you would like your client to pull down.
 
-{% include kb-image.html filename="data_feed_dialog.png" caption="Data feed dialog" %}
+{% include image.html filename="data_feed_dialog.png" caption="Data feed dialog" %}
 
 ## URL Signature
 

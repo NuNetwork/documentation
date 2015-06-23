@@ -9,11 +9,15 @@ description: > # this means to ignore newlines until "baseurl:"
 url: "https://docs.nubits.com"   # with the https protocol
 baseurl: ""
 enforce_ssl: "docs.nubits.com"  # without any protocol
-kbimageurl: "/kb/images/"
-historyurl: "https://github.com/NuNetwork/documentation/commits/gh-pages/_kb/"
-suggesturlbase: "https://docs.nubits.com/"
-historyurlbase: "https://timeline.nubits.com"
-historyimageurl: "/history/images/"
+imageurl:
+  kb: "/kb/images/"
+  history: "/history/images/"
+historyurl:
+  kb: "https://github.com/NuNetwork/documentation/commits/gh-pages/_kb/"
+  history: "https://github.com/NuNetwork/documentation/commits/gh-pages/_history/"
+suggesturlbase:
+  kb: "https://docs.nubits.com/"
+  history: "https://timeline.nubits.com"
 
 # Previous domain settings
 # (Keeping until we're sure we don't need them any longer; useful for any ports of this repo for other documentation uses, for instance, Peershares)

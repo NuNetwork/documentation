@@ -1,7 +1,9 @@
 en:
   primary:
     - title: Documentation
-      url: /documentation/
+      url: /
+    - title: History
+      url: /history/
     - title: Community Forums
       url: https://discuss.nubits.com/
     - title: Block Explorer
@@ -48,3 +50,11 @@ en:
       url: https://www.facebook.com/OfficialNuBits
     - resource: YouTube
       url: https://www.youtube.com/channel/UCneu3jamW6lVZ8aMgxyUjfQ/videos
+  history-sidebar:
+    - heading: Chronology
+    - heading: Events of 2013
+    - heading: Events of 2014
+    - heading: Events of 2015
+  events2013:
+  events2014:
+  events2015:

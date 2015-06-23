@@ -9,7 +9,7 @@
 
     <div class="row container page_content">
 
-      {% include sidebar-kb.html %}
+      {% include sidebar-history.html %}
 
 			<section class="col body_wrapper">
 				<header class="body_header">
@@ -21,12 +21,12 @@
           {% assign body_content3="%0D%0A%0D%0A%23%23+Update+Suggested%0D%0A" %}
           {% capture update_req_string %}
             {% capture encoded_title %}{{ page.title | replace: " ", "+" }}{% endcapture %}
-            {% capture content_url %}{{ site.suggesturlbase.kb }}{{ page.url }}{% endcapture %}
+            {% capture content_url %}{{ site.suggesturlbase.history }}{{ page.url }}{% endcapture %}
             {% capture encoded_url %}{{ content_url | replace: ":","%3A" | replace: "/","%2F"}}{% endcapture %}
             {{ issue_base_url }}{{ title_content }}{{ encoded_title }}{{ body_content1 }}{{ encoded_title }}{{ body_content2 }}{{ encoded_url }}{{ body_content3 }}
           {% endcapture %}
           <span class="version_history_link">
-            <a href="{{ site.historyurl.kb }}/{{ page.filename }}" target="_blank">Revision History</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{ update_req_string }}">Suggest Update</a>
+            <a href="{{ site.historyurl.history }}/{{ page.filename }}" target="_blank">Revision History</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{ update_req_string }}">Suggest Update</a>
           </span>
           <hr>
 				</header>
