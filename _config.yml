@@ -12,6 +12,8 @@ enforce_ssl: "docs.nubits.com"  # without any protocol
 kbimageurl: "/kb/images/"
 historyurl: "https://github.com/NuNetwork/documentation/commits/gh-pages/_kb/"
 suggesturlbase: "https://docs.nubits.com/"
+historyurlbase: "https://timeline.nubits.com"
+historyimageurl: "/history/images/"
 
 # Previous domain settings
 # (Keeping until we're sure we don't need them any longer; useful for any ports of this repo for other documentation uses, for instance, Peershares)
@@ -23,7 +25,8 @@ suggesturlbase: "https://docs.nubits.com/"
 collections:
   kb:
     output: true
-    fig_count: 1
+  history:
+    output: true
 
 # Build settings
 #markdown: redcarpet
