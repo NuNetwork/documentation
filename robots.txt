@@ -1,0 +1,11 @@
+# robots.txt
+
+# no restrictions on the type of user agent accessing the content
+User-agent: *
+
+Sitemap: https://docs.nubits.com/sitemap.xml
+
+# allow access to all pages, but don't index anything using the old
+# 'docs.nubits.com/v1.0/docs/*' url pattern from our previous ReadMe.io site
+Disallow:
+Disallow: /v1.0/docs/
