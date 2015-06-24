@@ -1,6 +1,6 @@
 {% capture location %}{{ page.url | remove_first:'/' | split:'/' | last | replace: '.html', '' }}{% endcapture %}
 {% comment %}<script>console.log('location = {{location}}');// for debugging</script>{% endcomment %}
-<section class="col nav_left_sidebar">
+<section id="sidebar_top" class="col nav_left_sidebar">
   <div class="chat_link"><a href="https://gitter.im/NuNetwork/documentation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank"><img src="https://badges.gitter.im/Join%20Chat.svg"></a></div>
   {% for menu in site.data.navigation[page.lang].history-sidebar %}
   <h4>{{ menu.heading | upcase }}</h4>
@@ -36,6 +36,8 @@
     {% endif %}
   </ul>
   {% endfor %}
+  <div id="sidebar_bottom" style="display: hidden;"></div>
 
+  <div id="jumplink" class="initial"><a href="#" onclick="scrollToTop();return false">Back to Top</a></div>
 
 </section>

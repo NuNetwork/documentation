@@ -3,3 +3,28 @@
 {% endcomment %}
 <script src="/assets/javascripts/instantclick.min.js" data-no-instant></script>
 <script data-no-instant>InstantClick.init();</script>
+
+<script>
+  window.onscroll = function (oEvent) {
+    var mydivpos = document.getElementById("sidebar_bottom").offsetTop;
+    var mydivoffset = mydivpos - 100;
+    var scrollPos = document.getElementsByTagName("body")[0].scrollTop;
+    console.log(mydivpos, scrollPos);
+
+    if(scrollPos >= mydivoffset)
+      document.getElementById("jumplink").className = "back_to_top";
+    else
+      document.getElementById("jumplink").className = "hidden";
+  };
+</script>
+
+<script type="text/javascript">
+  var timeOut;
+  function scrollToTop() {
+    if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+      window.scrollBy(0,-50);
+      timeOut=setTimeout('scrollToTop()',10);
+    }
+    else clearTimeout(timeOut);
+  }
+</script>
