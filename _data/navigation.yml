@@ -51,7 +51,6 @@ en:
     - resource: YouTube
       url: https://www.youtube.com/channel/UCneu3jamW6lVZ8aMgxyUjfQ/videos
   history-sidebar:
-    - heading: Chronology
     - heading: Events of 2013
     - heading: Events of 2014
     - heading: Events of 2015
@@ -98,4 +97,3 @@ en:
       url: "#trustless-liquidity-pool"
     - resource: Blocks &amp; Chains Decentralized Exchange
       url: "#blocks--chains-decentralized-exchange"
-      
