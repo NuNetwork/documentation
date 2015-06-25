@@ -11,7 +11,13 @@
   {% assign alt=include.alt %}
 {% endif %}
 
+{% if page.layout == 'history' %}
+  {% assign imgurl=site.imageurl.history %}
+{% else %}
+  {% assign imageurl=site.imageurl.kb %}
+{% endif %}
+
 <figure>
-  <img src="{{ site.baseurl }}{{ site.kbimageurl }}{{ include.filename }}" alt="{{ alt }}" class="kb_image_embed">
+  <img src="{{ site.baseurl }}{{ imageurl }}{{ include.filename }}" alt="{{ alt }}" >
   <figcaption>Fig %.{{ caption }}.</figcaption>
 </figure>

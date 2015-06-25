@@ -97,6 +97,7 @@ body
 
 .nav_left_sidebar
   @extend %grid-3
+  position: relative
   padding: 20px 30px
   font-size: .9em
   font-weight: 400
@@ -126,7 +127,13 @@ body
       &.current
         a
           color: red
-
+  .hidden, .initial
+    display: none
+  .back_to_top
+    display: inline-block
+    position: fixed
+    bottom: 0
+    padding: 10px 20px
 .body_wrapper
   @extend %grid-9
   padding: 20px 30px

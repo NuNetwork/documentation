@@ -28,11 +28,11 @@ rpcpassword={anything}
 
 If everything works as expected, you will see a dialog appear with a count of the number of addresses that have been exported. You can confirm this action by viewing your Peercoin wallet and looking on the "Receive Coins" tab. There should be a number of new addresses with the label "NuShares" that match the number that was exported in the previous step. If you do not see this, please make sure that your wallet was unlocked (and not just unlocked for minting) and try it again.
 
-{% include kb-image.html filename="nushares_export_keys.png" caption="NuShares export keys dialog" %}
+{% include image.html filename="nushares_export_keys.png" caption="NuShares export keys dialog" %}
 
 In your Peercoin wallet client, on the Receiving tab, you will see that the NuShares dividend addresses have been included:
 
-{% include kb-image.html filename="peercoin_exported_keys_view.png" caption="NuShares export keys" %}
+{% include image.html filename="peercoin_exported_keys_view.png" caption="NuShares export keys" %}
 
 Once that has been completed, you'll be ready for a dividend distribution. If you should add additional NuShares addresses in the future, please make sure you follow the same steps again to integrate those new paired keys into your Peercoin wallet. You will not duplicate existing keys, so this operation can be run as many times as you need, into the future.
 
@@ -42,7 +42,7 @@ Once that has been completed, you'll be ready for a dividend distribution. If yo
 
 If you see a dialog like this, when you try to export the keys:
 
-{% include kb-image.html filename="nushares_export_keys_troubleshooting.png" caption="NuShares export keys troubleshooting" %}
+{% include image.html filename="nushares_export_keys_troubleshooting.png" caption="NuShares export keys troubleshooting" %}
 
 You have probably already exported the keys to your client. Check your Peer(coin/unity) client to see if the keys exist.
 
