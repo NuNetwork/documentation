@@ -16,22 +16,21 @@
 
     {% if menu.heading == 'Events of 2013' %}
       {% for link in site.data.navigation[page.lang].events2013 %}
-        {% capture anchorlink %}{{ site.baseurl }}{{ page.url }}{{ link.url }}{% endcapture %}
-        <li class=""><a href="{{ anchorlink | replace: 'history/','history' }}" class="" >{{ link.resource }}</a></li>
+        <li class=""><a href="{{link.url}}" class="" >{{ link.resource }}</a></li>
       {% endfor %}
     {% endif %}
 
     {% if menu.heading == 'Events of 2014' %}
       {% for link in site.data.navigation[page.lang].events2014 %}
         {% capture anchorlink %}{{ site.baseurl }}{{ page.url }}{{ link.url }}{% endcapture %}
-        <li class=""><a href="{{ anchorlink | replace: 'history/','history' }}" class="" >{{ link.resource }}</a></li>
+        <li class=""><a href="{{link.url}}" class="" >{{ link.resource }}</a></li>
       {% endfor %}
     {% endif %}
 
     {% if menu.heading == 'Events of 2015' %}
       {% for link in site.data.navigation[page.lang].events2015 %}
         {% capture anchorlink %}{{ site.baseurl }}{{ page.url }}{{ link.url }}{% endcapture %}
-        <li class=""><a href="{{ anchorlink | replace: 'history/','history' }}" class="" >{{ link.resource }}</a></li>
+        <li class=""><a href="{{link.url}}" class="" >{{ link.resource }}</a></li>
       {% endfor %}
     {% endif %}
   </ul>
