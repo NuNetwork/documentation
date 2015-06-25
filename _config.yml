@@ -13,11 +13,11 @@ imageurl:
   kb: "/kb/images/"
   history: "/history/images/"
 historyurl:
-  kb: "https://github.com/NuNetwork/documentation/commits/gh-pages/_kb/"
-  history: "https://github.com/NuNetwork/documentation/commits/gh-pages/_history/"
+  kb: "https://github.com/NuNetwork/documentation/commits/gh-pages/_kb"
+  history: "https://github.com/NuNetwork/documentation/commits/gh-pages/_history"
 suggesturlbase:
   kb: "https://docs.nubits.com/"
-  history: "https://timeline.nubits.com"
+  history: "https://docs.nubits.com"
 
 # Previous domain settings
 # (Keeping until we're sure we don't need them any longer; useful for any ports of this repo for other documentation uses, for instance, Peershares)
