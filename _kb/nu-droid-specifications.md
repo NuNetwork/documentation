@@ -1,6 +1,12 @@
-NuDroid specifications and technology
-=====================================
-
+---
+title: NuDroid Specifications
+nav_heading: NuDroid
+filename: nu-droid-specifications.md
+permalink: /nudroid/
+layout: kb
+lang: en
+callouts:
+---
 Release notes
 -------------
 **Release notes NuDroid v3.1:**
