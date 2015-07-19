@@ -34,7 +34,7 @@ Limitations NuDroid v3.x with Bitcoin and altcoins
 
 Bluetooth and NFC limitations of the Shapeshift technology:
 
-When requesting a non-NuBits payment with Bluetooth enabled, the NuDroid app will not allow one to send via Bluetooth, but you can initiate a regular Shapeshift transfer. When using BIP0070 (https://bitcoinj.github.io/payment-protocol), the NuDroid app will try recognise the input, as it does not follow BIP0021 URIs. In this case BIP0070 should not be used when requesting Shapeshift payment from those using NuDroid. NFC using other apps will not work. To clarify what will work:
+When requesting a non-NuBits payment with Bluetooth enabled, the NuDroid app will not allow one to send via Bluetooth, but you can initiate a regular Shapeshift transfer. When using [BIP0070](https://bitcoinj.github.io/payment-protocol), the NuDroid app will try recognise the input, as it does not follow BIP0021 URIs. In this case BIP0070 should not be used when requesting Shapeshift payment from those using NuDroid. NFC using other apps will not work. To clarify what will work:
 
 1.	Manually inputting address
 2.	QR code of address
@@ -98,7 +98,7 @@ Instructions for preparing an NFC tag with your address:
 ## Application Architecture
 
 Andreas Schildbach architecture
-The current codebase of NuDroid v3.x is based on the Andreas Schildbach Android Bitcoin wallet version 4.13. The Bitcoin wallet is at 4.32 as of June 2015. [Here](https://github.com/schildbach/bitcoin-wallet/compare/v4.13...v4.32) is the list of changes made since.
+The current codebase of NuDroid v3.x is based on the Andreas Schildbach Android Bitcoin wallet version 4.13. The Bitcoin wallet is at 4.32 as of June 2015. Here is the [list of changes](https://github.com/schildbach/bitcoin-wallet/compare/v4.13...v4.32) made since.
 . This code may or may not be added in future official versions of NuDroid. However users can create their own unofficial builds if they wish.
 
 NuDroid is a standalone NuBits node with no centralized backend required. NuDroid version 3.x has been coded to use the server at svr1.nubitsexplorer.nu. In version 4.x the user will be able to select one through an interface and with that NuDroid can be made completely trustless assuming the user runs their own instance of Abe explorer (svr1.nubitsexplorer.nu).
@@ -108,7 +108,7 @@ NuDroid is a standalone NuBits node with no centralized backend required. NuDroi
 GPL version 3
 The NuDroid application is licensed under the GPL version 3. There is no warranty and no party shall be made liable to you for damages. If you lose coins due to this app, no compensation will be given. Use this App and the embedded Shapeshift services solely at your own risk.
 -   The repository for the ABE explorer lives [here](https://github.com/Cybnate/NuBits-Abe-explorer). 
--   The repository for nubitsj lives [here]( https://github.com/Cybnate/NuBitsj)
+-   The repository for nubitsj lives [here](https://github.com/Cybnate/NuBitsj)
 -   And the code for the wallet itself lives [here](https://github.com/Cybnate/NuDroid)
 
 Pull request against these repositories will be considered on a case by case bases. Obtaining community support on discuss.nubits.com will greatly improve your chances.
@@ -132,8 +132,8 @@ The following is a wish list created based on community feedback, developers’ 
 -	Adding ability to import a series of transactions in a comma delimited file format for immediate payments
 -	User interface for using multi-sig addresses
 -	User interface to switch between main and test network
--	Integrating OpenAlias (https://discuss.nubits.com/t/openalias-should-we-invest-in-it-this-year/1833)
+-	Integrating [OpenAlias](https://discuss.nubits.com/t/openalias-should-we-invest-in-it-this-year/1833)
 -	Strengthening resilience by creating another instance of ABE explorer
 -	Native support for Bitcoin and other altcoins, basically multi-coin wallet
 -	Smart contracts (e.g. ability for delayed payments based on block height or a transactions occurring after certain amount in a specific address arrives)
--	IFTTT support (https://en.wikipedia.org/wiki/IFTTT) e.g. when payment received send Tweet
+-	[IFTTT support](https://en.wikipedia.org/wiki/IFTTT) (e.g. "when payment received send tweet")
