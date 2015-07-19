@@ -109,7 +109,7 @@ GPL version 3
 The NuDroid application is licensed under the GPL version 3. There is no warranty and no party shall be made liable to you for damages. If you lose coins due to this app, no compensation will be given. Use this App and the embedded Shapeshift services solely at your own risk.
 -   The repository for the ABE explorer lives [here](https://github.com/Cybnate/NuBits-Abe-explorer). 
 -   The repository for nubitsj lives [here]( https://github.com/Cybnate/NuBitsj)
--   And the code for the wallet itself lives [here](https://github.com/Cybnate/NuDroid)
+-   And the code for the wallet itself lives [here](https://github.com/Cybnate/NuDroid)  
 Pull request against these repositories will be considered on a case by case bases. Obtaining community support on discuss.nubits.com will greatly improve your chances.
 
 ## Wish list
