@@ -15,7 +15,7 @@ callouts:
 
 **Release notes NuDroid v3.0:**
 
--	Shapeshift functionality
+-   Shapeshift functionality
 -	Store foreign coin addresses in address book
 -	Scanning QR codes of other coins including Bitcoin
 -	Export transactions to comma delimited file (CSV)
@@ -80,7 +80,7 @@ The following functionality is included in the v1.0 Release:
 **NuDroid powered by Shapeshift**
 Depending on the liquidity available, coins can be unavailable at Shapeshift.io. New coins supported by Shapeshift.io from today on, won't be supported automatically. This requires an update of the App. 
 
-The shapeshift service is delivered by Shapeshift.io. No sign-up is needed but a small fee does apply. More information can be found here: https://shapeshift.zendesk.com/hc/en-us/articles/202585602-What-s-your-fee-structure- On top of that usual miner or network fees also apply depending on the coins used. To date (June 2015) transactions up to 1000 NBT are supported by Shapeshift. There is no guarantee though and it may fluctuate daily. 
+The shapeshift service is delivered by Shapeshift.io. No sign-up is needed but a small fee does apply. More information can be found [here](https://shapeshift.zendesk.com/hc/en-us/articles/202585602-What-s-your-fee-structure-).  On top of that usual miner or network fees also apply depending on the coins used. To date (June 2015) transactions up to 1000 NBT are supported by Shapeshift. There is no guarantee though and it may fluctuate daily. 
 
 ## NFC (Near field communication) technology support
 
@@ -89,10 +89,7 @@ The NuDroid wallet supports reading NuBits requests via NFC, either from a passi
 For this to work, just enable NFC in your phone and hold your phone to the tag or device (with the "Request coins" dialog open). The "Send coins" dialog will open with fields populated.
 Instructions for preparing an NFC tag with your address:
 
--	We have successfully tested this NFC tag writer:
-https://play.google.com/store/apps/details?id=com.nxp.nfc.tagwriter
-Other writers should work as well, let us know if you succeed.
-
+-	We have successfully tested this [NFC tag writer](https://play.google.com/store/apps/details?id=com.nxp.nfc.tagwriter). Other writers should work as well, let us know if you succeed.
 -	Some tags have less than 50 bytes capacity, those won't work. 1 KB tags recommended.
 -	The tag needs to contain a Nubits URI. You can construct one with the "Request coins" dialog, then share with messaging or email. You can also construct the URI manually. Example for Mainnet: nu:BG2Y2jP5YFZ5RGk2PXaeWwbeA5y1ZtFhoL
 -	The type of the message needs to be URI or URL (not Text).
@@ -101,8 +98,8 @@ Other writers should work as well, let us know if you succeed.
 ## Application Architecture
 
 Andreas Schildbach architecture
-The current codebase of NuDroid v3.x is based on the Andreas Schildbach Android Bitcoin wallet version 4.13. The Bitcoin wallet is at 4.32 as of June 2015. Here is the list of changes made since:
-https://github.com/schildbach/bitcoin-wallet/compare/v4.13...v4.32. This code may or may not be added in future official versions of NuDroid. However users can create their own unofficial builds if they wish.
+The current codebase of NuDroid v3.x is based on the Andreas Schildbach Android Bitcoin wallet version 4.13. The Bitcoin wallet is at 4.32 as of June 2015. [Here](https://github.com/schildbach/bitcoin-wallet/compare/v4.13...v4.32) is the list of changes made since.
+. This code may or may not be added in future official versions of NuDroid. However users can create their own unofficial builds if they wish.
 
 NuDroid is a standalone NuBits node with no centralized backend required. NuDroid version 3.x has been coded to use the server at svr1.nubitsexplorer.nu. In version 4.x the user will be able to select one through an interface and with that NuDroid can be made completely trustless assuming the user runs their own instance of Abe explorer (svr1.nubitsexplorer.nu).
 
@@ -110,9 +107,9 @@ NuDroid is a standalone NuBits node with no centralized backend required. NuDroi
 
 GPL version 3
 The NuDroid application is licensed under the GPL version 3. There is no warranty and no party shall be made liable to you for damages. If you lose coins due to this app, no compensation will be given. Use this App and the embedded Shapeshift services solely at your own risk.
-The repository for the ABE explorer lives here: https://github.com/Cybnate/NuBits-Abe-explorer
-The repository for nubitsj lives here: https://github.com/Cybnate/NuBitsj
-And the code for the wallet itself lives here: https://github.com/Cybnate/NuDroid
+-   The repository for the ABE explorer lives [here](https://github.com/Cybnate/NuBits-Abe-explorer). 
+-   The repository for nubitsj lives [here]( https://github.com/Cybnate/NuBitsj)
+-   And the code for the wallet itself lives [here](https://github.com/Cybnate/NuDroid)
 Pull request against these repositories will be considered on a case by case bases. Obtaining community support on discuss.nubits.com will greatly improve your chances.
 
 ## Wish list
