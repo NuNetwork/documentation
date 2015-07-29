@@ -78,9 +78,9 @@ Return a JSON object representing the serialized, hex-encoded transaction.
 
 ### dumpprivkey
 
-`dumpprivkey <ppcoinaddress>`
+`dumpprivkey <address>`
 
-Reveals the private key corresponding to \<ppcoinaddress\>.
+Reveals the private key corresponding to \<address\>.
 
 ### encryptwallet
 
@@ -316,7 +316,7 @@ List commands, or get help for a command.
 
 ### importprivkey
 
-`importprivkey <ppcoinprivkey> [label]`
+`importprivkey <privkey> [label]`
 
 Adds a private key (as returned by dumpprivkey) to your wallet.
 
