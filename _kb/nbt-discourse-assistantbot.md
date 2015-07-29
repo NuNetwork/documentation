@@ -9,7 +9,7 @@ callouts:
 ---
 NuBits Discourse Assistant Bot it is designed to be used on [NuBits official forum](https://discuss.nubits.com)  to retrieve information about NuNet (liquidity, custodians, votes...)  formatting Motions or Custodian proposals and tipping NuBits on the forum.  Just mention `@assistant` in a public discussion or send a PM to access the bot (scroll down for the list of commands).
 
-It comes as a [discourse](http://www.discourse.org/) plugin and its code is open source and can be found  [on bitbucket](https://bitbucket.org/mj2p/assistantbot2). 
+It comes as a [discourse](http://www.discourse.org/) plugin and its code is open source and can be found  [on bitbucket](https://bitbucket.org/mj2p/assistantbot). 
 
 As well as helping in the formatting of motions , the bot can also fetch any of the NuNet information available in the Nu client and present it here in any public topic. Things like the current liquidity, the current difficulty, the current state of a particular motion or the current park rates can all be accessed with a simple command.
 Because the bot is hooked into the Nu Network, it can also let any user tip NuBits to any other user on this forum. To get started with tipping, send a PM with the word 'register' to [assistant](https://discuss.nubits.com/users/assistant/activity) . If you send someone who hasn't registered a tip, I'll create them an account and let them know a tip is waiting for them.
