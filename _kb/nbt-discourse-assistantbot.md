@@ -53,7 +53,7 @@ Mention the bot in a public discussion using `@assistant`
 - `@assistant tip [amount] @[user]` : Send a tip of [amount] NBT to @[user].
 
 
-## Standardise motion texts 
+## Standardised Motion Texts
 
 The main aim is to standardise the format of motions and custodial grants in a way that will allow other future tools to scrape the data from this forum and present it elsewhere. There has been an idea floating around for a web service which allows for data feed generation with a few clicks of a mouse. Such a web service could also act as a repository for motions and custodial proposals so that the data around the activity of NuNet can be easily accessed. A typical use case of Shareholder that wants to propose and hash a motion. 
 
