@@ -11,13 +11,10 @@ NuBits Discourse Assistant Bot it is designed to be used on [NuBits official for
 
 It comes as a [discourse](http://www.discourse.org/) plugin and its code is open source and can be found  [on bitbucket](https://bitbucket.org/mj2p/assistantbot2). 
 
-The main aim is to standardise the format of motions and custodial grants in a way that will allow other future tools to scrape the data from this forum and present it elsewhere. There has been an idea floating around for a web service which allows for data feed generation with a few clicks of a mouse. Such a web service could also act as a repository for motions and custodial proposals so that the data around the activity of NuNet can be easily accessed.
-The first step towards this is getting motions and proposals into a standard format so that the process can be automated as much as possible and that's where I come in.
+As well as helping in the formatting of motions , the bot can also fetch any of the NuNet information available in the Nu client and present it here in any public topic. Things like the current liquidity, the current difficulty, the current state of a particular motion or the current park rates can all be accessed with a simple command.
+Because the bot is hooked into the Nu Network, it can also let any user tip NuBits to any other user on this forum. To get started with tipping, send a PM with the word 'register' to [assistant](https://discuss.nubits.com/users/assistant/activity) . If you send someone who hasn't registered a tip, I'll create them an account and let them know a tip is waiting for them.
 
-As well as helping in the formatting mentioned above, I can also fetch any of the NuNet information available in the Nu client and present it here in any public topic. Things like the current liquidity, the current difficulty, the current state of a particular motion or the current park rates can all be accessed with a simple command.
-Because I'm hooked into the Nu Network, I can also let any user tip NuBits to any other user on this forum. To get started with tipping, send me a PM with the word 'register'. If you send someone who hasn't registered a tip, I'll create them an account and let them know a tip is waiting for them.
-
-To help get started, here is a list of the commands the bot will respond to. Please note that the bot will only respond to 'Private Message' commands via private message. Mention commands will only work when you mention its name in a forum post and type the command as shown below.
+To help get started, below  there is a list of the commands the bot will respond to. Please note that the bot will only respond to 'Private Message' commands via private message. Mention commands will only work when you mention its name in a forum post and type the command as shown below.
 
 ## Private Message Commands
 Access these command by writing a private message to the user [assistant](https://discuss.nubits.com/users/assistant/activity)  :  
@@ -27,7 +24,7 @@ Access these command by writing a private message to the user [assistant](https:
 
 ### Formatting Commands
 
- - `motion hash [motion]` : Hash a motion into the preferred format.
+ - `motion hash [motion]` : Hash a motion into the preferred format. (More details below)
  - `custodian hash [address] [amount] [text]` : Hash a Custodian Proposal into the preferred format.
 
 ### Tipping Private Message Commands
@@ -54,3 +51,25 @@ Mention the bot in a public discussion using `@assistant`
 - `@assistant verify` : Scan the thread for motions and custodial proposals and verify that their hashes are unchanged
 - `@assistant qrcode [address]` : Create a QR Code of the valid NBT address.
 - `@assistant tip [amount] @[user]` : Send a tip of [amount] NBT to @[user].
+
+
+## Standardise motion texts 
+
+The main aim is to standardise the format of motions and custodial grants in a way that will allow other future tools to scrape the data from this forum and present it elsewhere. There has been an idea floating around for a web service which allows for data feed generation with a few clicks of a mouse. Such a web service could also act as a repository for motions and custodial proposals so that the data around the activity of NuNet can be easily accessed.
+The first step towards this is getting motions and proposals into a standard format so that the process can be automated as much as possible and that's where I come in. 
+
+Dend the bot user a Private message which says
+
+`hash this is a test motion`
+
+you will receive the following:
+{% highlight text %}
+
+`ripemd160 hash: 836670cc16303aaa6e2c93891c7d9c6123c09ae7
+=############ Motion Hash starts with this line ############=
+
+this is a test motion
+
+=############ Motion Hash ends with this line ############=
+{% endhighlight %}
+
