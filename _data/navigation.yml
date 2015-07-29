@@ -32,6 +32,8 @@ en:
       url: https://bitbucket.org/JordanLeePeershares/nubit/issues
     - resource: NuBitsJ
       url: https://github.com/Cybnate/NuBitsj
+    - resource: NuBippy (BIP38 Paper Wallets)
+      url: https://bippy.nu      
   nubot:
     - resource: Source Code
       url: https://bitbucket.org/JordanLeePeershares/nubottrading
