@@ -55,21 +55,42 @@ Mention the bot in a public discussion using `@assistant`
 
 ## Standardise motion texts 
 
-The main aim is to standardise the format of motions and custodial grants in a way that will allow other future tools to scrape the data from this forum and present it elsewhere. There has been an idea floating around for a web service which allows for data feed generation with a few clicks of a mouse. Such a web service could also act as a repository for motions and custodial proposals so that the data around the activity of NuNet can be easily accessed.
-The first step towards this is getting motions and proposals into a standard format so that the process can be automated as much as possible and that's where I come in. 
+The main aim is to standardise the format of motions and custodial grants in a way that will allow other future tools to scrape the data from this forum and present it elsewhere. There has been an idea floating around for a web service which allows for data feed generation with a few clicks of a mouse. Such a web service could also act as a repository for motions and custodial proposals so that the data around the activity of NuNet can be easily accessed. A typical use case of Shareholder that wants to propose and hash a motion. 
 
-Dend the bot user a Private message which says
+1. Shareholder wishes to propose a motion. 
+2. Shareholder composes motion away from site. 
+3. Shareholder sends Pm to Assistant with the motion (see command below)
+4. Shareholder clicks on 'verify' link in the reply from Assistant and copies the entire text.
+5. Shareholder starts new topic and pastes the copied text into the post. They can then add any other text they want but that won't be included in the hash
 
-`hash this is a test motion`
+The instruction next to the verify link, to copy everything including the tags in instruction for if you want to independently verify the hash with a tool that isn't Assistant bot. When calculating the hash, assistant uses the raw text contained by the tags. By copying just that portion of the raw text, any other tool that calculates RIPEMD160 hashes should return the same value.
 
-you will receive the following:
+
+To use Assistant to format a motion, send a PM to @assistant. the first two words of the message should be 'motion hash'. Any other text in the message will be treated as the motion text and will be formatted into a standard motion.
+
+`motion hash this is my motion`
+
+Once correctly formatted, Assistant will calculate the RIPEMD160 hash of the motion text and will reply to your PM with the text for your post.
+
 {% highlight text %}
+Motion RIPEMD160 hash: 886c36dd00ebdf8f87812d141ba941e053c21830
 
-`ripemd160 hash: 836670cc16303aaa6e2c93891c7d9c6123c09ae7
-=############ Motion Hash starts with this line ############=
+=##=##=##=##=##=## Motion hash starts with this line ##=##=##=##=##=##=
 
-this is a test motion
+this is my motion
 
-=############ Motion Hash ends with this line ############=
+
+=##=##=##=##=##=## Motion hash ends with this line ##=##=##=##=##=##=
 {% endhighlight %}
+
+To copy that text you need to click the 'Verify' link towards the bottom of Assistant reply. This shows you the raw text that was hashed. If you paste that raw text, in it's entirety, into your post, it will appear nicely formatted as it did in Assistant reply. 
+If you don't copy the raw 'verify' text, your post won't be nicely formatted and the verification text will fail the hash if any one checks.
+
+Assistant adds some hidden html tags to the formatted motion which will allow future tools to easily access information.
+
+To verify a motion hash, reply to a motion post, mention @assistant and follow immediately with the word 'verify'. 
+
+`@assistant verify hash this is my motion`
+
+Assistant will scan the entire thread for any motions and re-calculate the hash on each. This provides a nice, easy way to verify that a motions text hasn't changed and that you are voting for the correct thing in your Nu client.
 
