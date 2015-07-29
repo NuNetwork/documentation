@@ -30,6 +30,8 @@ en:
       url: https://bitbucket.org/JordanLeePeershares/nubit
     - resource: Issue Tracker
       url: https://bitbucket.org/JordanLeePeershares/nubit/issues
+    - resource: NuBitsJ
+      url: https://github.com/Cybnate/NuBitsj
   nubot:
     - resource: Source Code
       url: https://bitbucket.org/JordanLeePeershares/nubottrading
