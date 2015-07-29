@@ -55,48 +55,61 @@ Restart SSH with `$ sudo /etc/init.d/ssh restart`
 
 
 ## Download and compile Nu
-`$ cd ~`
-`$ git clone https://bitbucket.org/JordanLeePeershares/nubit.git` 
-`$ cd nubit/src` 
-`$ sudo dd if=/dev/zero of=/swapfile bs=64M count=16` 
-`$ sudo mkswap /swapfile` 
-`$ sudo swapon /swapfile` 
-`$ make -f makefile.unix` 
-`$ strip nud` 
-`$ mv nud ~`
-`$ cd ~`
-`$ sudo rm -r nubit/`
-`$ sudo swapoff /swapfile`
-`$ sudo rm /swapfile`
-`$ sudo cp ~/nud /usr/bin/nud && sudo chmod a+x /usr/bin/nud`
+-`$ cd ~` #Go to pi user's home directory
+-`$ git clone https://bitbucket.org/JordanLeePeershares/nubit.git`   #clone NuBits repository locally
+-`$ cd nubit/src` #Go to source directory 
+-`$ sudo dd if=/dev/zero of=/swapfile bs=64M count=16` #provide some extra swap partition to speed up compilation time
+-`$ sudo mkswap /swapfile` 
+-`$ sudo swapon /swapfile` 
+-`$ make -f makefile.unix` #Build  nud. This command can take up to 2 hours, will produce an executable file : `nud`
+-`$ strip nud` #Reduce file size by stripping symbols
+-`$ sudo mv nud /usr/bin/nud && sudo chmod a+x /usr/bin/nud` #move nud and make it executable
+-`$ sudo rm -r ~/nubit/` #Remove directory with sources (optional)
+-`$ sudo swapoff /swapfile`#clean up the previously initiated swap
+-`$ sudo rm /swapfile`
 
-## Configure Nu
-`$  mkdir -p ~/.nu`
-`$  touch ~/.nu/nu.conf`
-`$  pico ~/.nu/nu.conf`
+## Configure Nud
+
+Now that nud is ready, we need to configure it before executing it. 
+
+-`$  mkdir -p ~/.nu`#Create the data folder 
+-`$  touch ~/.nu/nu.conf` #Create an empty configuration file
+-`$  pico ~/.nu/nu.conf`#Edit the nu.conf file
+
+Your nu.conf shuold look like the example below : 
 
 {% highlight text %}
 daemon=1 
 server=1
-rpcuser=xxx
-rpcpassword=yyy
+rpcuser=<chooseAnUsername>
+rpcpassword=<chooseAPassword>
 port=7890
 {% endhighlight %}
 
-DO NOT Open ports
+The  nu daemon will be listening to RPC messages on the port you specified. We highly suggest *not* to forward that port and leave the pi protected behing the NAT, for local usage only.  
 
 ## Start Nud and download the blockchain
-`$  nud -daemon`
-`$  nud getinfo`
 
-- Avoid lovale problems with locale
-`$ echo export LC_ALL=en_US.UTF-8 >> ~/.profile`
+Now you will be able to access nud via CLI by typing `nud` followed by the rpc command you want to invoke.  
+The first thing you want to do is starting the daemon and let it download the blockchain. This operation can take  several hours, or days depending on connectivity.  
+
+-`$  nud -daemon` #will start your nu daemon , startup time can take some time. 
+
+It is possible that you get an error related to perl and your locale settings.  If you get this  error, simply execute the following command that will write an export of your locale to the bash profile your locale language (in the example below being `en_US,` but could also be `en_GB`or something else). 
+- `$ echo export LC_ALL=en_US.UTF-8 >> ~/.profile`
+
+To check how the download of the blockchain is proceeding you can run 
+
+-`$  nud getinfo`
+
+and read the `blocks` number increasing, and compare it to the current `height` on [the block explorer](https://blockexplorer.nu/status).   Be patient while the blockchain is being downloaded. Otherwise import a pre-downloaded blockchain in dat format. 
 
 ## Configure your minting machine
 
 Configure to run as a service
 
 reboot
+ 
 Encrypt your wallet
 Import private keys
 
