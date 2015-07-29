@@ -11,7 +11,7 @@ callouts:
 ## Introduction
 Holding NuShares comes with a responsibility : as a shareholder is in your best interest to participate to the network by submitting your votes in each mint you mint. 
 
-To maximise the impact of your votes and the reward that comes with staking shares your Nu client should be minting 24/7.  A cost/efficient solution is delegating the minting to a cheap Raspberry Pi connected to the internet : unlike VPS or cloud service you will keep control over your shares, and you can finally turn off your home computer. 
+To maximise the impact of your votes and the reward that comes with staking shares your Nu client should be minting 24/7.  A cost/efficient solution is delegating the minting to a cheap Raspberry Pi connected to the internet : unlike VPS or cloud service you will keep control over your shares, and you can finally turn off your home computer.  Thanks to  [Nu data-feeds](https://docs.nubits.com/using-a-data-feed/), you can subscribe your raspberry to an external source and control your votes without need to access the pi all the time. 
 
 The Raspberry Pi is a cheap (~40$) and efficient device with enough computational power to let you mint.   
 
@@ -55,6 +55,7 @@ Restart SSH with `$ sudo /etc/init.d/ssh restart`
 
 
 ## Download and compile Nu
+
 -`$ cd ~` #Go to pi user's home directory
 -`$ git clone https://bitbucket.org/JordanLeePeershares/nubit.git`   #clone NuBits repository locally
 -`$ cd nubit/src` #Go to source directory 
@@ -106,28 +107,31 @@ and read the `blocks` number increasing, and compare it to the current `height` 
 
 ## Configure your minting machine
 
-Configure to run as a service
+Once it finished downloading the blockchain, configure nud to automatically run on startup. 
+`$ sudo pico /etc/rc.local`
+and add the following line immediately before the last line (`exit 0`) : `nud -daemon` . Save , exit pico and reboot the pi to test if the daemon started automatically. 
 
-reboot
- 
-Encrypt your wallet
-Import private keys
+### Fund your minting machine. 
 
-Unlock wallet
+You have three options to transfer NuShares to your raspberry : 
 
-pass (Type in the password to start minting. There is no prompt! the password shows! type password, press return, press control-D)
+1. Send NSR to on of the raspberry receive address 
+2. Import an existing private key using `$ nud importprivkey <yourprivkey>`  and cleaning up bash history right after with `$ cat /dev/null > ~/.bash_history` to delete traces
+3. Copy an existing walletS.dat file to the raspberry using scp . Execute this command from the machine where the existing wallet is hosted : `$ scp local/path/to/walletS.dat pi@<pi.ip.address>:/home/pi/.nu `
+
+Unless you go with the the third option and imported an encrypted wallet, make sure to encrypt your wallet with a [sufficiently complex passphrase](https://answers.uchicago.edu/16276) 
+`$ nud encryptwallet <passphrase>` 
+
+After you have a working node encrypted and funded with NuShares,  you need to unlock the wallet using your passphrase to allow minting. 
+To unlock your wallet, type the command below, press enter,  then type your passphrase,  press enter again and finally Control+D: 
 `$ nud walletpassphrase `cat` 999999999 true`
 
+Now you can use data-feeds to configure your vote, so everytime you mint a new block, you will participate to Nu democratic process.  You have also the option to manually configure votes via CLI, but is not reccomended.   
 
-Check if is minting correctly
-
-Configure datafeeds
-https://docs.nubits.com/using-a-data-feed/#using-data-feeds-from-the-daemon
-
+After you [created your own datafeed](https://docs.nubits.com/hosting-a-data-feed/) or chose to an [existing datafeed](https://discuss.nubits.com/c/nushares/data-feeds), this tutorial will teach you how to [use data feeds from the daemon](https://docs.nubits.com/using-a-data-feed/#using-data-feeds-from-the-daemon).  To subscribe to Cybnate's data feed, for example , you can use the following command :
 `$  nud setdatafeed https://raw.githubusercontent.com/Cybnate/NuNet-datafeed/master/Cybnate-datafeed.json https://raw.githubusercontent.com/Cybnate/NuNet-datafeed/master/Cybnate-datafeed.txt ShTrp9wbgnhZudk4eYXtBtcMyeBziGzUpc`
 
+Double check if the feed is set correctly by running 
 `$ nud getdatafeed `
 
-Do stuff via RPC https://docs.nubits.com/rpc-api/
-
-Use a GUI (also)
+Done!  You can now interact with your node using [rpc commands](https://docs.nubits.com/rpc-api/), and you can also manage the same NSR with a GUI client from your laptop at the same time, just remember to leave the GUI client locked, so it won't interfere with the raspberry.  
