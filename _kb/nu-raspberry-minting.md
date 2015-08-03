@@ -139,7 +139,7 @@ You have three options to transfer NuShares to your raspberry :
 1. Send NSR to on of the raspberry receive address 
 2. Import an existing private key using `$ nud importprivkey <yourprivkey>`  and clean up bash history right after with `$ cat /dev/null > ~/.bash_history` to delete all traces
 3. Copy an existing walletS.dat file to the raspberry using scp . Execute this command from the machine where the existing wallet is hosted :  
--`$ scp local/path/to/walletS.dat pi@<pi.ip.address>:/home/pi/.nu `
+`$ scp local/path/to/walletS.dat pi@<pi.ip.address>:/home/pi/.nu `
 
 Unless you go with the the third option and imported an encrypted wallet, make sure to encrypt your wallet with a [sufficiently complex passphrase](https://answers.uchicago.edu/16276) 
 - `$ nud encryptwallet <passphrase>` 
@@ -148,6 +148,8 @@ After you have a working node encrypted and funded with NuShares,  you need to u
 To unlock your wallet, type the command below, press enter,  then type your passphrase,  press enter again and finally Control+D: 
 
 - `$ nud walletpassphrase `cat` 999999999 true`
+
+### Configure votes
 
 Now you can use data-feeds to configure your vote, so everytime you mint a new block, you will participate to Nu democratic process.  You have also the option to manually configure votes via CLI, but is not reccomended.   
 
