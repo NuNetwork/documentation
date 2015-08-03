@@ -27,23 +27,36 @@ NOTE : in this tutorial we use pico as text editor, but feel free to use any oth
    - Basic CLI linux skills ;
 
 ## Prepare the Raspberry Pi
-- Download and install NOOBS, an easy operating system installer which contains Raspbian following the [the official tutorial](https://www.raspberrypi.org/help/noobs-setup/);
-- Update all existing software on the Pi 
+#### Download and install NOOBS, an easy operating system installer which contains Raspbian following the [the official tutorial](https://www.raspberrypi.org/help/noobs-setup/);
+
+#### Update all existing software on the Pi 
 `$ sudo apt-get update`
+
 `$ sudo apt-get upgrade`
-- Install dependencies required by Nu
+
+#### Install dependencies required by Nu
 `$ sudo apt-get install checkinstall subversion git git-core build-essential`
+
 `$ sudo apt-get install libssl-dev libdb++-dev libminiupnpc-dev`
+
 `$ sudo apt-get install libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libcurl4-openssl-dev`
-- Link libminiupnpc 
+
+#### Link libminiupnpc 
+
 `$ sudo ln -s /usr/lib/libminiupnpc.so.5 /usr/lib/libminiupnpc.so.10`
 
 Additionally we suggest to follow the optional steps below for additional security : 
 
-- Setup static ip for your raspberry following one of the many tutorials you can find online, for example [this](http://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address);
-- Enable SSH : enter `sudo raspi-config` in the terminal, then navigate to ssh, hit Enter and select `Enable or disable ssh server`.
-- Configure your raspberry to accept passwordless SSH sessions [following this tutorial](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md) , or if you know what you are doing simply run `$ cat ~/.ssh/id_rsa.pub | ssh pi@<IP-ADDRESS> 'cat >> .ssh/authorized_keys' `
-- Disable SSH password login  by editing /etc/ssh/sshd_config
+####  Setup static ip 
+Following one of the many tutorials you can find online, for example [this](http://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address);
+
+
+#### Enable SSH : 
+enter `$ sudo raspi-config` in the terminal, then navigate to ssh, hit Enter and select `Enable or disable ssh server`.
+#### Configure your raspberry to accept passwordless SSH sessions 
+[Follow this tutorial](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md) , or if you know what you are doing simply run `$ cat ~/.ssh/id_rsa.pub | ssh pi@<IP-ADDRESS> 'cat >> .ssh/authorized_keys' `
+#### Disable SSH password login 
+Edit `/etc/ssh/sshd_config`
 `$ sudo pico /etc/ssh/sshd_config`
 and making sure these three parameters are set to `no`
 {% highlight text %}
@@ -52,7 +65,6 @@ PasswordAuthentication no
 UsePAM no
 {% endhighlight %}
 Restart SSH with `$ sudo /etc/init.d/ssh restart`
-
 
 ## Download and compile Nu
 
