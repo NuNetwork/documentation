@@ -31,26 +31,24 @@ NOTE : in this tutorial we use pico as text editor, but feel free to use any oth
 An easy operating system installer which contains Raspbian following the [the official tutorial](https://www.raspberrypi.org/help/noobs-setup/);
 
 #### Update all existing software on the Pi 
-`$ sudo apt-get update`
-
-`$ sudo apt-get upgrade`
+ - `$ sudo apt-get update`
+ - `$ sudo apt-get upgrade`
 
 #### Install dependencies required by Nu
-`$ sudo apt-get install checkinstall subversion git git-core build-essential`
-
-`$ sudo apt-get install libssl-dev libdb++-dev libminiupnpc-dev`
-
-`$ sudo apt-get install libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libcurl4-openssl-dev`
+ - `$ sudo apt-get install checkinstall subversion git git-core build-essential`
+ - `$ sudo apt-get install libssl-dev libdb++-dev libminiupnpc-dev`
+ - `$ sudo apt-get install libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libcurl4-openssl-dev`
 
 #### Link libminiupnpc 
 
-`$ sudo ln -s /usr/lib/libminiupnpc.so.5 /usr/lib/libminiupnpc.so.10`
+ - `$ sudo ln -s /usr/lib/libminiupnpc.so.5 /usr/lib/libminiupnpc.so.10`
 
-Additionally we suggest to follow the optional steps below for additional security : 
+###  Optional reccomendations 
+We suggest to follow the optional steps below for additional security : 
 
 ####  Setup static ip 
-Following one of the many tutorials you can find online, for example [this](http://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address);
 
+Following one of the many tutorials you can find online, for example [this](http://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address);
 
 #### Enable SSH : 
 Enter `$ sudo raspi-config` in the terminal, then navigate to ssh, hit Enter and select `Enable or disable ssh server`.
@@ -92,9 +90,9 @@ Restart SSH with `$ sudo /etc/init.d/ssh restart`
 
 Now that nud is ready, we need to configure it before executing it. 
 
--`$  mkdir -p ~/.nu`#Create the data folder 
--`$  touch ~/.nu/nu.conf` #Create an empty configuration file
--`$  pico ~/.nu/nu.conf`#Edit the nu.conf file
+- `$  mkdir -p ~/.nu`#Create the data folder 
+- `$  touch ~/.nu/nu.conf` #Create an empty configuration file
+- `$  pico ~/.nu/nu.conf`#Edit the nu.conf file
 
 Your nu.conf shuold look like the example below : 
 
