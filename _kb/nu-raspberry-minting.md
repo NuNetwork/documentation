@@ -75,18 +75,18 @@ Restart SSH with `$ sudo /etc/init.d/ssh restart`
 
 ## Download and compile Nu
 
- -`$ cd ~` #Go to pi user's home directory
- -`$ git clone https://bitbucket.org/JordanLeePeershares/nubit.git`   #clone NuBits repository locally
- -`$ cd nubit/src` #Go to source directory 
- -`$ sudo dd if=/dev/zero of=/swapfile bs=64M count=16` #provide some extra swap partition to speed up compilation time
- -`$ sudo mkswap /swapfile` 
- -`$ sudo swapon /swapfile` 
- -`$ make -f makefile.unix` #Build  nud. This command can take up to 2 hours, will produce an executable file : `nud`
- -`$ strip nud` #Reduce file size by stripping symbols
- -`$ sudo mv nud /usr/bin/nud && sudo chmod a+x /usr/bin/nud` #move nud and make it executable
- -`$ sudo rm -r ~/nubit/` #Remove directory with sources (optional)
- -`$ sudo swapoff /swapfile`#clean up the previously initiated swap
- -`$ sudo rm /swapfile`
+ - `$ cd ~` #Go to pi user's home directory
+ - `$ git clone https://bitbucket.org/JordanLeePeershares/nubit.git`   #clone NuBits repository locally
+ - `$ cd nubit/src` #Go to source directory 
+ - `$ sudo dd if=/dev/zero of=/swapfile bs=64M count=16` #provide some extra swap partition to speed up compilation time
+ - `$ sudo mkswap /swapfile` 
+ - `$ sudo swapon /swapfile` 
+ - `$ make -f makefile.unix` #Build  nud. This command can take up to 2 hours, will produce an executable file : `nud`
+ - `$ strip nud` #Reduce file size by stripping symbols
+ - `$ sudo mv nud /usr/bin/nud && sudo chmod a+x /usr/bin/nud` #move nud and make it executable
+ - `$ sudo rm -r ~/nubit/` #Remove directory with sources (optional)
+ - `$ sudo swapoff /swapfile`#clean up the previously initiated swap
+ - `$ sudo rm /swapfile`
 
 ## Configure Nud
 
