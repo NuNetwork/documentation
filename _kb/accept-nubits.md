@@ -20,7 +20,7 @@ Nu gives a huge advantage to merchants that wants to accept crypto-currency paym
  - We also suggest to activate the `autoconvert` function to instantly exchange any other crypto for stable NuBits.  For each currency you wish to convert, in the `Payout mode ` column select `To Balance + Convert"`and select `NBT` ; 
  - Integrate  NuBits into your ecommerce using [Coinpayment's merchant tools](https://www.coinpayments.net/merchant-tools) :  consume their [APIs](https://www.coinpayments.net/merchant-tools-api), generate an [HTML button](https://www.coinpayments.net/merchant-tools-button-maker) , [create invoices](https://www.coinpayments.net/merchant-tools-request) or use one of the available [shopping chart plugins](https://www.coinpayments.net/merchant-tools-plugins) to integrate into drupal, woocommerce and more. 
 
-##Accept NuBits via Shapeshift
+##Accept NuBits via ShapeShift
 
-A less sophisticated yet efficient way to accept Nubits is by using ShapeShift's [shifty button](https://shapeshift.io/shifty_button
+A less sophisticated yet efficient way to accept NuBits is by using ShapeShift's [shifty button](https://shapeshift.io/shifty_button
 ). You can place the Shifty Button HTML code into any page to enable it to accept altcoins automatically. Your users can then deposit NuBits and they'll be auto-converted into Bitcoin for you. 
