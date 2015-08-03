@@ -111,7 +111,7 @@ The  nu daemon will be listening to RPC messages on the port you specified. We h
 Now you will be able to access nud via CLI by typing `nud` followed by the rpc command you want to invoke.  
 The first thing you want to do is starting the daemon and let it download the blockchain. This operation can take  several hours, or days depending on connectivity.  
 
-- `$  nud -daemon` #will start your nu daemon , startup time can take some time. 
+- `$  nud -daemon` #will start your nu daemon , startup time can take minutes. 
 
 It is possible that you get an error related to perl and your locale settings.  If you get this  error, simply execute the following command that will write an export of your locale to the bash profile your locale language (in the example below being `en_US,` but could also be `en_GB`or something else). 
 - `$ echo export LC_ALL=en_US.UTF-8 >> ~/.profile`
@@ -126,29 +126,35 @@ and read the `blocks` number increasing, and compare it to the current `height` 
 
 Once it finished downloading the blockchain, configure nud to automatically run on startup. 
  - `$ sudo pico /etc/rc.local`
-and add the following line immediately before the last line (`exit 0`) : `nud -daemon` . Save , exit pico and reboot the pi to test if the daemon started automatically. 
+and add the following line immediately before the last line (`exit 0`) : 
+`nud -daemon`
+
+Save , exit pico and reboot the pi to test if the daemon started automatically. 
 
 ### Fund your minting machine. 
 
 You have three options to transfer NuShares to your raspberry : 
 
 1. Send NSR to on of the raspberry receive address 
-2. Import an existing private key using `$ nud importprivkey <yourprivkey>`  and cleaning up bash history right after with `$ cat /dev/null > ~/.bash_history` to delete traces
+2. Import an existing private key using `$ nud importprivkey <yourprivkey>`  and clean up bash history right after with `$ cat /dev/null > ~/.bash_history` to delete all traces
 3. Copy an existing walletS.dat file to the raspberry using scp . Execute this command from the machine where the existing wallet is hosted : `$ scp local/path/to/walletS.dat pi@<pi.ip.address>:/home/pi/.nu `
 
 Unless you go with the the third option and imported an encrypted wallet, make sure to encrypt your wallet with a [sufficiently complex passphrase](https://answers.uchicago.edu/16276) 
-`$ nud encryptwallet <passphrase>` 
+- `$ nud encryptwallet <passphrase>` 
 
 After you have a working node encrypted and funded with NuShares,  you need to unlock the wallet using your passphrase to allow minting. 
 To unlock your wallet, type the command below, press enter,  then type your passphrase,  press enter again and finally Control+D: 
-`$ nud walletpassphrase `cat` 999999999 true`
+
+- `$ nud walletpassphrase `cat` 999999999 true`
 
 Now you can use data-feeds to configure your vote, so everytime you mint a new block, you will participate to Nu democratic process.  You have also the option to manually configure votes via CLI, but is not reccomended.   
 
 After you [created your own datafeed](https://docs.nubits.com/hosting-a-data-feed/) or chose to an [existing datafeed](https://discuss.nubits.com/c/nushares/data-feeds), this tutorial will teach you how to [use data feeds from the daemon](https://docs.nubits.com/using-a-data-feed/#using-data-feeds-from-the-daemon).  To subscribe to Cybnate's data feed, for example , you can use the following command :
+
 `$  nud setdatafeed https://raw.githubusercontent.com/Cybnate/NuNet-datafeed/master/Cybnate-datafeed.json https://raw.githubusercontent.com/Cybnate/NuNet-datafeed/master/Cybnate-datafeed.txt ShTrp9wbgnhZudk4eYXtBtcMyeBziGzUpc`
 
 Double check if the feed is set correctly by running 
+
 `$ nud getdatafeed `
 
 Done!  You can now interact with your node using [rpc commands](https://docs.nubits.com/rpc-api/), and you can also manage the same NSR with a GUI client from your laptop at the same time, just remember to leave the GUI client locked, so it won't interfere with the raspberry.  
