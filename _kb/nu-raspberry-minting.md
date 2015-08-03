@@ -111,21 +111,21 @@ The  nu daemon will be listening to RPC messages on the port you specified. We h
 Now you will be able to access nud via CLI by typing `nud` followed by the rpc command you want to invoke.  
 The first thing you want to do is starting the daemon and let it download the blockchain. This operation can take  several hours, or days depending on connectivity.  
 
--`$  nud -daemon` #will start your nu daemon , startup time can take some time. 
+- `$  nud -daemon` #will start your nu daemon , startup time can take some time. 
 
 It is possible that you get an error related to perl and your locale settings.  If you get this  error, simply execute the following command that will write an export of your locale to the bash profile your locale language (in the example below being `en_US,` but could also be `en_GB`or something else). 
 - `$ echo export LC_ALL=en_US.UTF-8 >> ~/.profile`
 
 To check how the download of the blockchain is proceeding you can run 
 
--`$  nud getinfo`
+- `$  nud getinfo`
 
 and read the `blocks` number increasing, and compare it to the current `height` on [the block explorer](https://blockexplorer.nu/status).   Be patient while the blockchain is being downloaded.
 
 ## Configure your minting machine
 
 Once it finished downloading the blockchain, configure nud to automatically run on startup. 
-`$ sudo pico /etc/rc.local`
+ - `$ sudo pico /etc/rc.local`
 and add the following line immediately before the last line (`exit 0`) : `nud -daemon` . Save , exit pico and reboot the pi to test if the daemon started automatically. 
 
 ### Fund your minting machine. 
