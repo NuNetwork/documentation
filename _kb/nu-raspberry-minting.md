@@ -55,11 +55,12 @@ Enter `$ sudo raspi-config` in the terminal, then navigate to ssh, hit Enter and
 #### Accept passwordless SSH sessions 
 [Follow this tutorial](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md), or if you know what you are doing simply run 
 
-`$ cat ~/.ssh/id_rsa.pub | ssh pi@<IP-ADDRESS> 'cat >> .ssh/authorized_keys' `
+- `$ cat ~/.ssh/id_rsa.pub | ssh pi@<IP-ADDRESS> 'cat >> .ssh/authorized_keys' `
+
 #### Disable SSH password login 
 Edit `/etc/ssh/sshd_config`
 
-`$ sudo pico /etc/ssh/sshd_config`
+- `$ sudo pico /etc/ssh/sshd_config`
 
 and make sure these three parameters are set to `no`
 
@@ -137,7 +138,8 @@ You have three options to transfer NuShares to your raspberry :
 
 1. Send NSR to on of the raspberry receive address 
 2. Import an existing private key using `$ nud importprivkey <yourprivkey>`  and clean up bash history right after with `$ cat /dev/null > ~/.bash_history` to delete all traces
-3. Copy an existing walletS.dat file to the raspberry using scp . Execute this command from the machine where the existing wallet is hosted : `$ scp local/path/to/walletS.dat pi@<pi.ip.address>:/home/pi/.nu `
+3. Copy an existing walletS.dat file to the raspberry using scp . Execute this command from the machine where the existing wallet is hosted :  
+-`$ scp local/path/to/walletS.dat pi@<pi.ip.address>:/home/pi/.nu `
 
 Unless you go with the the third option and imported an encrypted wallet, make sure to encrypt your wallet with a [sufficiently complex passphrase](https://answers.uchicago.edu/16276) 
 - `$ nud encryptwallet <passphrase>` 
@@ -151,10 +153,10 @@ Now you can use data-feeds to configure your vote, so everytime you mint a new b
 
 After you [created your own datafeed](https://docs.nubits.com/hosting-a-data-feed/) or chose to an [existing datafeed](https://discuss.nubits.com/c/nushares/data-feeds), this tutorial will teach you how to [use data feeds from the daemon](https://docs.nubits.com/using-a-data-feed/#using-data-feeds-from-the-daemon).  To subscribe to Cybnate's data feed, for example , you can use the following command :
 
-`$  nud setdatafeed https://raw.githubusercontent.com/Cybnate/NuNet-datafeed/master/Cybnate-datafeed.json https://raw.githubusercontent.com/Cybnate/NuNet-datafeed/master/Cybnate-datafeed.txt ShTrp9wbgnhZudk4eYXtBtcMyeBziGzUpc`
+- `$  nud setdatafeed https://raw.githubusercontent.com/Cybnate/NuNet-datafeed/master/Cybnate-datafeed.json https://raw.githubusercontent.com/Cybnate/NuNet-datafeed/master/Cybnate-datafeed.txt ShTrp9wbgnhZudk4eYXtBtcMyeBziGzUpc`
 
 Double check if the feed is set correctly by running 
 
-`$ nud getdatafeed `
+- `$ nud getdatafeed `
 
 Done!  You can now interact with your node using [rpc commands](https://docs.nubits.com/rpc-api/), and you can also manage the same NSR with a GUI client from your laptop at the same time, just remember to leave the GUI client locked, so it won't interfere with the raspberry.  
