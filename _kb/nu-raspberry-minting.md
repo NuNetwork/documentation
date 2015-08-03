@@ -11,13 +11,13 @@ callouts:
 ## Introduction
 Holding NuShares comes with a responsibility : as a shareholder is in your best interest to participate to the network by submitting your votes in each mint you mint. 
 
-To maximise the impact of your votes and the reward that comes with staking shares your Nu client should be minting 24/7.  A cost/efficient solution is delegating the minting to a cheap Raspberry Pi connected to the internet : unlike VPS or cloud service you will keep control over your shares, and you can finally turn off your home computer.  Thanks to  [Nu data-feeds](https://docs.nubits.com/using-a-data-feed/), you can subscribe your raspberry to an external source and control your votes without need to access the pi all the time. 
+To maximise the impact of your votes and the reward that comes with staking shares your Nu client should be minting 24/7.  A cost-efficient solution is delegating the minting to a cheap Raspberry Pi connected to the internet : unlike VPS or cloud service you will keep control over your shares, and you can finally turn off your home computer.  Thanks to  [Nu data-feeds](https://docs.nubits.com/using-a-data-feed/), you can subscribe your raspberry to an external source and control your votes without need to access the pi all the time. 
 
 The Raspberry Pi is a cheap (~40$) and efficient device with enough computational power to let you mint.   
 
 In this minimal tutorial we will see how to setup a minting machine, not a [full node](https://bitcoin.org/en/full-node#other-linux-distributions). For security reasons full nodes and minting nodes should be kept separated. 
 
-NOTE : in this tutorial we use pico as text editor, but feel free to use any other editor (nano,vi,etc). 
+NOTE : in this tutorial we use pico as text editor, but feel free to use any other editor (nano, vi, etc ...). 
 
 ## What do you need
    - A Raspberry Pi [2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/)  ;
@@ -28,7 +28,7 @@ NOTE : in this tutorial we use pico as text editor, but feel free to use any oth
 
 ## Prepare the Raspberry Pi
 #### Download and install NOOBS
-An easy operating system installer which contains Raspbian following the [the official tutorial](https://www.raspberrypi.org/help/noobs-setup/);
+Follow the [the official tutorial](https://www.raspberrypi.org/help/noobs-setup/); to install an easy operating system installer which contains Raspbian on the raspberry.
 
 #### Update all existing software on the Pi 
  - `$ sudo apt-get update`
@@ -128,9 +128,17 @@ and read the `blocks` number increasing, and compare it to the current `height` 
 Once it finished downloading the blockchain, configure nud to automatically run on startup. 
  - `$ sudo pico /etc/rc.local`
 and add the following line immediately before the last line (`exit 0`) : 
-`nud -daemon`
+{% highlight text %}
+.
+.
+.
+nud -daemon
+exit 0
+{% endhighlight %}
 
-Save , exit pico and reboot the pi to test if the daemon started automatically. 
+Save, exit pico and reboot the pi to test if the daemon started automatically. 
+
+- `$  sudo reboot`
 
 ### Fund your minting machine. 
 
