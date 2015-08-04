@@ -1,6 +1,6 @@
 ---
 title: Accept NuBits
-nav_heading: Tools
+nav_heading: NuBits
 filename: accept-nubits.md
 permalink: /accept-nubits/
 layout: kb
