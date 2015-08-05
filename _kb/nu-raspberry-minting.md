@@ -161,7 +161,7 @@ To unlock your wallet, type the command below, press enter,  then type your pass
 
 Now you can use data-feeds to configure your vote, so everytime you mint a new block, you will participate to Nu democratic process.  You have also the option to manually configure votes via CLI, but is not reccomended.   
 
-After you [created your own datafeed](https://docs.nubits.com/hosting-a-data-feed/) or chose to an [existing datafeed](https://discuss.nubits.com/c/nushares/data-feeds), this tutorial will teach you how to [use data feeds from the daemon](https://docs.nubits.com/using-a-data-feed/#using-data-feeds-from-the-daemon).  For example, to subscribe to[Cybnate's data feed](https://discuss.nubits.com/t/cybnates-datafeed-beta/1310) you can use the following command :
+After you [created your own datafeed](https://docs.nubits.com/hosting-a-data-feed/) or chose to an [existing datafeed](https://discuss.nubits.com/c/nushares/data-feeds), this tutorial will teach you how to [use data feeds from the daemon](https://docs.nubits.com/using-a-data-feed/#using-data-feeds-from-the-daemon).  For example, to subscribe to [Cybnate's data feed](https://discuss.nubits.com/t/cybnates-datafeed-beta/1310) you can use the following command :
 
 - `$  nud setdatafeed https://raw.githubusercontent.com/Cybnate/NuNet-datafeed/master/Cybnate-datafeed.json https://raw.githubusercontent.com/Cybnate/NuNet-datafeed/master/Cybnate-datafeed.txt ShTrp9wbgnhZudk4eYXtBtcMyeBziGzUpc`
 
