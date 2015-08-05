@@ -121,7 +121,7 @@ To check how the download of the blockchain is proceeding you can run
 
 - `$  nud getinfo`
 
-and read the `blocks` number increasing, and compare it to the current `height` on [the block explorer](https://blockexplorer.nu/status).   Be patient while the blockchain is being downloaded.
+and read the `blocks` number growing while comparing it to the current `height` on [the block explorer](https://blockexplorer.nu/status).   Be patient while the blockchain is being downloaded.
 
 ## Configure your minting machine
 
