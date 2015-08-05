@@ -125,7 +125,7 @@ and read the `blocks` number growing while comparing it to the current `height` 
 
 ## Configure your minting machine
 
-Once it finished downloading the blockchain, configure nud to automatically run on startup. 
+You can configure nud to automatically run on startup. 
  - `$ sudo pico /etc/rc.local`
 and add the following line immediately before the last line (`exit 0`) : 
 {% highlight text %}
