@@ -15,7 +15,7 @@ To maximise the impact of your votes and the reward that comes with staking shar
 
 The Raspberry Pi is a cheap (~40$) and efficient device with enough computational power to let you mint.   
 
-In this minimal tutorial we will see how to setup a minting machine, not a [full node](https://bitcoin.org/en/full-node#other-linux-distributions). For security reasons full nodes and minting nodes should be kept separated. 
+In this minimal tutorial we will see how to setup a minting machine which is different from a [full node](https://bitcoin.org/en/full-node#other-linux-distributions). For security reasons full nodes and minting nodes should be kept separated. 
 
 NOTE : in this tutorial we use pico as text editor, but feel free to use any other editor (nano, vi, etc ...). 
 
