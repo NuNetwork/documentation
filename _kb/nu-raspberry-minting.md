@@ -28,7 +28,7 @@ NOTE : in this tutorial we use pico as text editor, but feel free to use any oth
 
 ## Prepare the Raspberry Pi
 #### Download and install NOOBS
-Follow the [the official tutorial](https://www.raspberrypi.org/help/noobs-setup/); to install an easy operating system installer which contains Raspbian on the raspberry.
+Follow the [the official tutorial](https://www.raspberrypi.org/help/noobs-setup/); to install an easy operating system installer which contains Raspbian.
 
 #### Update all existing software on the Pi 
  - `$ sudo apt-get update`
