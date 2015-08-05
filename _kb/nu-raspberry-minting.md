@@ -21,7 +21,7 @@ NOTE : in the examples of this tutorial we used `pico` as text editor, but feel 
 
 ## What you need
    - A Raspberry Pi [2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). The  1B and 1B+ can also be used to mint, although R-pi 2 is more efficient, especially when minting with a large number of shares. 
-   - A fresh [SD card](https://www.raspberrypi.org/documentation/installation/sd-cards.md)  ;
+   - A fresh [SD card](https://www.raspberrypi.org/documentation/installation/sd-cards.md), ideally 8+ GB, class 10 speed  ;
    - An Ethernet cable or a WiFi dongle ;
    - Some [NuShares](https://nubits.com/nushares/introduction) (minimum 10k NSR are required for minting) ;
    - Basic [unix CLI skills](http://linuxcommand.org/) ;
