@@ -11,7 +11,7 @@ callouts:
 ## Introduction
 Holding NuShares comes with a responsibility : it is in your best interest to participate to the network by submitting your votes in each block you mint. 
 
-To maximise the impact of your votes and the reward that comes with staking shares your Nu client should be minting 24/7.  A cost-efficient solution is delegating the minting to a cheap Raspberry Pi connected to the internet : unlike VPS or cloud service you will keep control over your shares, and you can finally turn off your home computer.  Thanks to  [Nu data-feeds](https://docs.nubits.com/using-a-data-feed/), you can subscribe your raspberry to an external source and control your votes without need to access the pi all the time. 
+To maximise the impact of your votes and the reward that comes with staking shares, your Nu client should be minting 24/7.  A cost-efficient solution is delegating the minting to a cheap Raspberry Pi connected to the internet : unlike VPS or cloud service you will keep control over your shares, and you can finally turn off your home computer.  Thanks to  [Nu data-feeds](https://docs.nubits.com/using-a-data-feed/), you can subscribe your raspberry to an external source and control your votes without need to access the pi all the time. 
 
 The Raspberry Pi is a cheap (~40$) and efficient device with enough computational power to let you mint.   
 
