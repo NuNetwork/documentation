@@ -150,7 +150,7 @@ You have three options to transfer NuShares to your raspberry :
 
 1. Send NSR to one of the raspberry receive address 
 2. Import an existing private key using `$ nud importprivkey <yourprivkey>`  and clean up bash history right after with `$ cat /dev/null > ~/.bash_history` to delete all traces
-3. Copy an existing walletS.dat file to the raspberry using scp . Execute this command from the machine where the existing wallet is hosted :  
+3. Copy an existing walletS.dat file to the raspberry using `scp` . Execute this command from the machine where the existing wallet is hosted :  
 `$ scp local/path/to/walletS.dat pi@<pi.ip.address>:/home/pi/.nu `
 
 Unless you go with the the third option and imported an encrypted wallet, make sure to encrypt your wallet with a [sufficiently complex passphrase](https://answers.uchicago.edu/16276) 
