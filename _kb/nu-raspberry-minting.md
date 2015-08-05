@@ -53,7 +53,7 @@ Following one of the many tutorials you can find online, for example [this](http
 #### Enable SSH : 
 Enter `$ sudo raspi-config` in the terminal, then navigate to ssh, hit Enter and select `Enable or disable ssh server`.
 #### Accept passwordless SSH sessions 
-[Follow this tutorial](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md), or if you know what you are doing simply run 
+[Follow this tutorial](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md), or if you know what you are doing simply run (on your machines) 
 
 - `$ cat ~/.ssh/id_rsa.pub | ssh pi@<IP-ADDRESS> 'cat >> .ssh/authorized_keys' `
 
