@@ -114,7 +114,7 @@ The first thing you want to do is starting the daemon and let it download the bl
 
 - `$  nud -daemon` #will start your nu daemon , startup can take some minutes. 
 
-It is possible that you get an error related to perl and your locale settings.  If you get this  error, simply execute the following command that will write an export of your locale to the bash profile your locale language (in the example below being `en_US,` but could also be `en_GB`or something else). 
+It is possible that you get an error related to perl and your `locale` settings.  If you get this  error, simply execute the following command that will write an export of your locale to the bash profile your `locale` setting (in the example below being `en_US,` but could also be `en_GB`or something else). 
 - `$ echo export LC_ALL=en_US.UTF-8 >> ~/.profile`
 
 To check how the download of the blockchain is proceeding you can run 
