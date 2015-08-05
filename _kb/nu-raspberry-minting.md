@@ -105,6 +105,9 @@ rpcpassword=<chooseAPassword>
 port=7890
 {% endhighlight %}
 
+After editing the config, make it read only : 
+ - `$ sudo chmod 400 ~/.nu/nu.conf`
+ 
 The  nu daemon will be listening to RPC messages on the port you specified. We highly suggest *not* to forward that port and leave the pi protected behing the NAT, for local usage only.  
 
 ## Start Nud and download the blockchain
