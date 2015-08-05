@@ -109,7 +109,7 @@ The  nu daemon will be listening to RPC messages on the port you specified. We h
 
 ## Start Nud and download the blockchain
 
-Now you will be able to access nud via CLI by typing `nud` followed by the rpc command you want to invoke.  
+Now you will be able to access nud via CLI by typing `nud` followed by the [rpc command](https://docs.nubits.com/rpc-api/) you want to invoke.  
 The first thing you want to do is starting the daemon and let it download the blockchain. This operation can take  several hours, or days depending on connectivity.  
 
 - `$  nud -daemon` #will start your nu daemon , startup time can take minutes. 
