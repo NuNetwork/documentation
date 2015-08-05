@@ -17,7 +17,7 @@ The Raspberry Pi is a cheap (~40$) and efficient device with enough computationa
 
 In this minimal tutorial we will see how to setup a minting machine which is different from a [full node](https://bitcoin.org/en/full-node#other-linux-distributions). For security reasons full nodes and minting nodes should be kept separated. 
 
-NOTE : in this tutorial we use pico as text editor, but feel free to use any other editor (nano, vi, etc ...). 
+NOTE : in the examples of this tutorial we used `pico` as text editor, but feel free to use any other editor (nano, vi, etc ...) . 
 
 ## What do you need
    - A Raspberry Pi [2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/)  ;
