@@ -143,6 +143,7 @@ Save, exit pico and reboot the pi with
 and test if the daemon started automatically : 
 
 - `$  nud getinfo`
+- 
 ### Fund your minting machine. 
 
 You have three options to transfer NuShares to your raspberry : 
