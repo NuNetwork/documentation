@@ -22,9 +22,9 @@ NOTE : in the examples of this tutorial we used `pico` as text editor, but feel 
 ## What you need
    - A Raspberry Pi [2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/)  ;
    - A fresh [SD card](https://www.raspberrypi.org/documentation/installation/sd-cards.md)  ;
-   - An Ethernet cable or wifi dongle ;
+   - An Ethernet cable or a WiFi dongle ;
    - Some [NuShares](https://nubits.com/nushares/introduction) (minimum 10k NSR are required for minting) ;
-   - Basic CLI linux skills ;
+   - Basic [unix CLI skills](http://linuxcommand.org/) ;
 
 ## Prepare the Raspberry Pi
 #### Download and install NOOBS
