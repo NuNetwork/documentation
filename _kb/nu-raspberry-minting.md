@@ -159,9 +159,9 @@ Unless you go with the the third option and imported an encrypted wallet, make s
 After you have a working node encrypted and funded with NuShares,  you need to **unlock the wallet** using your passphrase to allow minting. 
 To unlock your wallet, type the command below, press enter,  then type your passphrase,  press enter again and finally Control+D:
 
-{% highlight text %}
+```
 $ nud walletpassphrase `cat` 999999999 true
-{% endhighlight %}
+```
 
 
 ### Configure votes
