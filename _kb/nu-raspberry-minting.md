@@ -136,10 +136,13 @@ nud -daemon
 exit 0
 {% endhighlight %}
 
-Save, exit pico and reboot the pi to test if the daemon started automatically. 
+Save, exit pico and reboot the pi with
 
 - `$  sudo reboot`
 
+and test if the daemon started automatically : 
+
+- `$  nud getinfo`
 ### Fund your minting machine. 
 
 You have three options to transfer NuShares to your raspberry : 
