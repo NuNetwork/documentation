@@ -20,7 +20,7 @@ In this minimal tutorial we will see how to setup a minting machine which is dif
 NOTE : in the examples of this tutorial we used `pico` as text editor, but feel free to use any other editor (nano, vi, etc ...) . 
 
 ## What you need
-   - A Raspberry Pi [2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/)  ;
+   - A Raspberry Pi [2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). The  1B and 1B+ can also be used to mint, although R-pi 2 is more efficient, especially when minting with a large number of shares. 
    - A fresh [SD card](https://www.raspberrypi.org/documentation/installation/sd-cards.md)  ;
    - An Ethernet cable or a WiFi dongle ;
    - Some [NuShares](https://nubits.com/nushares/introduction) (minimum 10k NSR are required for minting) ;
