@@ -153,7 +153,7 @@ You have three options to transfer NuShares to your raspberry :
 3. Copy an existing walletS.dat file to the raspberry using `scp` . Execute this command from the machine where the existing wallet is hosted :  
 `$ scp local/path/to/walletS.dat pi@<pi.ip.address>:/home/pi/.nu `
 
-Unless you go with the the third option and imported an encrypted wallet, make sure to *encrypt your wallet* with a [sufficiently complex passphrase](https://answers.uchicago.edu/16276) 
+Unless you go with the the third option and imported an encrypted wallet, make sure to **encrypt your wallet** with a [sufficiently complex passphrase](https://answers.uchicago.edu/16276) 
 - `$ nud encryptwallet <passphrase>` 
 
 After you have a working node encrypted and funded with NuShares,  you need to **unlock the wallet** using your passphrase to allow minting. 
