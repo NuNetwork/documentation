@@ -165,7 +165,7 @@ To unlock your wallet, type the command below, press enter,  then type your pass
 ```
 $ nud walletpassphrase `cat` 999999999 true
 ```
-
+Alternatively, you can use [this bash script](https://gist.github.com/desrever-nu/6e18d037251edeaeb4d6) so you don't have to remember the sequence above everytime. 
 
 ### Configure votes
 
