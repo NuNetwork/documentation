@@ -112,7 +112,7 @@ The  nu daemon will be listening to RPC messages on the port you specified. We h
 Now you will be able to access nud via CLI by typing `nud` followed by the [rpc command](https://docs.nubits.com/rpc-api/) you want to invoke.  
 The first thing you want to do is starting the daemon and let it download the blockchain. This operation can take  several hours - or even days - depending on connectivity.  
 
-- `$  nud -daemon` #will start your nu daemon , startup time can take minutes. 
+- `$  nud -daemon` #will start your nu daemon , startup can take some minutes. 
 
 It is possible that you get an error related to perl and your locale settings.  If you get this  error, simply execute the following command that will write an export of your locale to the bash profile your locale language (in the example below being `en_US,` but could also be `en_GB`or something else). 
 - `$ echo export LC_ALL=en_US.UTF-8 >> ~/.profile`
