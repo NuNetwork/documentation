@@ -1,5 +1,5 @@
 ---
-title: Mminting on a Raspberry Pi
+title: Minting on a Raspberry Pi
 nav_heading: Technical Resources
 filename: nu-raspberry-minting.md
 permalink: /nu-raspberry-minting/
