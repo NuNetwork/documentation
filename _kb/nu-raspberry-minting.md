@@ -35,18 +35,6 @@ Follow the [the official tutorial](https://www.raspberrypi.org/help/noobs-setup/
  - `$ sudo apt-get update`
  - `$ sudo apt-get upgrade`
 
-#### Install dependencies required by Nu
- - `$ sudo apt-get install checkinstall subversion git git-core build-essential`
- - `$ sudo apt-get install libssl-dev libdb++-dev libminiupnpc-dev`
- - `$ sudo apt-get install libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libcurl4-openssl-dev`
-
-#### Link libminiupnpc 
-
- - `$ sudo ln -s /usr/lib/libminiupnpc.so.5 /usr/lib/libminiupnpc.so.10`
-
-###  Optional reccomendations 
-We suggest to follow the optional steps below for additional security : 
-
 ####  Setup static ip 
 
 Following one of the many tutorials you can find online, for example [this](http://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address);
@@ -73,7 +61,17 @@ UsePAM no
 
 Restart SSH with `$ sudo /etc/init.d/ssh restart`
 
-## Download and compile Nu
+#### Install dependencies required by Nu
+ - `$ sudo apt-get install checkinstall subversion git git-core build-essential`
+ - `$ sudo apt-get install libssl-dev libdb++-dev libminiupnpc-dev`
+ - `$ sudo apt-get install libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libcurl4-openssl-dev`
+ - 
+#### Link libminiupnpc 
+
+ - `$ sudo ln -s /usr/lib/libminiupnpc.so.5 /usr/lib/libminiupnpc.so.10`
+
+## Download and compile Nu from sources
+The build process can take long. If you want to skip it and get precompiled binaries instead, skip this section and go to the next.
 
  - `$ cd ~` #Go to pi user's home directory
  - `$ git clone https://bitbucket.org/JordanLeePeershares/nubit.git`   #clone NuBits repository locally
@@ -87,6 +85,13 @@ Restart SSH with `$ sudo /etc/init.d/ssh restart`
  - `$ sudo rm -r ~/nubit/` #Remove directory with sources (optional)
  - `$ sudo swapoff /swapfile`#clean up the previously initiated swap
  - `$ sudo rm /swapfile`
+
+## Download precompiled binaries 
+
+You can download unofficial precompiled build maintaned by the Nu community. Read the disclaimer on [this repository](https://github.com/desrever-nu/nu-raspberry-unofficial) and download nud : 
+- `$ sudo wget https://github.com/desrever-nu/nu-raspberry-unofficial/raw/master/latest/nud `
+- `$ sudo mv nud /usr/bin/nud && sudo chmod a+x /usr/bin/nud` #move nud and make it executable
+
 
 ## Configure Nud
 
