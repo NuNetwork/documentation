@@ -23,7 +23,18 @@ Managed pools are maintained by a person or persons. Liqudity funds are sent to 
 
 ### Automated pool (ALP)
 
-Automated pools (also known as "trustless-liquidity pools") are a Nu community innovation pioneered by [Creon](https://discuss.nubits.com/users/creon) of the NuBits forum. The first implementation of an automated pool was [announced on March 5th 2015](https://discuss.nubits.com/t/trust-less-liquidity-pool/1686). The design of the automated pool is intended to significantly reduce the counter-party risk involved to pool contriubters by keeping funds in their control. This first implementation uses a client/server architecture. A pool operator runs the server software that clients can connect to. The job of the server is to verify that users have orders place on NuBits supported exchanges that help support the NuBits peg. The client software automatically places these orders and reports them back to the server. Clients compete with each other to provide liquidity, and earn interest paid out by the server for the support they provide. Anyone can join or leave an automated pool at their own discretion. 
+Automated pools (also known as "trustless-liquidity pools") are a Nu community innovation pioneered by [Creon](https://discuss.nubits.com/users/creon) of the NuBits forum. 
+
+The first implementation of an automated pool was [announced on March 5th 2015](https://discuss.nubits.com/t/trust-less-liquidity-pool/1686). The design of the automated pool is intended to significantly reduce the counter-party risk involved to pool contriubters by keeping funds in their control. This first implementation uses a client/server architecture. A pool operator runs the server software that clients can connect to. The job of the server is to verify that users have orders place on NuBits supported exchanges that help support the NuBits peg. The client software automatically places these orders and reports them back to the server. Clients compete with each other to provide liquidity, and earn interest paid out by the server for the support they provide. Anyone can join or leave an automated pool at their own discretion. 
+
+#### Source code
+
+The code for the ALP is open source, and so implementations can vary across pools.
+
+Two examples of automated pool software currently in use can be found below.
+
+ * [nupool.net](http://nupool.net) source code is available [HERE](https://github.com/inuitwallet/nu-pool)
+ * [nupond.net](http://nupond.net) source code is available [HERE](https://github.com/Nagalim/nu-pool)
 
 ## How do I dive in?
 
