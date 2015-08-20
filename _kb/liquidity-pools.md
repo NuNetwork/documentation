@@ -1,6 +1,6 @@
 ---
 title: Liquidity Pools
-nav_heading: Liquidity Pools
+nav_heading: NuBits
 filename: liquidity-pools.md
 permalink: /liquidity-pools/
 layout: kb
