@@ -39,3 +39,7 @@ Two examples of automated pool software currently in use can be found below.
 ## How do I dive in?
 
 Various pools are listed [HERE](https://nubits.com/liquidity-pools) on the NuBits website.
+
+## Need some help, or have more questions?
+
+Check out the liquidity pool discussions [HERE](https://discuss.nubits.com/c/liquidity-pools) on the official NuBits forum.
