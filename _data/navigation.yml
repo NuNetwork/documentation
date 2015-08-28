@@ -4,9 +4,9 @@ en:
       url: /
     - title: History
       url: /history/
-    - title: Community Forums
+    - title: Forum
       url: https://discuss.nubits.com/
-    - title: Community Chats
+    - title: Chat
       url: https://gitter.im/NuNetwork
     - title: Block Explorer
       url: https://blockexplorer.nu/
