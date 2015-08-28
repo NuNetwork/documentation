@@ -6,6 +6,8 @@ en:
       url: /history/
     - title: Community Forums
       url: https://discuss.nubits.com/
+    - title: Community Chats
+      url: https://gitter.im/NuNetwork
     - title: Block Explorer
       url: https://blockexplorer.nu/
   doc-sidebar:
