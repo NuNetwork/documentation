@@ -25,6 +25,10 @@ The `--unit=<unit>` flag is provied as a command line convenience. For example t
 
 ## Nu Network Ports
 
+Example of pointing Peatio exchange to use NuBits from the daemon:
+
+`rpc: http://nuEx:123exch@127.0.0.1:14002`
+
 ### protocol ports
 
 Production Network | Test Network
@@ -47,11 +51,7 @@ Production Network | Test Network
 ----------|----------
 9902 | 9904
 
-Example of pointing Peatio exchange to use NuBits from the daemon:
-
-`rpc: http://nuEx:123exch@127.0.0.1:14002`
-
-## Methods
+## Commands
 
 ### addmultisigaddress
 
