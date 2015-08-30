@@ -328,9 +328,14 @@ Fills the keypool, requires portfolio passphrase to be set.
 
 ### liquidityinfo
 
-`liquidityinfo <currency> <buyamount> <sellamount> <grantaddress>`
+`liquidityinfo <currency> <buyamount> <sellamount> <grantaddress> <identifier>`
 
-Broadcast liquidity information.
+Broadcast liquidity information. 
+The identifier is used to aggregate liquidity and must be submitted in the format : 
+
+*tier:pair:exchange:botsessionid*
+
+Example of a valid identifier : *2:BTCNBT:ccedk:nubotsession3*
 
 ### listaccounts
 
