@@ -198,6 +198,14 @@ Returns a recent hashes per second performance measurement while generating.
 
 Returns an object containing various state info.
 
+
+### getliquiditydetails
+
+`getliquiditydetails <currency>`
+
+Return the breakdown detail of liquidityinfo
+Currency is the single letter of the currency (currently only 'B' for "NuBits").
+
 ### getliquidityinfo
 
 `getliquidityinfo <currency>`
