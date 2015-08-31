@@ -17,11 +17,15 @@ In the same way that anyone can contribute hashing power to help maintain the bi
 
 ## Types of liquidity pools
 
-### Managed pool (MLP)
+### Managed liquidity pool (MLP)
 
 Managed pools are maintained by a person or persons. Liqudity funds are sent to someone who will use them to maintain the peg on behalf of the user. The first example of a managed liquity pool was created by [Henry](https://discuss.nubits.com/users/henry) of the NuBits forum on [Feb 27th, 2015](https://discuss.nubits.com/t/passed-motion-to-create-the-first-liquidity-pool-the-nu-lagoon/1616).
 
-### Automated pool (ALP)
+Examples:
+
+ * [nulagoon.com](http://nulagoon.com/)
+
+### Automated liquidity pool (ALP)
 
 Automated pools (also known as "trustless-liquidity pools") are a Nu community innovation pioneered by [Creon](https://discuss.nubits.com/users/creon) of the NuBits forum.  
 
