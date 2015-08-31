@@ -14,11 +14,11 @@ A motion was put forth by Jordan Lee on [Nov 12th 2014](https://discuss.nubits.c
 
 ### Tier 1
 
-This liquidity is immediately available, being on the order book. It is used by NuBot to maitain the 1$ peg on exchanges.
+This liquidity is immediately available, being on the order book at the best price (1$ +- fees and spread). It is used by NuBot to maitain the 1$ peg on exchanges.
 
 ### Tier 2
 
-This liquidity sits on exchanges but is not placed on order books and can be promoted to the order book (Tier 1) in a couple seconds.
+This liquidity sits on exchanges but is not usually placed on order books or placed on the orderbook at premium prices. It can be promoted to the order book (Tier 1) in a couple seconds.
 
 ### Tier 3
 
