@@ -9,7 +9,7 @@ callouts:
   - shortname: use-ports-application
     type: warning
     title: For applications use network ports
-    body: Network ports should always be used in cases of interfacing your application with Nu (such as an exchange). 
+    body: Network ports should always be used in cases of connecting your application with Nu (such as an exchange). 
 ---
 
 Many commands can be used for multiple units (Such as NuBits or NuShares). Some commands will force you to specify the unit code (B or S), but others will not. In the cases where you aren't required to provide the code, commands will default to NuShares. If you would like to use other units it can be done a couple different ways. 
