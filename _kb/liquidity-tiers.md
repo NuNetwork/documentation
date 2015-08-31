@@ -18,7 +18,7 @@ This liquidity is immediately available, being on the order book at the best pri
 
 ### Tier 2
 
-This liquidity sits on exchanges but is not usually placed on order books or placed on the orderbook at premium prices. It can be promoted to the order book (Tier 1) in a couple seconds.
+This liquidity sits on exchanges but is not usually placed on order books, or is placed on the orderbook at premium prices. It can be promoted to the order book (Tier 1) in a couple seconds.
 
 ### Tier 3
 
