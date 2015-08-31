@@ -6,28 +6,52 @@ permalink: /rpc-api/
 layout: kb
 lang: en
 callouts:
+  - shortname: use-ports-application
+    type: warning
+    title: For applications use network ports
+    body: Network ports should always be used in cases of interfacing your application with Nu (such as an exchange). 
 ---
+
+Many commands can be used for multiple units (Such as NuBits or NuShares). Some commands will force you to specify the unit code (B or S), but others will not. In the cases where you aren't required to provide the code, commands will default to NuShares. If you would like to use other units it can be done a couple different ways. 
+
+* Pointing to the units network port
+* Preceeding commands with the `--unit=<unit>` parameter
+
+{% include callout-block.html name="use-ports-application" %}
+
+## Command line
+
+The `--unit=<unit>` flag is provied as a command line convenience. For example to get a new NuBits address from the daemon you would run `./nud --unit=B getnewaddress` as `./nud getnewaddress` would return a NuShares address by default.
 
 ## Nu Network Ports
 
-{% highlight bash %}
-PROTOCOL PORT 7890
-// Base RPC port used by the NuShares RPC server.
-// Other unit RPC servers listen on RPC_PORT+1, RPC_PORT+2, etc.
-RPC PORT 14001
-RPC PORT 14002     // NuBits
+Example of pointing Peatio exchange to use NuBits from the daemon:
 
-// Same rules apply to testnet, but on different ports
-TESTNET PORT 7895
-TESTNET RPC PORT 15001     // NuShares
-TESTNET RPC PORT 15002     // NuBits
+`rpc: http://nuEx:123exch@127.0.0.1:14002`
 
-// Peercoin ports used when communicating with the Peercoin wallet for dividend distributions
-PEERCOIN RPC PORT 9902
-PEERCOIN TESTNET RPC PORT 9904
-{% endhighlight %}
+### protocol ports
 
-## Methods
+Production Network | Test Network
+----------|----------
+7890 | 7895
+
+### RPC Ports
+
+Unit | Production Network | Test Network
+----------|----------|----------
+NuShares | 14001 | 15001
+NuBits | 14002 | 15002
+
+### Other Networks RPC
+
+#### Peercoin
+Peercoin ports used when communicating with the Peercoin wallet for dividend distributions
+
+Production Network | Test Network
+----------|----------
+9902 | 9904
+
+## Commands
 
 ### addmultisigaddress
 
