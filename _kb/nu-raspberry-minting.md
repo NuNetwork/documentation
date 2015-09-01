@@ -70,7 +70,7 @@ Restart SSH with `$ sudo /etc/init.d/ssh restart`
 
  - `$ sudo ln -s /usr/lib/libminiupnpc.so.5 /usr/lib/libminiupnpc.so.10`
 
-## Download and compile Nu from sources
+## Compile Nu from sources
 The build process can take long. If you want to skip it and get precompiled binaries instead, skip this section and go to the next.
 
  - `$ cd ~` #Go to pi user's home directory
