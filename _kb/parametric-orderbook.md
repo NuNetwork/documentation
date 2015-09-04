@@ -9,7 +9,7 @@ callouts:
 ---
 ## Introduction
 
-Before NuBot v0.3.1, the bot puts all the available liquidity in a vertical wall, according to the initial design outlined in the whitepaper. Starting from NuBot v0.3.2 and following the evolution of liquidity operation (read community discussions  [one](https://discuss.nubits.com/t/finalized-evolution-of-liquidity-operations/618) - [two](https://discuss.nubits.com/t/nubits-trading-walls-design-features-and-the-improvements-chinese/1066) - [three](https://discuss.nubits.com/t/closed-motion-to-cease-shareholder-funded-nbt-ppc-operations/702) ) the bot implements the [multi-tier liquidity model](https://docs.nubits.com/nubits-liquidity/). 
+Before NuBot v0.3.1, the bot puts all the available liquidity in a large single order, according to the initial design outlined in the whitepaper. Starting from NuBot v0.3.2 and following the evolution of liquidity operation (read community discussions  [one](https://discuss.nubits.com/t/finalized-evolution-of-liquidity-operations/618) - [two](https://discuss.nubits.com/t/nubits-trading-walls-design-features-and-the-improvements-chinese/1066) - [three](https://discuss.nubits.com/t/closed-motion-to-cease-shareholder-funded-nbt-ppc-operations/702) ) the bot implements the [multi-tier liquidity model](https://docs.nubits.com/nubits-liquidity/). 
 
 In this model, NuBot places the vertical walls at the best price (Tier1) along with a tail of orders distributed at premium prices and odeled by bot operators : the parametric order book.  
 
