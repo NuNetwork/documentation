@@ -14,7 +14,7 @@ A motion was put forth by Jordan Lee on [Nov 12th 2014](https://discuss.nubits.c
 
 ### Tier 1
 
-This liquidity is immediately available, being on the order book at the best price (1$ +- fees and spread). It is used by (NuBot)[https://bitbucket.org/JordanLeePeershares/nubottrading] to maitain the 1$ peg on exchanges.
+This liquidity is immediately available, being on the order book at the best price (1$ +- fees and spread). It is used by [NuBot](https://bitbucket.org/JordanLeePeershares/nubottrading) to maitain the 1$ peg on exchanges.
 
 ### Tier 2
 
