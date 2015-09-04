@@ -1,5 +1,5 @@
 ---
-title: NuBot parametric Orderbook
+title: NuBot Parametric Orderbook
 nav_heading: NuBot
 filename: parametric-orderbook.md
 permalink: /parametric-orderbook/
