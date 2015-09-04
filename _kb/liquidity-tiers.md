@@ -14,7 +14,7 @@ A motion was put forth by Jordan Lee on [Nov 12th 2014](https://discuss.nubits.c
 
 ### Tier 1
 
-This liquidity is immediately available, being on the order book at the best price (1$ +- fees and spread). It is used by NuBot to maitain the 1$ peg on exchanges.
+This liquidity is immediately available, being on the order book at the best price (1$ +- fees and spread). It is used by (NuBot)[https://bitbucket.org/JordanLeePeershares/nubottrading] to maitain the 1$ peg on exchanges.
 
 ### Tier 2
 
@@ -34,4 +34,4 @@ This liquidity presents itself in a decentralized manner from the manipulation o
 
 ### Tier 6
 
-This liquidity takes the form of custodial grants for sell side and currency burning for buy side (presuming a currency burning motion is passed and implemented as appears likely). It takes a week or more to bring to market but has zero maintenance costs. 
+This liquidity takes the form of custodial grants for sell side and currency burning for buy side (presuming a currency burning motion is passed and implemented). It takes a week or more to bring to market but has zero maintenance costs. 
