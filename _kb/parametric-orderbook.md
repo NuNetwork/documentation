@@ -9,7 +9,7 @@ callouts:
 ---
 ## Introduction
 
-Before NuBot v0.3.1, the used to put all the available liquidity in a large single order, according to the initial design outlined in the whitepaper. Starting from NuBot v0.3.2 and following the evolution of liquidity operation (read community discussions  [one](https://discuss.nubits.com/t/finalized-evolution-of-liquidity-operations/618) - [two](https://discuss.nubits.com/t/nubits-trading-walls-design-features-and-the-improvements-chinese/1066) - [three](https://discuss.nubits.com/t/closed-motion-to-cease-shareholder-funded-nbt-ppc-operations/702) ) the bot implements the [multi-tier liquidity model](https://docs.nubits.com/nubits-liquidity/). 
+Before NuBot v0.3.1, we used to put all the available liquidity in a large single order, according to the initial design outlined in the whitepaper. Starting from NuBot v0.3.2 and following the evolution of liquidity operation (read community discussions  [one](https://discuss.nubits.com/t/finalized-evolution-of-liquidity-operations/618) - [two](https://discuss.nubits.com/t/nubits-trading-walls-design-features-and-the-improvements-chinese/1066) - [three](https://discuss.nubits.com/t/closed-motion-to-cease-shareholder-funded-nbt-ppc-operations/702) ) the bot implements the [multi-tier liquidity model](https://docs.nubits.com/nubits-liquidity/). 
 
 In this model, NuBot places the vertical walls at the best price (Tier1) along with a tail of orders distributed at premium prices and controlled by bot operators : the parametric order book.  
 
@@ -24,7 +24,7 @@ The model is simple and at the same time flexible enough for making it fit in di
 
  - The model can be configured by the custodian using the configuration file or directly in the UI.
  - The model is dynamic, in the sense that its parameters can be manipulated at runtime.
- - NuBot will implement capabilities to autonomous adapt parameters to best fit market conditions.
+ - NuBot will implement capabilities to autonomously adapt parameters to best fit market conditions.
  - The buy and sell liquidity can be modelled separately
 
 If you launch NuBot with the GUI, you will be able to change parameters and see a real time preview of how changing parameters affects the sahpe of your orderbook.
