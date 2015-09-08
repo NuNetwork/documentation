@@ -10,8 +10,7 @@ If you want to contribute to the documentation feel free to fork this repository
 
 Adding a new page is as easy as creating a new file under the *_kb* directory and filling it with proper metadata at the top of the file :
 
-
-{% highlight text %}
+```
 ---
 title: <Explanatory title>
 nav_heading: <the category of navbar - see _data/navigation.yml>
@@ -21,7 +20,7 @@ layout: kb
 lang: en
 callouts:
 ---
-{% endhighlight %}
+```
 
 
 
