@@ -21,6 +21,7 @@ lang: en
 callouts:
 ---
 ```
+You can see an example of the raw text for the front page of docs.nubits.com [here](https://raw.githubusercontent.com/NuNetwork/documentation/gh-pages/_kb/getting-started-with-nu.md)
 
 
 
