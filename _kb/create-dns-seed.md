@@ -11,7 +11,7 @@ callouts:
     title: Do not use beta software in production
     body: This software is in beta-status and we advise you to use it with caution.
 ---
-##Introduction 
+## Introduction 
 This tutorial will show you how to run your own DNS seed. 
 
 It will describe how you can achieve this using nubits-seeder and cf-php. 
@@ -23,7 +23,7 @@ You can find the repo for both programs here: https://github.com/bananenwilly/nu
 
 We will not talk much about nubits-seeder in this tutorial. Cf-php is where the magic happens.  
 
-##What does cf-php do?
+## What does cf-php do?
 
 It reads a file called dnsseed.dump in the nubits-seeder root directory, which is continuously created when nubits-seeder is crawling for nodes. 
 It will generate an IP-table from the dnseed.dump file and pushes this table to a CloudFlare (CF) enabled domain of your choice over the Cloudflare API.
@@ -46,13 +46,13 @@ nuseed.coinerella.com. 299 IN A 212.114.48.31
 
 There is no need for you to run your own DNS server. It's using the DNS servers provided by CloudFlare. 
 
-##Requirements
+## Requirements
   * `CloudFlare.com account`
   * `Domain (e. g. praisejordanleeourlordandsaviour.com) configured to use CF's DNS servers`
   * `small server (Raspberry Pis can easily handle this)`
   * `php5-cli, php5-curl, nubits-seeder repo`
 
-##Let's get started
+## Let's get started
 
   * `Get your CF API Key (CloudFlare.com -> My Settings -> Account -> API Key -> View API Key) and have it ready`
   * `install php5-cli and php5-curl`
