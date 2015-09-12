@@ -57,9 +57,7 @@ without the need to run your own DNS server. It's using the DNS servers provided
 ##Let's get started
 
     * `Get your CF API Key (CloudFlare.com -> My Settings -> Account -> API Key -> View API Key) and have it ready`
-
 	 * `install php5-cli and php5-curl`
-	 
     * `Download and start nubits-seeder`
 	```
     git clone https://github.com/bananenwilly/nubits-seeder1
