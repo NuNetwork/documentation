@@ -17,19 +17,18 @@ This tutorial will show you how to run your own DNS seed.
 It will describe how you can achieve this using nubits-seeder and cf-php. 
 
 Nubits-seeder is a small crawler, that checks for live nodes on NuNet.
-CF-PHP is a script which queries the CloudFlare API and enters the seed nodes crawled by nubits-seeder into the DNS zone file. 
+Cf-php is a script which queries the CloudFlare API and enters the seed nodes crawled by nubits-seeder into the DNS zone file. 
 
-You can find the repo for both programs here:
-https://github.com/bananenwilly/nubits-seeder
+You can find the repo for both programs here: https://github.com/bananenwilly/nubits-seeder
 
-We will not talk much about nubits-seeder in this tutorial. cf-php is where the magic happens.  
+We will not talk much about nubits-seeder in this tutorial. Cf-php is where the magic happens.  
 
 ##What does cf-php do?
 
 It reads a file called dnsseed.dump in the nubits-seeder root directory, which is continuously created when nubits-seeder is crawling for nodes. 
-It will generate an IP-table from the dnseed.dump file and pushes this table to a Cloudflare (CF) enabled domain of your choice over the Cloudflare API.
+It will generate an IP-table from the dnseed.dump file and pushes this table to a CloudFlare (CF) enabled domain of your choice over the Cloudflare API.
 
-It will generate a DNS zone file like this
+A DNS zone file created by cf-php will look something like this:
 
 ```
 ;; ANSWER SECTION:
@@ -45,8 +44,7 @@ nuseed.coinerella.com. 299 IN A 73.7.110.25
 nuseed.coinerella.com. 299 IN A 212.114.48.31
 ```
 
-
-without the need to run your own DNS server. It's using the DNS servers provided by CloudFlare. 
+There is no need for you to run your own DNS server. It's using the DNS servers provided by CloudFlare. 
 
 ##Requirements
   * `CloudFlare.com account`
@@ -71,9 +69,7 @@ screen -dmS nuseed sh -c "./dnsseed"
 to have a screen session, detach the screen session with CTRL+A+D
 ```
 
-  * `Edit cf-php/cf.php file
-    open cf.php in an editor of your choice
-    and fill in`
+  * `Open cf-php/cf.php in an editor of your choice and edit the config paramters accordingly.`
 
 ```php
 $domain ="domain.com";
@@ -84,12 +80,12 @@ $key = "yourapikey"; //key for cloudflare api found in account settings
 $seed_dump = "/path/to/dnsseed.dump"; //absolute path to dnsseed.dump in the nubits-seeder root directory
 ```
 
-accordingly.
-
   * `Have a cronjob run cf-php regularly`
 ```
 crontab -e
 * * * * * php ~/nubits-seeder/cf-php/cf.php
 ```
+
+This will run the cf.php script every minute. 
 
 That should be it. You now have your own Nu DNS seed. 
