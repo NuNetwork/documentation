@@ -2,7 +2,7 @@
 title: Create your own Nu DNS seed with CloudFlare 
 nav_heading: Technical Resources
 filename: create-dns-seed.md
-permalink: /create-nu-dns-seed
+permalink: /create-nu-dns-seed/
 layout: kb
 lang: en
 callouts:
