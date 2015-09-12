@@ -30,7 +30,7 @@ It will generate an IP-table from the dnseed.dump file and pushes this table to 
 
 A DNS zone file created by cf-php will look something like this:
 
-```
+{% highlight text %}
 ;; ANSWER SECTION:
 nuseed.coinerella.com. 299 IN A 212.129.19.120
 nuseed.coinerella.com. 299 IN A 217.23.13.138
@@ -42,7 +42,7 @@ nuseed.coinerella.com. 299 IN A 176.9.65.41
 nuseed.coinerella.com. 299 IN A 176.9.113.75
 nuseed.coinerella.com. 299 IN A 73.7.110.25
 nuseed.coinerella.com. 299 IN A 212.114.48.31
-```
+{% endhighlight %}
 
 
 There is no need for you to run your own DNS server. It's using the DNS servers provided by CloudFlare. 
