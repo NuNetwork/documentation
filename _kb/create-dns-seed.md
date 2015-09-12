@@ -56,37 +56,40 @@ without the need to run your own DNS server. It's using the DNS servers provided
 
 ##Let's get started
 
-    * `Get your CF API Key (CloudFlare.com -> My Settings -> Account -> API Key -> View API Key) and have it ready`
-	 * `install php5-cli and php5-curl`
-    * `Download and start nubits-seeder`
-	```
-    git clone https://github.com/bananenwilly/nubits-seeder1
-    cd nubits-seeder
-    make
-    chmod +x dnsseed
-    ./dnsseed
-    or
-    screen -dmS nuseed sh -c "./dnsseed"
-    to have a screen session, detach the screen session with CTRL+A+D
-	```
-   
-    * `Edit cf-php/cf.php file`
+  * `Get your CF API Key (CloudFlare.com -> My Settings -> Account -> API Key -> View API Key) and have it ready`
+  * `install php5-cli and php5-curl`
+  * `Download and start nubits-seeder`
+
+```
+git clone https://github.com/bananenwilly/nubits-seeder1
+cd nubits-seeder
+make
+chmod +x dnsseed
+./dnsseed
+or
+screen -dmS nuseed sh -c "./dnsseed"
+to have a screen session, detach the screen session with CTRL+A+D
+```
+
+  * `Edit cf-php/cf.php file
     open cf.php in an editor of your choice
-    and fill in
+    and fill in`
 
-	```php
-	$domain ="domain.com";
-	$name = "nuseed"; //subdomain e.g. name.domain.com 
-	$number_of_records = 10; //maximum n A records with $name... 10 is recommended
-	$user = "emailofcloudflareaccount"; //user name
-	$key = "yourapikey"; //key for cloudflare api found in account settings
-	$seed_dump = "/path/to/dnsseed.dump"; //absolute path to dnsseed.dump in the nubits-seeder root directory
-	```
+```php
+$domain ="domain.com";
+$name = "nuseed"; //subdomain e.g. name.domain.com 
+$number_of_records = 10; //maximum n A records with $name... 10 is recommended
+$user = "emailofcloudflareaccount"; //user name
+$key = "yourapikey"; //key for cloudflare api found in account settings
+$seed_dump = "/path/to/dnsseed.dump"; //absolute path to dnsseed.dump in the nubits-seeder root directory
+```
 
-	accordingly.
-	* `Have a cronjob run cf-php regularly`
-	```
-	crontab -e
-	* * * * * php ~/nubits-seeder/cf-php/cf.php
-	```
+accordingly.
+
+  * `Have a cronjob run cf-php regularly`
+```
+crontab -e
+* * * * * php ~/nubits-seeder/cf-php/cf.php
+```
+
 That should be it. You now have your own Nu DNS seed. 
