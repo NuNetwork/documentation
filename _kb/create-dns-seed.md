@@ -26,7 +26,8 @@ We will not talk much about nubits-seeder in this tutorial. cf-php is where the 
 
 ##What does cf-php do?
 
-It reads a file called dnsseed.dump in the nubits-seeder root directory, which is continuously created when nubits-seeder is crawling for nodes. It will generate a IP-table from the dnseed.dump file and pushes this table to a Cloudflare (CF) enabled domain of your choice over the Cloudflare API.
+It reads a file called dnsseed.dump in the nubits-seeder root directory, which is continuously created when nubits-seeder is crawling for nodes. 
+It will generate an IP-table from the dnseed.dump file and pushes this table to a Cloudflare (CF) enabled domain of your choice over the Cloudflare API.
 
 It will generate a DNS zone file like this
 
@@ -49,10 +50,10 @@ without the need to run your own DNS server. It's using the DNS servers provided
 
 ##Requirements
 
-    * `CloudFlare.com account`
-    * `Domain (e. g. praisejordanleeourlordandsaviour.com) configured to use CF's DNS servers`
-    * `small server (Raspberry Pis can easily handle this)`
-    * `php5-cli, php5-curl, nubits-seeder repo`
+	* `CloudFlare.com account`
+ 	* `Domain (e. g. praisejordanleeourlordandsaviour.com) configured to use CF's DNS servers`
+	* `small server (Raspberry Pis can easily handle this)`
+ 	* `php5-cli, php5-curl, nubits-seeder repo`
 
 ##Let's get started
 
