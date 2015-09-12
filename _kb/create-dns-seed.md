@@ -61,7 +61,7 @@ There is no need for you to run your own DNS server. It's using the DNS servers 
 
 <b></b>
 
-```shell
+{% highlight shell %}
 git clone https://github.com/bananenwilly/nubits-seeder
 cd nubits-seeder
 make
@@ -70,31 +70,32 @@ chmod +x dnsseed
 or
 screen -dmS nuseed sh -c "./dnsseed"
 to have a screen session, detach the screen session with CTRL+A+D
-```
+{% endhighlight %}
+
 <b></b>
 
   * `Open cf-php/cf.php in an editor of your choice and edit the config paramters accordingly.`
 
 <b></b>
 
-```
+{% highlight php %}
 $domain ="domain.com";
 $name = "nuseed"; //subdomain e.g. name.domain.com 
 $number_of_records = 10; //maximum n A records with $name... 10 is recommended
 $user = "emailofcloudflareaccount"; //user name
 $key = "yourapikey"; //key for cloudflare api found in account settings
 $seed_dump = "/path/to/dnsseed.dump"; //absolute path to dnsseed.dump in the nubits-seeder root directory
-```
+{% endhighlight %}
 <b></b>
 
   * `Have a cronjob run cf-php regularly`
 
 <b></b>
 
-```
+{% highlight %}
 crontab -e
 php ~/nubits-seeder/cf-php/cf.php
-```
+{% endhighlight json %}
 
 <b></b>
 
