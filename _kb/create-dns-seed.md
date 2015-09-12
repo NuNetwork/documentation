@@ -58,7 +58,7 @@ There is no need for you to run your own DNS server. It's using the DNS servers 
   * `install php5-cli and php5-curl`
   * `Download and start nubits-seeder`
 
-```shell
+```
 git clone https://github.com/bananenwilly/nubits-seeder
 cd nubits-seeder
 make
@@ -71,7 +71,8 @@ to have a screen session, detach the screen session with CTRL+A+D
 
   * `Open cf-php/cf.php in an editor of your choice and edit the config paramters accordingly.`
 
-```php
+
+```
 $domain ="domain.com";
 $name = "nuseed"; //subdomain e.g. name.domain.com 
 $number_of_records = 10; //maximum n A records with $name... 10 is recommended
@@ -81,9 +82,10 @@ $seed_dump = "/path/to/dnsseed.dump"; //absolute path to dnsseed.dump in the nub
 ```
 
   * `Have a cronjob run cf-php regularly`
+
 ```
 crontab -e
-* * * * * php ~/nubits-seeder/cf-php/cf.php
+php ~/nubits-seeder/cf-php/cf.php
 ```
 
 This will run the cf.php script every minute. 
