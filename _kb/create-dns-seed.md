@@ -59,6 +59,7 @@ There is no need for you to run your own DNS server. It's using the DNS servers 
   * `install php5-cli and php5-curl`
   * `Download and start nubits-seeder`
 
+<b></b>
 
 ```shell
 git clone https://github.com/bananenwilly/nubits-seeder
@@ -70,8 +71,11 @@ or
 screen -dmS nuseed sh -c "./dnsseed"
 to have a screen session, detach the screen session with CTRL+A+D
 ```
+<b></b>
 
   * `Open cf-php/cf.php in an editor of your choice and edit the config paramters accordingly.`
+
+<b></b>
 
 ```
 $domain ="domain.com";
@@ -81,13 +85,18 @@ $user = "emailofcloudflareaccount"; //user name
 $key = "yourapikey"; //key for cloudflare api found in account settings
 $seed_dump = "/path/to/dnsseed.dump"; //absolute path to dnsseed.dump in the nubits-seeder root directory
 ```
+<b></b>
 
   * `Have a cronjob run cf-php regularly`
+
+<b></b>
 
 ```
 crontab -e
 php ~/nubits-seeder/cf-php/cf.php
 ```
+
+<b></b>
 
 This will run the cf.php script every minute. 
 
