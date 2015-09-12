@@ -49,11 +49,10 @@ nuseed.coinerella.com. 299 IN A 212.114.48.31
 without the need to run your own DNS server. It's using the DNS servers provided by CloudFlare. 
 
 ##Requirements
-
-	* `CloudFlare.com account`
- 	* `Domain (e. g. praisejordanleeourlordandsaviour.com) configured to use CF's DNS servers`
-	* `small server (Raspberry Pis can easily handle this)`
- 	* `php5-cli, php5-curl, nubits-seeder repo`
+  * `CloudFlare.com account`
+  * `Domain (e. g. praisejordanleeourlordandsaviour.com) configured to use CF's DNS servers`
+  * `small server (Raspberry Pis can easily handle this)`
+  * `php5-cli, php5-curl, nubits-seeder repo`
 
 ##Let's get started
 
