@@ -60,7 +60,7 @@ There is no need for you to run your own DNS server. It's using the DNS servers 
   * `Download and start nubits-seeder`
 
 
-```
+```shell
 git clone https://github.com/bananenwilly/nubits-seeder
 cd nubits-seeder
 make
