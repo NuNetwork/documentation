@@ -19,7 +19,7 @@ It will describe how you can achieve this using nubits-seeder and cf-php.
 Nubits-seeder is a small crawler, that checks for live nodes on NuNet.
 Cf-php is a script which queries the CloudFlare API and enters the seed nodes crawled by nubits-seeder into the DNS zone file. 
 
-You can find the repo for both programs here: https://github.com/bananenwilly/nubits-seeder
+You can find the repo for both programs here: [https://github.com/bananenwilly/nubits-seeder]
 
 We will not talk much about nubits-seeder in this tutorial. Cf-php is where the magic happens.  
 
@@ -58,7 +58,7 @@ There is no need for you to run your own DNS server. It's using the DNS servers 
   * `install php5-cli and php5-curl`
   * `Download and start nubits-seeder`
 
-```
+```shell
 git clone https://github.com/bananenwilly/nubits-seeder
 cd nubits-seeder
 make
