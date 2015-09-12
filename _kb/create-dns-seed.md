@@ -92,7 +92,7 @@ $seed_dump = "/path/to/dnsseed.dump"; //absolute path to dnsseed.dump in the nub
 
 <b></b>
 
-{% highlight %}
+{% highlight shell %}
 crontab -e
 php ~/nubits-seeder/cf-php/cf.php
 {% endhighlight json %}
