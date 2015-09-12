@@ -61,7 +61,7 @@ without the need to run your own DNS server. It's using the DNS servers provided
   * `Download and start nubits-seeder`
 
 ```
-git clone https://github.com/bananenwilly/nubits-seeder1
+git clone https://github.com/bananenwilly/nubits-seeder
 cd nubits-seeder
 make
 chmod +x dnsseed
