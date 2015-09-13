@@ -65,7 +65,35 @@ Restart SSH with `$ sudo /etc/init.d/ssh restart`
  - `$ sudo apt-get install checkinstall subversion git git-core build-essential`
  - `$ sudo apt-get install libssl-dev libdb++-dev libminiupnpc-dev`
  - `$ sudo apt-get install libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libcurl4-openssl-dev`
- - 
+
+##### Installing BerkeleyDB4.8 from source - in case no repository with compiled packages can be found
+> don't install libdb++-dev from repository - it might be newer than 4.8 and nud compiled with libdb > 4.8 converts .dat files in ~/.nu to a format that is not compatible with official releases that use libdb4.8  
+
+**Adjusted dependencies for compiling nud with libdb4.8:**
+
+{% highlight bash %}
+sudo apt-get install checkinstall subversion git git-core build-essential libssl-dev libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libcurl4-openssl-dev libminiupnpc-dev
+{% endhighlight %}
+
+{% highlight bash %}
+cd ~/
+wget http://download.oracle.com/berkeley-db/db-4.8.30.tar.gz
+tar xvf db-4.8.30.tar.gz
+cd ~/db-4.8.30/build_unix
+../dist/configure --enable-cxx
+make
+{% endhighlight %}
+
+> this might take a while - even on RaPi2  
+
+{% highlight bash %}
+sudo make install
+export BDB_INCLUDE_PATH="/usr/local/BerkeleyDB.4.8/include"
+export BDB_LIB_PATH="/usr/local/BerkeleyDB.4.8/lib"
+sudo ln -s /usr/local/BerkeleyDB.4.8/lib/libdb-4.8.so /usr/lib/libdb-4.8.so
+sudo ln -s /usr/local/BerkeleyDB.4.8/lib/libdb_cxx-4.8.so /usr/lib/libdb_cxx-4.8.so
+{% endhighlight %}
+
 #### Link libminiupnpc 
 
  - `$ sudo ln -s /usr/lib/libminiupnpc.so.5 /usr/lib/libminiupnpc.so.10`
