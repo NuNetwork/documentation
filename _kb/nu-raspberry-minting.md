@@ -6,6 +6,10 @@ permalink: /nu-raspberry-minting/
 layout: kb
 lang: en
 callouts:
+  - shortname: dont-install-libdev
+    type: warning
+    title: Don't install libdb++-dev from repository
+    body: it might be newer than 4.8 and nud compiled with libdb > 4.8 converts .dat files in `~/.nu` to a format that is not compatible with official releases that use libdb4.8  
 ---
 
 ## Introduction
@@ -66,8 +70,9 @@ Restart SSH with `$ sudo /etc/init.d/ssh restart`
  - `$ sudo apt-get install libssl-dev libdb++-dev libminiupnpc-dev`
  - `$ sudo apt-get install libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libcurl4-openssl-dev`
 
-##### Installing BerkeleyDB4.8 from source - in case no repository with compiled packages can be found
-> don't install libdb++-dev from repository - it might be newer than 4.8 and nud compiled with libdb > 4.8 converts .dat files in ~/.nu to a format that is not compatible with official releases that use libdb4.8  
+#### Installing BerkeleyDB4.8 from source - in case no repository with compiled packages can be found
+
+{% include callout-block.html name="hidden-dirs" %}
 
 **Adjusted dependencies for compiling nud with libdb4.8:**
 
