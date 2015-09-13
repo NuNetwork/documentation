@@ -45,6 +45,7 @@ Following one of the many tutorials you can find online, for example [this](http
 
 #### Enable SSH : 
 Enter `$ sudo raspi-config` in the terminal, then navigate to ssh, hit Enter and select `Enable or disable ssh server`.
+
 #### Accept passwordless SSH sessions 
 [Follow this tutorial](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md), or if you know what you are doing simply run (on your machines) 
 
@@ -72,7 +73,7 @@ Restart SSH with `$ sudo /etc/init.d/ssh restart`
 
 #### Installing BerkeleyDB4.8 from source - in case no repository with compiled packages can be found
 
-{% include callout-block.html name="hidden-dirs" %}
+{% include callout-block.html name="dont-install-libdev" %}
 
 **Adjusted dependencies for compiling nud with libdb4.8:**
 
