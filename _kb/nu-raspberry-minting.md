@@ -221,4 +221,4 @@ Double check if the feed is set correctly by running
 
 Congrats, your minting machine is ready! 
 
- You can now interact with your node using [rpc commands](https://docs.nubits.com/rpc-api/), and you can also manage the same NSR with a GUI client from your laptop at the same time, just remember to leave the GUI client locked, so it won't mint and interfere with the raspberry.  
+You can now interact with your node using [rpc commands](https://docs.nubits.com/rpc-api/).
