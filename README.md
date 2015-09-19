@@ -46,7 +46,7 @@ callouts:
     body: Lines that start with \# are comments, and are ignored
 ```
 
-Note the spacing, as this is important when descriing callouts. Once a callout has been described in the metadata youc can add it into the body of the document using the code below.
+Note the spacing, as this is important when describing callouts. Once a callout has been described in the metadata you can add it into the body of the document using the code below.
 
 `{% include callout-block.html name="hidden-dirs" %}`
 
