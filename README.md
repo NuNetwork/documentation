@@ -52,6 +52,6 @@ Note the spacing, as this is important when descriing callouts. Once a callout h
 
 This code will be replaced with the callout box when the page is rendered. Notice that the `name` field must be the same as the `shortname` field in the callout metadata. There are three kinds of callouts. Info, warning, and danger, which are differentiated by different icons and colors.
 
-[replace with image]
-[replace with image]
-[replace with image]
+![danger callout](https://raw.githubusercontent.com/NuNetwork/documentation/gh-pages/assets/images/danger_callout_example.PNG)
+![info callout](https://raw.githubusercontent.com/NuNetwork/documentation/gh-pages/assets/images/info_callout_example.PNG)
+![warning callout](https://raw.githubusercontent.com/NuNetwork/documentation/gh-pages/assets/images/warning_callout_example.PNG)
