@@ -39,6 +39,8 @@ If you launch NuBot with the GUI, you will be able to change parameters and see 
 | bookBuyOffset | depends on currency (0;0.01;0.025) |  offset from target price  |  double , expressed USD.  |
 | bookSellInterval | 0.008 |  interval price between two sell orders  |  double , expressed USD. (0.000001,0.3)  |
 | bookBuyInterval | 0.008 |  interval price between two buy orders  |  double , expressed USD. (0.000001,0.3) |
+| bookSellMaxVolumeCumulative | 0 (unlimited) |  maximum cumulative volume of open sell orders  |  double , expressed USD.   |
+| bookBuyMaxVolumeCumulative | 0 (unlimited) |  maximum cumulative volume of open buy orders  |  double , expressed USD. |
 | bookSellType | exp | shape of the curve  |  String , **lin**ear; **exp**onential; **log**arithmic;  |
 | bookBuyType | exp | shape of the curve  |  String , **lin**ear; **exp**onential; **log**arithmic; |
 | bookSellSteepness | mid | steepness of the curve  |  String , flat;low;mid;high |
@@ -54,13 +56,20 @@ Below, a sample JSON representation of the model, to add to custodian configurat
   "bookSellWall": 1000.0,
   "bookSellOffset": 0.002,
   "bookSellInterval": 0.015,
+  "bookSellMaxVolumeCumulative" : 0,
   "bookSellType": "exp",
   "bookSellSteepness": "low",
 
   "bookBuywall": 1000.0,
   "bookBuyOffset": 0.048,
   "bookBuyInterval": 0.015,
+  "bookSellMaxVolumeCumulative" : 0,
   "bookBuyType": "log",
   "bookBuySteepness": "low"
 }
 {% endhighlight %}
+
+## Dynamics 
+
+This section will specify the dynamics of the orders on the orderbook, i.e. how orders are handled over time. [tbd]
+
