@@ -63,7 +63,7 @@ Below, a sample JSON representation of the model, to add to custodian configurat
   "bookBuywall": 1000.0,
   "bookBuyOffset": 0.048,
   "bookBuyInterval": 0.015,
-  "bookSellMaxVolumeCumulative" : 0,
+  "bookBuyMaxVolumeCumulative" : 0,
   "bookBuyType": "log",
   "bookBuySteepness": "low"
 }
