@@ -2,14 +2,6 @@
   market: both
   url: https://www.allcoin.com/
   logo: logo-allcoin.png
-- exchange: Alts Trade
-  market: both
-  url: https://alts.trade/
-  logo: logo-alts_trade.png
-- exchange: Bitcoin.co.id
-  market: nbt
-  url: https://vip.bitcoin.co.id/nbtbtc
-  logo: logo-bitcoin_co_id.png
 - exchange: Bittrex
   market: nbt
   url: https://bittrex.com/Market/Index?MarketName=BTC-NBT
@@ -22,6 +14,18 @@
   market: both
   url: https://bter.com/
   logo: logo-bter.png
+- exchange: CCEDK
+  market: both
+  url: https://ccedk.com/
+  logo: logo-ccedk.png
+- exchange: Cryptsy
+  market: both
+  url: https://www.cryptsy.com/
+  logo: logo-cryptsy.png
+- exchange: Litebit
+  market: nbt
+  url: https://litebit.eu/
+  logo: logo-litebit.png
 - exchange: Poloniex
   market: both
   url: https://poloniex.com/
@@ -30,3 +34,7 @@
   market: nbt
   url: https://shapeshift.io/
   logo: logo-shapeshift.png
+- exchange: SouthXchange
+  market: nbt
+  url: https://www.southxchange.com/
+  logo: logo-southxhange.png
