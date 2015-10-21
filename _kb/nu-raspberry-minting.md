@@ -23,6 +23,9 @@ In this minimal tutorial we will see how to setup a minting machine which is dif
 
 NOTE : in the examples of this tutorial we used `pico` as text editor, but feel free to use any other editor (nano, vi, etc ...) . 
 
+<img src="https://raw.githubusercontent.com/NuNetwork/documentation/gh-pages/assets/images/nupi.png" width="250">
+
+
 ## What you need
    - A Raspberry Pi [2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). The  1B and 1B+ can also be used to mint, although R-pi 2 is more efficient, especially when minting with a large number of shares. 
    - A fresh [SD card](https://www.raspberrypi.org/documentation/installation/sd-cards.md), ideally 8+ GB, class 10 speed  ;
