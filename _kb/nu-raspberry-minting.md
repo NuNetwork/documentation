@@ -109,7 +109,10 @@ The build process can take long. If you want to skip it and get precompiled bina
 
  - `$ cd ~` #Go to pi user's home directory
  - `$ git clone https://bitbucket.org/JordanLeePeershares/nubit.git`   #clone NuBits repository locally
- - `$ cd nubit/src` #Go to source directory 
+ - `$ cd nubit` #Go to root repository directory
+ - `$ git tag` #Retrieve a list of tags and find the most recent stable tag--the highest number without a suffix. 
+ - `$ git checkout v2.0.1` #Grab a stable version of the code (replace _2.0.1_ with the results of the previous step if needed).
+ - `$ cd src` #Go to source directory 
  - `$ sudo dd if=/dev/zero of=/swapfile bs=64M count=16` #provide some extra swap partition to speed up compilation time
  - `$ sudo mkswap /swapfile` 
  - `$ sudo swapon /swapfile` 
