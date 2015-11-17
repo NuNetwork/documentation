@@ -20,6 +20,15 @@ Nu gives a huge advantage to merchants that wants to accept crypto-currency paym
  - We also suggest to activate the `autoconvert` function to instantly exchange any other crypto for stable NuBits.  For each currency you wish to convert, in the `Payout mode` column select `To Balance + Convert`and select `NBT`
  - Integrate  NuBits into your e-commerce using [Coinpayment's merchant tools](https://www.coinpayments.net/merchant-tools) :  consume their [APIs](https://www.coinpayments.net/merchant-tools-api), generate an [HTML button](https://www.coinpayments.net/merchant-tools-button-maker) , [create invoices](https://www.coinpayments.net/merchant-tools-request) or use one of the available [shopping chart plugins](https://www.coinpayments.net/merchant-tools-plugins) to integrate into drupal, woocommerce and more. 
 
+## Accept NuBits via Coinify
+
+A valid alternative to CoinPayments is [Coinify.com](https://coinify.com/), which provides which also provides a platform for merchants that wishes to accept altcoin payments, including merchants tools and plugins integration for e-commerce.
+
+ - [Create a new account](https://coinify.com/signup/now)  or login into your existing account;
+ - Create a new Bitcoin account  [in your settings page](https://www.coinify.com/merchant/accounts)
+ - Integrate  Bitcoin into your e-commerce using [Coinify's merchant tools](https://www.coinify.com/merchant/plugins) , generate an [HTML button](https://www.coinify.com/merchant/tools) , [create invoices](https://www.coinify.com/invoicest) or [interact via api](https://www.coinify.com/merchant/api)
+ - Accept Bitcoin at your phisical shop using [mobile checkout](https://www.coinify.com/merchant/mobile_checkout)
+
 
 ## Accept NuBits via ShapeShift
 
