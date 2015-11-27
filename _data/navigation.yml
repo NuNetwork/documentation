@@ -46,7 +46,7 @@ en:
     - resource: Block Explorer
       url: http://blockexplorer.nu
     - resource: Nu Press Kit
-      url: http://nubrand.me/
+      url: http://coingame.github.io/nubrand/
   ext-resources:
   social-networks:
     - resource: Community Forums
