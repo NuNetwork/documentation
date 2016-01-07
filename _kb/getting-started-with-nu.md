@@ -27,6 +27,10 @@ You can get the official Nu wallet from [NuBits.com/download](https://nubits.com
   * [NuBippy](http://bippy.org/nubippy/) - NuBippy can be used to create [BIP0038](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) encrypted offline wallets.
   * [WalletGenerator.net](https://walletgenerator.net/?currency=Nubits) - Many ways to generate wallets for NuBits
 
+### Web Wallets
+ * [NuBits.mintr.org](https://nubits.mintr.org/) - Also supports NuShares
+ * [CoinWallet.co](https://coinwallet.co)
+
 ## Get NuBits and NuShares
 
 You have a wallet now. Great! Now how do you get NuBits and NuShares?
