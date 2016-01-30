@@ -16,7 +16,7 @@ callouts:
 > Security is always excessive until it's not enough.
 >               — Robbie Sinclair, Head of Security, Country Energy, NSW Australia
 
-You should always reguarly backup your wallet files, and have multiple backups stored on various media and locations. It's also a good idea to backup your data directory prior to using newer wallet verions. Though many times you will be warned if this is a neccesary action. Here we'll go over the steps needed to perform different types of backups.
+You should always regularly backup your wallet files, and have multiple backups stored on various media and locations. It's also a good idea to backup your data directory prior to using newer wallet versions. Though many times you will be warned if this is a necessary action. Here we'll go over the steps needed to perform different types of backups.
 
 ## Wallet Backups
 
@@ -54,4 +54,4 @@ The safest way to backup your wallet files is by using the wallet itself.
  In some cases you'll want to back up your entire data directory which contains your wallet files, blockchain, and other data required by Nu to run. Follow the steps to create a backup of the data directory.
  
   1. First locate the data directory for your operating system.  You can use the guide [located here](https://docs.nubits.com/creating-conf-file/#find-the-nu-data-directory).
-  1. If you need to keep the existing data directory simply copy/paste the entire directory somewhere. If you don't need to keep the files in place just rename the directory. For exanmple you can add "BACKUP" to the end, which on a Linux system would look like ".nuBACKUP". 
+  1. If you need to keep the existing data directory simply copy/paste the entire directory somewhere. If you don't need to keep the files in place just rename the directory. For example you can add "BACKUP" to the end, which on a Linux system would look like ".nuBACKUP".
