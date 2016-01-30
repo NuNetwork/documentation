@@ -1,5 +1,5 @@
 ---
-title: Using a bootstrap file
+title: Using A Bootstrap File
 nav_heading: Getting Started
 filename: bootstrap-file.md
 permalink: /using-a-bootstrap/
