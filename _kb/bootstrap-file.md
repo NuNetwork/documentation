@@ -1,6 +1,6 @@
 ---
 title: Using a bootstrap file
-nav_heading: NuBits
+nav_heading: Getting Started
 filename: bootstrap-file.md
 permalink: /using-a-bootstrap/
 layout: kb
