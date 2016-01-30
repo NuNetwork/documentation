@@ -20,6 +20,7 @@ A currency asset.
 - United States NuBits (US-NBT) [pegged](#peg) to the US dollar.  
 
 The following assets do not exist yet, but [have been voted on](https://discuss.nubits.com/t/passed-motion-to-introduce-new-nubits-products/2834) by NuShares holders to be implemented in the future.  
+
 - Chinese NuBits (CN-NBT) pegged to the Chinese yuan.
 - European NuBits (EU-NBT) pegged to the European euro.
 - SDR NuBits (X-NBT) pegged to the [Special Drawing Rights](https://www.imf.org/external/np/fin/data/rms_sdrv.aspx) basket currency.
