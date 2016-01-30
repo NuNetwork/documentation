@@ -18,7 +18,7 @@ callouts:
 
 You should always reguarly backup your wallet files, and have multiple backups stored on various media and locations. It's also a good idea to backup your data directory prior to using newer wallet verions. Though many times you will be warned if this is a neccesary action. Here we'll go over the steps needed to perform different types of backups.
 
-## Wallet backups
+## Wallet Backups
 
 The safest way to backup your wallet files is by using the wallet itself.
 
@@ -32,7 +32,7 @@ The safest way to backup your wallet files is by using the wallet itself.
  
  Remember to do this for all units (NuShares, NuBits, etc). You can see which unit you're backing up by clicking the "Unit" menu option. You can also change units from here as well to back up others.
 
-### Using the Daemon
+### Using the daemon
 
  1. Use the `backupwallet` command to backup the wallet from the daemon. Provide the location and file name as a parameter where you would like it to be backed up.
  1. `./nud backupwallet "/path/to/location/walletS.dat"`
@@ -42,7 +42,7 @@ The safest way to backup your wallet files is by using the wallet itself.
  `./nud --unit=B backupwallet "/path/to/location/walletB.dat"`
  
 
-## Using the Data Directory
+### Using the Data Directory
  
  On some occasions you may not be able to start up the Nu application, so you'll be unable to backup your wallet files from it using the steps above. In those instances you can use the next best option which is to copy the wallet files from the data directory. **You should never do this while the Nu application is running. Always shut down Nu first**.
  
