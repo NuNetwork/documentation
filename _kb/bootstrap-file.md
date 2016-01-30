@@ -7,6 +7,8 @@ layout: kb
 lang: en
 ---
 
+This is only available for Nu wallet version 2.1 and higher.
+
 A bootstrap file allows you to download a large portion of the blockchain. The advantage is that the Nu wallet doesn't need to download the blocks from other peers. Syncing the blockchain from a boostrap file is much faster than downloading from peers. Follow the steps below to download and use a bootstrap file.
 
  1. Download the bootstrap.dat file [from here](https://docs.google.com/uc?id=0B96pmq-lU9NQTUlqYjY5S2xNNzQ&export=download). A [torrent file](https://bitbucket.org/JordanLeePeershares/nubit/downloads/NuBootstrap012616.torrent) is also available to download using bittorrent. 
