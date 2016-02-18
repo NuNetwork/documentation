@@ -8,9 +8,7 @@ lang: en
 callouts:
 ---
 
-# Listing of various block explorers that supports NuBits, NuShares or both.
-
-  
+## Listing of various block explorers that supports NuBits, NuShares or both.  
 
   * [BlockExplorer.nu](http://blockexplorer.nu/) - Supports NuBits and NuShares. Also shows charting infomration about transactions, voting and other information.
   * [NuBitsExplorer.nu](https://NuBitsExplorer.nu) - Supports NuBits
