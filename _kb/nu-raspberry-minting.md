@@ -6,6 +6,10 @@ permalink: /nu-raspberry-minting/
 layout: kb
 lang: en
 callouts:
+  - shortname: dont-install-libdev
+    type: warning
+    title: Don't install libdb++-dev from repository
+    body: it might be newer than 4.8 and nud compiled with libdb > 4.8 converts .dat files in `~/.nu` to a format that is not compatible with official releases that use libdb4.8  
 ---
 
 ## Introduction
@@ -18,6 +22,9 @@ The Raspberry Pi is a cheap (~40$) and efficient device with enough computationa
 In this minimal tutorial we will see how to setup a minting machine which is different from a [full node](https://bitcoin.org/en/full-node#other-linux-distributions). For security reasons full nodes and minting nodes should be kept separated. 
 
 NOTE : in the examples of this tutorial we used `pico` as text editor, but feel free to use any other editor (nano, vi, etc ...) . 
+
+<img src="https://raw.githubusercontent.com/NuNetwork/documentation/gh-pages/assets/images/nupi.png" width="250">
+
 
 ## What you need
    - A Raspberry Pi [2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). The  1B and 1B+ can also be used to mint, although R-pi 2 is more efficient, especially when minting with a large number of shares. 
@@ -41,6 +48,7 @@ Following one of the many tutorials you can find online, for example [this](http
 
 #### Enable SSH : 
 Enter `$ sudo raspi-config` in the terminal, then navigate to ssh, hit Enter and select `Enable or disable ssh server`.
+
 #### Accept passwordless SSH sessions 
 [Follow this tutorial](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md), or if you know what you are doing simply run (on your machines) 
 
@@ -65,7 +73,36 @@ Restart SSH with `$ sudo /etc/init.d/ssh restart`
  - `$ sudo apt-get install checkinstall subversion git git-core build-essential`
  - `$ sudo apt-get install libssl-dev libdb++-dev libminiupnpc-dev`
  - `$ sudo apt-get install libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libcurl4-openssl-dev`
- - 
+
+#### Installing BerkeleyDB4.8 from source - in case no repository with compiled packages can be found
+
+{% include callout-block.html name="dont-install-libdev" %}
+
+**Adjusted dependencies for compiling nud with libdb4.8:**
+
+{% highlight bash %}
+sudo apt-get install checkinstall subversion git git-core build-essential libssl-dev libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libcurl4-openssl-dev libminiupnpc-dev
+{% endhighlight %}
+
+{% highlight bash %}
+cd ~/
+wget http://download.oracle.com/berkeley-db/db-4.8.30.tar.gz
+tar xvf db-4.8.30.tar.gz
+cd ~/db-4.8.30/build_unix
+../dist/configure --enable-cxx
+make
+{% endhighlight %}
+
+> this might take a while - even on RaPi2  
+
+{% highlight bash %}
+sudo make install
+export BDB_INCLUDE_PATH="/usr/local/BerkeleyDB.4.8/include"
+export BDB_LIB_PATH="/usr/local/BerkeleyDB.4.8/lib"
+sudo ln -s /usr/local/BerkeleyDB.4.8/lib/libdb-4.8.so /usr/lib/libdb-4.8.so
+sudo ln -s /usr/local/BerkeleyDB.4.8/lib/libdb_cxx-4.8.so /usr/lib/libdb_cxx-4.8.so
+{% endhighlight %}
+
 #### Link libminiupnpc 
 
  - `$ sudo ln -s /usr/lib/libminiupnpc.so.5 /usr/lib/libminiupnpc.so.10`
@@ -75,7 +112,10 @@ The build process can take long. If you want to skip it and get precompiled bina
 
  - `$ cd ~` #Go to pi user's home directory
  - `$ git clone https://bitbucket.org/JordanLeePeershares/nubit.git`   #clone NuBits repository locally
- - `$ cd nubit/src` #Go to source directory 
+ - `$ cd nubit` #Go to root repository directory
+ - `$ git tag` #Retrieve a list of tags and find the most recent stable tag--the highest number without a suffix. 
+ - `$ git checkout v2.0.3` #Grab a stable version of the code (replace _2.0.1_ with the results of the previous step if needed).
+ - `$ cd src` #Go to source directory 
  - `$ sudo dd if=/dev/zero of=/swapfile bs=64M count=16` #provide some extra swap partition to speed up compilation time
  - `$ sudo mkswap /swapfile` 
  - `$ sudo swapon /swapfile` 
@@ -187,4 +227,4 @@ Double check if the feed is set correctly by running
 
 Congrats, your minting machine is ready! 
 
- You can now interact with your node using [rpc commands](https://docs.nubits.com/rpc-api/), and you can also manage the same NSR with a GUI client from your laptop at the same time, just remember to leave the GUI client locked, so it won't mint and interfere with the raspberry.  
+You can now interact with your node using [rpc commands](https://docs.nubits.com/rpc-api/).
