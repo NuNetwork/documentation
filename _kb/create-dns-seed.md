@@ -52,6 +52,7 @@ There is no need for you to run your own DNS server. It's using the DNS servers 
   * `Domain (e. g. praisejordanleeourlordandsaviour.com) configured to use CF's DNS servers`
   * `small server (Raspberry Pis can easily handle this)`
   * `php5-cli, php5-curl, nubits-seeder repo`
+  * `you may need to install lib-boost on your system to compile this (on Debian based systems: sudo apt-get install libboost-all-dev)`
 
 ## Let's get started
 
