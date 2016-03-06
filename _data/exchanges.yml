@@ -1,7 +1,3 @@
-- exchange: Allcoin
-  market: both
-  url: https://www.allcoin.com/
-  logo: logo-allcoin.png
 - exchange: Bittrex
   market: nbt
   url: https://bittrex.com/Market/Index?MarketName=BTC-NBT
@@ -14,10 +10,6 @@
   market: both
   url: https://ccedk.com/
   logo: logo-ccedk.png
-- exchange: Cryptsy
-  market: both
-  url: https://www.cryptsy.com/
-  logo: logo-cryptsy.png
 - exchange: Poloniex
   market: both
   url: https://poloniex.com/
