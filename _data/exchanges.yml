@@ -6,10 +6,6 @@
   market: nbt
   url: https://bittrex.com/Market/Index?MarketName=BTC-NBT
   logo: logo-bittrex.png
-- exchange: Bittylicious
-  market: nbt
-  url: https://bittylicious.com/
-  logo: logo-bittylicious.png
 - exchange: BTER
   market: both
   url: https://bter.com/
@@ -22,10 +18,6 @@
   market: both
   url: https://www.cryptsy.com/
   logo: logo-cryptsy.png
-- exchange: Litebit
-  market: nbt
-  url: https://litebit.eu/
-  logo: logo-litebit.png
 - exchange: Poloniex
   market: both
   url: https://poloniex.com/
