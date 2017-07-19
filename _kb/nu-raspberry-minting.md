@@ -114,7 +114,7 @@ The build process can take long. If you want to skip it and get precompiled bina
  - `$ git clone https://bitbucket.org/JordanLeePeershares/nubit.git`   #clone NuBits repository locally
  - `$ cd nubit` #Go to root repository directory
  - `$ git tag` #Retrieve a list of tags and find the most recent stable tag--the highest number without a suffix. 
- - `$ git checkout v2.0.3` #Grab a stable version of the code (replace _2.0.1_ with the results of the previous step if needed).
+ - `$ git checkout v5.0.1` #Grab a stable version of the code (replace _5.0.1_ with the results of the previous step if needed).
  - `$ cd src` #Go to source directory 
  - `$ sudo dd if=/dev/zero of=/swapfile bs=64M count=16` #provide some extra swap partition to speed up compilation time
  - `$ sudo mkswap /swapfile` 
@@ -128,8 +128,9 @@ The build process can take long. If you want to skip it and get precompiled bina
 
 ## Download precompiled binaries 
 
-You can download unofficial precompiled build maintaned by the Nu community. Read the disclaimer on [this repository](https://github.com/desrever-nu/nu-raspberry-unofficial) and download nud : 
-- `$ sudo wget https://github.com/desrever-nu/nu-raspberry-unofficial/raw/master/latest/nud `
+You can download unofficial precompiled build maintaned by the Nu community. Read the disclaimer on [this repository](https://github.com/proteanx/nunetwork/tree/master/armhf) and download nud :
+- `$ cd ~/` #Go to pi user's home directory 
+- `$ wget https://github.com/proteanx/nunetwork/raw/master/armhf/nud `
 - `$ sudo mv nud /usr/bin/nud && sudo chmod a+x /usr/bin/nud` #move nud and make it executable
 
 
@@ -170,7 +171,7 @@ To check how the download of the blockchain is proceeding you can run
 
 - `$  nud getinfo`
 
-and read the `blocks` number growing while comparing it to the current `height` on [the block explorer](https://blockexplorer.nu/status).   Be patient while the blockchain is being downloaded.
+and read the `blocks` number growing while comparing it to the current `height` on [the block explorer](https://nuexplorer.ddns.net/status).   Be patient while the blockchain is being downloaded.
 
 ## Configure your minting machine
 

@@ -8,6 +8,9 @@ lang: en
 callouts:
 ---
 
+## The NuNetwork is not currently (as of 7/19/2017) operating on the dividend model and instead of issuing quarterly profits in a PPC dividend the network/custodians are conducting "Company Share BuyBacks" of NSR NuShares on the open market.
+
+
 ## Instructions for how to set up your connection between Peer(coin/unity) and Nu
 
 Dividends are sent out in the form of Peercoins. Once you export the Peercoin keys from your Nu wallet into your Peer(coin/unity) wallet the dividends will be accessible. Follow the instructions below to export the keys.
