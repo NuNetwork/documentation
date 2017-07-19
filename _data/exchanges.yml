@@ -2,23 +2,12 @@
   market: nbt
   url: https://bittrex.com/Market/Index?MarketName=BTC-NBT
   logo: logo-bittrex.png
-- exchange: BTER
+- exchange: Cryptopia
   market: both
-  url: https://bter.com/
-  logo: logo-bter.png
-- exchange: CCEDK
-  market: both
-  url: https://ccedk.com/
-  logo: logo-ccedk.png
-- exchange: Poloniex
-  market: both
-  url: https://poloniex.com/
-  logo: logo-poloniex.png
-- exchange: Shapeshift.io
-  market: nbt
-  url: https://shapeshift.io/
-  logo: logo-shapeshift.png
-- exchange: SouthXchange
-  market: nbt
-  url: https://www.southxchange.com/
-  logo: logo-southxhange.png
+  url: https://www.cryptopia.co.nz
+  logo: logo-cryptopia.jpg
+- exchange: Alcurex
+  market: nsr
+  url: https://alcurex.com/#NSR-BTC
+  logo: logo-alcurex.png
+  

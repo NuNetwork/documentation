@@ -15,7 +15,7 @@ The whole Nu entity. This is includes the code, assets, communities, and service
 
 ### NuBit (?-NBT)
 
-A currency asset.
+NuBits first and primary currency asset representing a digital US Dollar.
 
 - United States NuBits (US-NBT) [pegged](#peg) to the US dollar.  
 
@@ -29,7 +29,7 @@ The following assets do not exist yet, but [have been voted on](https://discuss.
 
 An asset that represents ownership of Nu and provides the ability to vote and control the Nu network in a distributed fashion.
 
-Owners of NuShares are rewarded as the Nu network generates revenue, by distribution of dividends or through share buybacks.
+Minting owners of NuShares are first rewarded as the Nu network generates blocks via a 40 NSR block generation reward. Then NSR Shareholders are further rewarded for network profits (NuBits health) by either distribution of dividends, network NSR share buybacks and/or a combination of the two methods.
 
 ### NuShareholder
 
@@ -70,7 +70,7 @@ On an exchange order book, the sell side is comprised of all orders that offer t
 
 ### Sell-Side Custodian
 
-A term coined in the Nu [white paper](https://nubits.com/about/white-paper). A sell-side custodian sells their granted NuBits on an exchange and returns the profits to Nu in the form of dividends. A buy-side custodian on the other hand, immediately places orders to buy NuBits, thus supporting the buy side.
+A term coined in the Nu [white paper](https://nubits.com/learn/white-paper). A sell-side custodian sells their granted NuBits on an exchange and returns the profits to Nu in the form of dividends. A buy-side custodian on the other hand, immediately places orders to buy NuBits, thus supporting the buy side.
 
 ## Liquidity Terms
 
