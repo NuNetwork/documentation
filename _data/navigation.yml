@@ -9,7 +9,7 @@ en:
     - title: Chat
       url: https://gitter.im/NuNetwork
     - title: Block Explorer
-      url: https://blockexplorer.nu/
+      url: https://nuexplorer.ddns.net/
   doc-sidebar:
     - heading: Getting Started
     - heading: NuBits
@@ -24,9 +24,9 @@ en:
   nubits:
   nushares:
     - resource: NuShares Introduction
-      url: https://nubits.com/nushares/introduction
+      url: https://nubits.com/learn/nushares
     - resource: Voting Mechanics
-      url: https://nubits.com/nushares/voting-mechanics
+      url: https://nubits.com/learn/voting-mechanics
   tech-resources:
     - resource: Source Code
       url: https://bitbucket.org/JordanLeePeershares/nubit
@@ -44,7 +44,7 @@ en:
   webservices:
   tools:
     - resource: Block Explorer
-      url: http://blockexplorer.nu
+      url: https://nuexplorer.ddns.net/
     - resource: Nu Press Kit
       url: http://coingame.github.io/nubrand/
     - resource: CoinToolkit
@@ -59,8 +59,6 @@ en:
       url: https://twitter.com/OfficialNuBits
     - resource: Facebook
       url: https://www.facebook.com/OfficialNuBits
-    - resource: YouTube
-      url: https://www.youtube.com/channel/UCneu3jamW6lVZ8aMgxyUjfQ/videos
   history-sidebar:
     - heading: Events of 2013
     - heading: Events of 2014

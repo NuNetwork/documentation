@@ -70,7 +70,7 @@ rpc: http://nuEx:123exch@127.0.0.1:14002
 
 ## 5. Optional: Become A Liquidity Providing Custodian
 
-As described [in the Nu white paper](https://nubits.com/about/white-paper), if you plan to put your fund into reserves to buy or sell NuBits for your business, you could be approved to become a Liquidity Providing Custodian (LPC) and receive LPC fees from the NuShare holders. An LPC is required to set a tight buy/sell spread (typically 0.2%) between buy and sell prices, and will report liquidity (it's automatic) to NuNet.
+As described [in the Nu white paper](https://nubits.com/learn/white-paper), if you plan to put your fund into reserves to buy or sell NuBits for your business, you could be approved to become a Liquidity Providing Custodian (LPC) and receive LPC fees from the NuShare holders. An LPC is required to set a tight buy/sell spread (typically 0.2%) between buy and sell prices, and will report liquidity (it's automatic) to NuNet.
 
 To become an LPC you need to submit a custodial grant proposal. A [template is available](https://discuss.nubits.com/t/determine-what-information-we-want-to-include-in-the-custodial-proposal-template/94) to get you started. It can be helpful to read past proposals in the [Motions area of the discussion board](https://discuss.nubits.com/c/nushares/motions).
 
